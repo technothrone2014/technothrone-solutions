@@ -40,7 +40,7 @@ export default function Hero() {
             <div className="relative bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-8">
               <div className="text-sm text-gray-400 mb-2">// READY FOR PRODUCTION</div>
               <div className="font-mono">
-                <p className="text-emerald-400">> npm run deploy</p>
+                <p className="text-emerald-400">{'>'} npm run deploy</p>
                 <p className="text-cyan-400 animate-pulse">✓ Application live at technothrone.com</p>
                 <p className="text-gray-400 mt-4">/* 7+ years of production experience */</p>
                 <p className="text-gray-400">/* KRA, KPA, and counting */</p>
