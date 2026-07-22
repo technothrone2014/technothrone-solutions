@@ -1,59 +1,79 @@
 'use client'
 import { motion } from 'framer-motion'
-import { Code2, Leaf, Building2, Users, Database, Sparkles } from 'lucide-react'
+import { 
+  Crown, 
+  Code2, 
+  Leaf, 
+  Building2, 
+  Users, 
+  Database, 
+  Sparkles,
+  Shield,
+  GraduationCap,
+  Rocket
+} from 'lucide-react'
 
 const audiences = [
   {
     id: 'developers',
     icon: <Code2 className="w-8 h-8" />,
-    title: "Developers & IT Teams",
-    description: "Technical partnership, code reviews, architecture design",
-    color: "from-blue-500 to-cyan-500",
-    image: "👨‍💻",
-    benefits: ["Technical consulting", "Code reviews", "System architecture"]
+    title: "Fellow Developers",
+    description: "Join the royal court of technical excellence",
+    color: "from-purple-500 to-purple-700",
+    image: "👑",
+    benefits: ["Code Reviews", "Architecture Design", "Technical Consulting"]
   },
   {
     id: 'farmers',
     icon: <Leaf className="w-8 h-8" />,
     title: "Farmers & Agribusiness",
-    description: "AI-powered platforms, crop monitoring, market intelligence",
-    color: "from-emerald-500 to-green-500",
+    description: "Rule your fields with AI-powered wisdom",
+    color: "from-gold-500 to-yellow-600",
     image: "🌾",
-    benefits: ["Smart farming", "Yield prediction", "Market insights"]
+    benefits: ["Smart Farming", "Yield Prediction", "Market Intelligence"]
   },
   {
     id: 'enterprises',
     icon: <Building2 className="w-8 h-8" />,
     title: "Enterprises & Government",
-    description: "Mission-critical systems, data migration, automation",
-    color: "from-purple-500 to-pink-500",
-    image: "🏢",
-    benefits: ["Legacy migration", "Data automation", "Gov-grade security"]
+    description: "Crown your operations with royal engineering",
+    color: "from-purple-600 to-indigo-700",
+    image: "🏛️",
+    benefits: ["Legacy Migration", "Data Automation", "Gov-Grade Security"]
   },
   {
     id: 'startups',
-    icon: <Sparkles className="w-8 h-8" />,
-    title: "Startups & Innovators",
-    description: "Rapid prototyping, MVP development, scaling",
-    color: "from-orange-500 to-red-500",
+    icon: <Rocket className="w-8 h-8" />,
+    title: "Startups & Visionaries",
+    description: "Launch your kingdom with royal backing",
+    color: "from-gold-400 to-orange-500",
     image: "🚀",
-    benefits: ["MVP in weeks", "Scalable architecture", "Funding-ready"]
+    benefits: ["MVP in Weeks", "Scalable Architecture", "Funding-Ready"]
   }
 ]
 
 export default function Audience() {
   return (
-    <section id="audience" className="py-20 px-4 md:px-8">
+    <section id="audience" className="py-20 px-4 md:px-8 relative">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/10 via-transparent to-transparent" />
+      
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 px-4 py-2 bg-purple-900/30 border border-gold-500/30 rounded-full text-gold-400 text-sm mb-4"
+          >
+            <Crown className="w-4 h-4" />
+            For Every Kingdom
+          </motion.div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Solutions for{' '}
-            <span className="gradient-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-purple-400">
-              Every Audience
-            </span>
+            <span className="text-white">Who We </span>
+            <span className="gradient-gold bg-clip-text text-transparent">Serve</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            I build technology that serves diverse needs - from farmers to government agencies.
+            From the fields to the boardroom, we build technology that empowers every domain.
           </p>
         </div>
 
@@ -64,18 +84,18 @@ export default function Audience() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group p-6 bg-white/5 backdrop-blur border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-2"
+              className="group p-6 bg-purple-900/20 backdrop-blur border border-gold-500/20 rounded-2xl hover:bg-purple-900/30 transition-all duration-300 hover:-translate-y-2 hover:border-gold-500/40"
             >
-              <div className="text-4xl mb-4">{audience.image}</div>
-              <div className={`w-12 h-12 bg-gradient-to-r ${audience.color} rounded-xl flex items-center justify-center mb-4 text-white group-hover:scale-110 transition`}>
+              <div className="text-4xl mb-4 group-hover:scale-110 transition">{audience.image}</div>
+              <div className={`w-12 h-12 bg-gradient-to-r ${audience.color} rounded-xl flex items-center justify-center mb-4 text-white group-hover:scale-110 transition shadow-lg shadow-purple-500/20`}>
                 {audience.icon}
               </div>
-              <h3 className="text-lg font-bold mb-2">{audience.title}</h3>
+              <h3 className="text-lg font-bold text-white mb-2">{audience.title}</h3>
               <p className="text-sm text-gray-400 mb-4">{audience.description}</p>
               <ul className="space-y-1">
                 {audience.benefits.map((benefit, j) => (
-                  <li key={j} className="text-xs text-gray-500 flex items-center gap-2">
-                    <span className="w-1 h-1 bg-emerald-400 rounded-full"></span>
+                  <li key={j} className="text-xs text-gold-400/70 flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 bg-gold-400 rounded-full"></span>
                     {benefit}
                   </li>
                 ))}

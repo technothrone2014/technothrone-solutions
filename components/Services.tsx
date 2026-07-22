@@ -1,40 +1,77 @@
-import { Server, Database, Brain, Shield } from 'lucide-react'
+'use client'
+import { motion } from 'framer-motion'
+import { 
+  Crown, 
+  Server, 
+  Database, 
+  Brain, 
+  Shield,
+  GitBranch,
+  LineChart,
+  Sparkles
+} from 'lucide-react'
 
 const services = [
   {
-    icon: <Server className="w-8 h-8" />,
-    title: 'Full-Stack Development',
-    desc: 'Next.js, Node.js, TypeScript, Python — production-grade systems that scale.'
+    icon: <Crown className="w-8 h-8" />,
+    title: 'Royal Engineering',
+    desc: 'Full-stack development with Next.js, TypeScript, and Python — fit for a king.'
   },
   {
     icon: <Database className="w-8 h-8" />,
-    title: 'Data Engineering',
-    desc: 'Complex SQL, ETL pipelines, migration, and validation automation for government agencies.'
+    title: 'Data Sovereignty',
+    desc: 'Complex SQL, ETL pipelines, and automation for government-grade systems.'
   },
   {
     icon: <Brain className="w-8 h-8" />,
-    title: 'AI Integration',
-    desc: 'Custom chatbots, NLP, intelligent reporting, and AI-powered dashboards.'
+    title: 'AI & Intelligence',
+    desc: 'Custom chatbots, NLP, and intelligent reporting for modern kingdoms.'
   },
   {
     icon: <Shield className="w-8 h-8" />,
-    title: 'Legacy Migration',
-    desc: 'Zero-downtime migration from outdated systems to modern, scalable architectures.'
+    title: 'Legacy Ascension',
+    desc: 'Zero-downtime migration from outdated systems to modern architectures.'
   }
 ]
 
 export default function Services() {
   return (
-    <section className="py-20 px-4 md:px-8">
+    <section className="py-20 px-4 md:px-8 bg-purple-900/5">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">What I Deliver</h2>
+        <div className="text-center mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 px-4 py-2 bg-purple-900/30 border border-gold-500/30 rounded-full text-gold-400 text-sm mb-4"
+          >
+            <Sparkles className="w-4 h-4" />
+            Our Royal Services
+          </motion.div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="text-white">What We </span>
+            <span className="gradient-gold bg-clip-text text-transparent">Deliver</span>
+          </h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            Every service is crafted with the precision and quality worthy of the throne.
+          </p>
+        </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, i) => (
-            <div key={i} className="group p-6 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition hover:border-emerald-500/30">
-              <div className="text-emerald-400 mb-4 group-hover:scale-110 transition">{service.icon}</div>
-              <h3 className="text-lg font-bold mb-2">{service.title}</h3>
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="group p-6 bg-purple-900/20 backdrop-blur border border-gold-500/20 rounded-2xl hover:bg-purple-900/30 transition-all duration-300 hover:-translate-y-2 hover:border-gold-500/40"
+            >
+              <div className="w-14 h-14 bg-gradient-royal rounded-xl flex items-center justify-center mb-4 text-white group-hover:scale-110 transition shadow-lg shadow-purple-500/20">
+                {service.icon}
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">{service.title}</h3>
               <p className="text-gray-400 text-sm">{service.desc}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

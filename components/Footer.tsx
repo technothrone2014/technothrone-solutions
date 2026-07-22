@@ -1,9 +1,32 @@
+import { Crown, Github, Linkedin, Twitter } from 'lucide-react'
+
 export default function Footer() {
   return (
-    <footer className="py-8 border-t border-white/5 text-center text-gray-500 text-sm">
+    <footer className="py-8 border-t border-gold-500/20 bg-purple-900/10">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <p className="font-mono">Technothrone Solutions — Where government-grade engineering meets modern innovation.</p>
-        <p className="mt-2">© 2026. Built with Next.js, TypeScript, and precision.</p>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex items-center gap-2">
+            <Crown className="w-5 h-5 text-gold-400 crown-icon" />
+            <span className="text-gold-400 font-semibold">Technothrone Solutions</span>
+          </div>
+          <p className="text-gray-400 text-sm text-center md:text-left">
+            Where Royal Engineering Meets Digital Innovation
+          </p>
+          <div className="flex gap-4">
+            <a href="#" className="text-gray-500 hover:text-gold-400 transition">
+              <Github className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-gray-500 hover:text-gold-400 transition">
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-gray-500 hover:text-gold-400 transition">
+              <Twitter className="w-5 h-5" />
+            </a>
+          </div>
+        </div>
+        <div className="text-center mt-4 text-gray-500 text-xs">
+          © 2026 Technothrone Solutions. All rights reserved. 👑
+        </div>
       </div>
     </footer>
   )

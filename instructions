@@ -1,0 +1,49 @@
+echo ".env.local" >> .gitignore
+echo ".env" >> .gitignore
+echo ".env.*" >> .gitignore
+
+git init
+git add .
+git commit -m "Technothrone Solutions MVP - Ready for production"
+git branch -M main
+git remote add origin https://github.com/technothrone2014/technothrone-solutions.git
+git push -u origin main
+
+# 1. Remove the current origin
+git remote remove origin
+
+# 2. Add origin with your username in the URL
+git remote add origin https://technothrone2014@github.com/technothrone2014/technothrone-solutions.git
+
+# 3. Push using Personal Access Token (PAT)
+git push -u origin main
+
+
+git add next.config.ts
+git commit -m "Add static export configuration for Render"
+git push -u origin main
+
+
+# Move the components folder from app/ to root
+Move-Item -Path "app/components" -Destination "components"
+
+# Update imports in app/page.tsx to use relative paths
+
+
+git add .
+git commit -m "Update component imports to relative paths"
+git push
+
+
+
+# Delete git history (this removes all the secret issues)
+Remove-Item -Path ".git" -Recurse -Force -ErrorAction SilentlyContinue
+
+# Initialize new git repo
+git init
+
+# Add all files
+git add .
+
+# Commit
+git commit -m "Technothrone Solutions - Production Ready"

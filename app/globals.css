@@ -4,26 +4,48 @@
 
 @layer base {
   * {
-    border-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(124, 58, 237, 0.2);
   }
+  
   body {
-    background: #0a0a0a;
-    color: #ededed;
+    background: #0A0015;
+    color: #FFF5E6;
+    font-family: 'Inter', sans-serif;
   }
+  
   ::selection {
-    background: rgba(16, 185, 129, 0.3);
-    color: white;
+    background: rgba(124, 58, 237, 0.5);
+    color: #FCD34D;
   }
 }
 
 @layer utilities {
-  .gradient-text {
-    @apply bg-clip-text text-transparent;
+  .gradient-gold {
+    background: linear-gradient(135deg, #FCD34D 0%, #F59E0B 50%, #D97706 100%);
   }
-  .animate-delay-700 {
-    animation-delay: 700ms;
+  
+  .gradient-purple {
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #4C1D95 100%);
   }
-  .animate-delay-1000 {
-    animation-delay: 1000ms;
+  
+  .gradient-royal {
+    background: linear-gradient(135deg, #7C3AED 0%, #F59E0B 100%);
+  }
+  
+  .glow-gold {
+    box-shadow: 0 0 40px rgba(245, 158, 11, 0.3);
+  }
+  
+  .glow-purple {
+    box-shadow: 0 0 40px rgba(124, 58, 237, 0.3);
+  }
+  
+  .border-glow {
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.1);
+  }
+  
+  .crown-icon {
+    filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.5));
   }
 }
