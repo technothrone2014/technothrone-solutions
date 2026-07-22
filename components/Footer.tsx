@@ -1,5 +1,5 @@
 'use client'
-import { Crown, Github, Linkedin, Twitter, Mail, Phone } from 'lucide-react'
+import { Crown } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -13,30 +13,30 @@ export default function Footer() {
           <p className="text-gray-400 text-sm text-center md:text-left">
             Where Royal Engineering Meets Digital Innovation
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 text-sm">
             <a 
               href="https://github.com/technothrone2014" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-gold-400 transition"
             >
-              <Github className="w-5 h-5" />
+              GitHub
             </a>
             <a 
-              href="https://linkedin.com/in/technothrone" 
+              href="#" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-gold-400 transition"
             >
-              <Linkedin className="w-5 h-5" />
+              LinkedIn
             </a>
             <a 
-              href="https://twitter.com/technothrone" 
+              href="#" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-gold-400 transition"
             >
-              <Twitter className="w-5 h-5" />
+              Twitter
             </a>
           </div>
         </div>

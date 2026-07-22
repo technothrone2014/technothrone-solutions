@@ -47,3 +47,12 @@ git add .
 
 # Commit
 git commit -m "Technothrone Solutions - Production Ready"
+
+
+# Install framer-motion if not already installed
+npm install framer-motion
+
+# Add all changes
+git add .
+git commit -m "👑 Royal Transformation - Purple & Gold Theme"
+git push origin master:main
