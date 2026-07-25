@@ -269,7 +269,7 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* Stats - Glass Cards */}
+        {/* Stats - Glass Cards - FIXED */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
