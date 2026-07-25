@@ -243,6 +243,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-wrap gap-4 justify-center"
         >
+          {/* Primary CTA - Gold Button with DARK content */}
           <motion.a
             whileHover={{ 
               scale: 1.08, 
@@ -251,12 +252,14 @@ export default function Hero() {
             }}
             whileTap={{ scale: 0.95 }}
             href="#work"
-            className="group px-10 py-5 bg-gradient-to-r from-gold-500 via-yellow-500 to-gold-500 rounded-full font-space font-bold text-lg text-black hover:scale-105 transition-all duration-300 shadow-[0_0_60px_rgba(245,158,11,0.3)] flex items-center gap-3"
+            className="link-reset group px-10 py-5 bg-gradient-to-r from-gold-500 via-yellow-500 to-gold-500 rounded-full font-space font-bold text-lg text-black hover:scale-105 transition-all duration-300 shadow-[0_0_60px_rgba(245,158,11,0.3)] flex items-center gap-3"
           >
-            <Crown className="w-6 h-6 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 drop-shadow-[0_0_30px_rgba(245,158,11,0.6)]" />
-            Claim Your Throne
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-all duration-300" />
+            <Crown className="w-6 h-6 text-black group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
+            <span className="text-black">Claim Your Throne</span>
+            <ArrowRight className="w-5 h-5 text-black group-hover:translate-x-2 transition-all duration-300" />
           </motion.a>
+
+          {/* Secondary CTA - Purple border with warm text */}
           <motion.a
             whileHover={{ 
               scale: 1.08, 
@@ -265,7 +268,7 @@ export default function Hero() {
             }}
             whileTap={{ scale: 0.95 }}
             href="#contact"
-            className="px-10 py-5 bg-white/5 backdrop-blur-xl border-2 border-purple-400/30 rounded-full font-space font-bold text-lg text-royal-warm hover:bg-purple-900/30 transition-all duration-300 hover:border-purple-400/60"
+            className="link-reset px-10 py-5 bg-white/5 backdrop-blur-xl border-2 border-purple-400/30 rounded-full font-space font-bold text-lg text-royal-warm hover:bg-purple-900/30 transition-all duration-300 hover:border-purple-400/60"
           >
             Rule Together
           </motion.a>

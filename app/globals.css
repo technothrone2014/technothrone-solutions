@@ -22,12 +22,42 @@
     background-attachment: fixed;
     background-size: 400% 400%;
     animation: gradientShift 15s ease infinite;
-    
-    /* WARM TEXT COLORS */
     color: #F5E6D3;
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
     position: relative;
+  }
+  
+  /* FIX: Link colors - Royal Gold */
+  a {
+    color: #FCD34D;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #F59E0B;
+  }
+  
+  a:visited {
+    color: #FCD34D;
+  }
+  
+  a:active {
+    color: #FCD34D;
+  }
+  
+  /* But that are links should NOT be gold by default */
+  a.no-link-style {
+    color: inherit;
+  }
+  
+  a.no-link-style:hover {
+    color: inherit;
+  }
+  
+  a.no-link-style:visited {
+    color: inherit;
   }
   
   /* Glossy overlay effects */
@@ -183,5 +213,18 @@
   
   .text-glow-warm {
     text-shadow: 0 0 60px rgba(245, 158, 11, 0.15);
+  }
+  
+  /* Reset link styles for buttons */
+  .link-reset {
+    color: inherit !important;
+  }
+  
+  .link-reset:hover {
+    color: inherit !important;
+  }
+  
+  .link-reset:visited {
+    color: inherit !important;
   }
 }
