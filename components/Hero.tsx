@@ -52,7 +52,7 @@ export default function Hero() {
       </div>
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
-        {/* Crown Badge - Enhanced Typography */}
+        {/* Crown Badge - Warm Colors */}
         <motion.div
           initial={{ opacity: 0, y: 20, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -82,17 +82,17 @@ export default function Hero() {
           
           <motion.div 
             whileHover={{ scale: 1.05, y: -5 }}
-            className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-2xl border border-white/20 rounded-full shadow-[0_0_80px_rgba(245,158,11,0.15)] hover:shadow-[0_0_100px_rgba(245,158,11,0.25)] transition-all duration-500"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-white/5 backdrop-blur-2xl border border-gold-500/30 rounded-full shadow-[0_0_80px_rgba(245,158,11,0.15)] hover:shadow-[0_0_100px_rgba(245,158,11,0.25)] transition-all duration-500"
           >
-            <Crown className="w-6 h-6 text-gold-400 drop-shadow-[0_0_30px_rgba(245,158,11,0.6)]" />
-            <span className="font-space text-gold-300 font-bold text-lg tracking-wider">
+            <Crown className="w-6 h-6 text-royal-gold drop-shadow-[0_0_30px_rgba(245,158,11,0.6)]" />
+            <span className="font-space text-royal-gold font-bold text-lg tracking-wider">
               Technothrone Solutions
             </span>
-            <Sparkles className="w-5 h-5 text-gold-400 animate-pulse" />
+            <Sparkles className="w-5 h-5 text-royal-gold animate-pulse" />
           </motion.div>
         </motion.div>
 
-        {/* Main Headline - PLAYFAIR DISPLAY (Royal) */}
+        {/* Main Headline - WARM WHITE */}
         <div className="relative mb-6">
           <motion.div
             animate={{ 
@@ -178,7 +178,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-wide"
           >
-            <span className="text-white/90 drop-shadow-[0_0_40px_rgba(255,255,255,0.15)]">
+            <span className="text-royal-white drop-shadow-[0_0_40px_rgba(255,248,240,0.15)]">
               Welcome to
             </span>
             <br />
@@ -188,7 +188,7 @@ export default function Hero() {
           </motion.h1>
         </div>
 
-        {/* Subtitle - SPACE GROTESK (Modern) */}
+        {/* Subtitle - WARM GOLD-TINTED */}
         <div className="relative max-w-3xl mx-auto mb-12">
           <motion.div
             animate={{ 
@@ -196,7 +196,7 @@ export default function Hero() {
               opacity: [0.2, 0.5, 0.2]
             }}
             transition={{ duration: 3, repeat: Infinity }}
-            className="absolute -left-8 top-1/2 -translate-y-1/2 text-xl hidden md:block"
+            className="absolute -left-8 top-1/2 -translate-y-1/2 text-xl text-royal-dim hidden md:block"
           >
             ✦
           </motion.div>
@@ -206,7 +206,7 @@ export default function Hero() {
               opacity: [0.2, 0.5, 0.2]
             }}
             transition={{ duration: 3.5, repeat: Infinity, delay: 1 }}
-            className="absolute -right-8 top-1/2 -translate-y-1/2 text-xl hidden md:block"
+            className="absolute -right-8 top-1/2 -translate-y-1/2 text-xl text-royal-dim hidden md:block"
           >
             ✦
           </motion.div>
@@ -215,14 +215,14 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-space text-xl md:text-2xl lg:text-3xl text-gray-200 tracking-wide"
+            className="font-space text-xl md:text-2xl lg:text-3xl text-royal-warm tracking-wide"
           >
             Where{' '}
-            <span className="text-gold-400 font-bold drop-shadow-[0_0_30px_rgba(245,158,11,0.4)] font-space">
+            <span className="text-royal-gold font-bold drop-shadow-[0_0_30px_rgba(245,158,11,0.4)] font-space">
               Royal Engineering
             </span>
             {' '}meets{' '}
-            <span className="text-purple-400 font-bold drop-shadow-[0_0_30px_rgba(124,58,237,0.4)] font-space">
+            <span className="text-purple-300 font-bold drop-shadow-[0_0_30px_rgba(124,58,237,0.4)] font-space">
               Digital Innovation
             </span>
           </motion.p>
@@ -230,13 +230,13 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="font-inter text-base text-gray-300 mt-2 tracking-wide"
+            className="font-inter text-base text-royal-muted mt-2 tracking-wide"
           >
             Building mission-critical systems for governments, enterprises, and the future
           </motion.p>
         </div>
 
-        {/* CTA Buttons - SPACE GROTESK */}
+        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -265,13 +265,13 @@ export default function Hero() {
             }}
             whileTap={{ scale: 0.95 }}
             href="#contact"
-            className="px-10 py-5 bg-white/10 backdrop-blur-xl border-2 border-purple-400/30 rounded-full font-space font-bold text-lg text-white hover:bg-purple-900/30 transition-all duration-300 hover:border-purple-400/60"
+            className="px-10 py-5 bg-white/5 backdrop-blur-xl border-2 border-purple-400/30 rounded-full font-space font-bold text-lg text-royal-warm hover:bg-purple-900/30 transition-all duration-300 hover:border-purple-400/60"
           >
             Rule Together
           </motion.a>
         </motion.div>
 
-        {/* Stats - INTER (Clean, Modern) */}
+        {/* Stats - WARM TEXT */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -303,17 +303,17 @@ export default function Hero() {
                 borderColor: "rgba(245,158,11,0.5)",
                 y: -10
               }}
-              className={`p-6 bg-gradient-to-br ${item.color} backdrop-blur-2xl border border-white/20 rounded-2xl hover:bg-white/20 transition-all duration-300 group cursor-pointer shadow-[0_0_40px_rgba(0,0,0,0.2)]`}
+              className={`p-6 bg-gradient-to-br ${item.color} backdrop-blur-2xl border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 group cursor-pointer shadow-[0_0_40px_rgba(0,0,0,0.2)]`}
             >
               <div className="flex items-center gap-4 justify-center">
                 <motion.span 
                   whileHover={{ rotate: 15, scale: 1.3 }}
-                  className="text-gold-400 transition-all duration-300 drop-shadow-[0_0_30px_rgba(245,158,11,0.4)]"
+                  className="text-royal-gold transition-all duration-300 drop-shadow-[0_0_30px_rgba(245,158,11,0.4)]"
                 >
                   {item.icon}
                 </motion.span>
                 <div className="text-left">
-                  <div className="font-inter font-bold text-white text-base md:text-lg tracking-wide drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                  <div className="font-inter font-bold text-royal-white text-base md:text-lg tracking-wide drop-shadow-[0_0_20px_rgba(255,248,240,0.1)]">
                     {item.label}
                   </div>
                 </div>
@@ -322,23 +322,23 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* Trust Badges - INTER */}
+        {/* Trust Badges - WARM */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="mt-12 flex flex-wrap justify-center items-center gap-6 text-sm text-gray-300"
+          className="mt-12 flex flex-wrap justify-center items-center gap-6 text-sm"
         >
-          <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter">
-            <Award className="w-4 h-4 text-gold-400" />
+          <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft">
+            <Award className="w-4 h-4 text-royal-gold" />
             <span>Trusted by KRA & KPA</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter">
-            <Rocket className="w-4 h-4 text-purple-400" />
+          <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft">
+            <Rocket className="w-4 h-4 text-purple-300" />
             <span>7+ Years Experience</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter">
-            <Zap className="w-4 h-4 text-gold-400" />
+          <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft">
+            <Zap className="w-4 h-4 text-royal-gold" />
             <span>Production Systems</span>
           </div>
         </motion.div>
