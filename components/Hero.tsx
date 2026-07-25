@@ -16,12 +16,11 @@ import {
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 md:px-8 overflow-hidden">
-      {/* VIBRANT Background - Lighter and More Alive */}
+      {/* VIBRANT Background */}
       <div className="absolute inset-0 -z-10">
-        {/* Base Gradient - Lighter purple to gold */}
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-slate-900/60 to-gold-900/30" />
         
-        {/* Animated Gradient Orbs - Larger, More Visible */}
+        {/* Animated Gradient Orbs */}
         <motion.div 
           animate={{ 
             scale: [1, 1.5, 1], 
@@ -51,82 +50,6 @@ export default function Hero() {
           transition={{ duration: 12, repeat: Infinity, delay: 4 }}
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-pink-500/20 rounded-full blur-3xl"
         />
-
-        {/* FLOATING ANIMATIONS - NOW IN FRONT */}
-        <motion.div
-          animate={{ 
-            y: [0, -40, 0], 
-            rotate: [0, 15, 0],
-            scale: [1, 1.1, 1]
-          }}
-          transition={{ duration: 6, repeat: Infinity }}
-          className="absolute top-20 left-10 text-8xl opacity-40 drop-shadow-[0_0_60px_rgba(245,158,11,0.4)]"
-          style={{ zIndex: 5 }}
-        >
-          👑
-        </motion.div>
-        <motion.div
-          animate={{ 
-            y: [0, 50, 0], 
-            rotate: [0, -15, 0],
-            scale: [1, 1.2, 1]
-          }}
-          transition={{ duration: 7, repeat: Infinity, delay: 1 }}
-          className="absolute bottom-20 left-20 text-7xl opacity-30 drop-shadow-[0_0_50px_rgba(124,58,237,0.4)]"
-          style={{ zIndex: 5 }}
-        >
-          ⚜️
-        </motion.div>
-        <motion.div
-          animate={{ 
-            rotate: 360, 
-            scale: [1, 1.3, 1],
-            x: [0, 30, 0]
-          }}
-          transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-          className="absolute top-1/3 right-20 text-6xl opacity-30 drop-shadow-[0_0_60px_rgba(245,158,11,0.3)]"
-          style={{ zIndex: 5 }}
-        >
-          ✨
-        </motion.div>
-        <motion.div
-          animate={{ 
-            y: [0, -30, 0],
-            x: [0, 20, 0],
-            scale: [1, 1.1, 1]
-          }}
-          transition={{ duration: 8, repeat: Infinity, delay: 3 }}
-          className="absolute bottom-32 right-32 text-7xl opacity-25 drop-shadow-[0_0_50px_rgba(124,58,237,0.3)]"
-          style={{ zIndex: 5 }}
-        >
-          🏛️
-        </motion.div>
-
-        {/* Floating Particles - NEW */}
-        <motion.div
-          animate={{ 
-            y: [0, -80, 0],
-            x: [0, 40, 0],
-            opacity: [0.3, 0.6, 0.3]
-          }}
-          transition={{ duration: 9, repeat: Infinity, delay: 2 }}
-          className="absolute top-40 right-40 text-5xl opacity-20"
-          style={{ zIndex: 5 }}
-        >
-          ⭐
-        </motion.div>
-        <motion.div
-          animate={{ 
-            y: [0, 60, 0],
-            x: [0, -30, 0],
-            opacity: [0.2, 0.5, 0.2]
-          }}
-          transition={{ duration: 11, repeat: Infinity, delay: 4 }}
-          className="absolute bottom-60 left-40 text-5xl opacity-20"
-          style={{ zIndex: 5 }}
-        >
-          🌟
-        </motion.div>
       </div>
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
@@ -135,8 +58,30 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="flex justify-center mb-8"
+          className="flex justify-center mb-8 relative"
         >
+          {/* Decorative animations around the badge */}
+          <motion.div
+            animate={{ 
+              y: [0, -10, 0],
+              opacity: [0.3, 0.7, 0.3]
+            }}
+            transition={{ duration: 3, repeat: Infinity }}
+            className="absolute -left-16 top-1/2 -translate-y-1/2 text-2xl"
+          >
+            ✨
+          </motion.div>
+          <motion.div
+            animate={{ 
+              y: [0, 10, 0],
+              opacity: [0.3, 0.7, 0.3]
+            }}
+            transition={{ duration: 3.5, repeat: Infinity, delay: 1 }}
+            className="absolute -right-16 top-1/2 -translate-y-1/2 text-2xl"
+          >
+            ✨
+          </motion.div>
+          
           <motion.div 
             whileHover={{ scale: 1.05, y: -5 }}
             className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-2xl border border-white/20 rounded-full shadow-[0_0_80px_rgba(245,158,11,0.15)] hover:shadow-[0_0_100px_rgba(245,158,11,0.25)] transition-all duration-500"
@@ -147,42 +92,149 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Main Headline - More Dynamic */}
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
-        >
-          <span className="text-white/90 drop-shadow-[0_0_40px_rgba(255,255,255,0.15)]">Welcome to</span>
-          <br />
-          <span className="gradient-gold bg-clip-text text-transparent drop-shadow-[0_0_60px_rgba(245,158,11,0.4)]">
-            The Guruz of IT
-          </span>
-        </motion.h1>
+        {/* Main Headline Container - WITH ANIMATIONS AROUND IT */}
+        <div className="relative mb-6">
+          {/* Floating Animations - LEFT SIDE */}
+          <motion.div
+            animate={{ 
+              y: [0, -25, 0],
+              rotate: [0, 10, 0],
+              scale: [1, 1.1, 1]
+            }}
+            transition={{ duration: 4, repeat: Infinity }}
+            className="absolute -left-20 top-1/2 -translate-y-1/2 text-6xl opacity-40 drop-shadow-[0_0_60px_rgba(245,158,11,0.4)] hidden lg:block"
+            style={{ zIndex: 5 }}
+          >
+            👑
+          </motion.div>
+          
+          <motion.div
+            animate={{ 
+              y: [0, 15, 0],
+              x: [0, -10, 0],
+              rotate: [0, -10, 0]
+            }}
+            transition={{ duration: 5, repeat: Infinity, delay: 1 }}
+            className="absolute -left-10 bottom-0 text-4xl opacity-30 drop-shadow-[0_0_40px_rgba(124,58,237,0.3)] hidden lg:block"
+            style={{ zIndex: 5 }}
+          >
+            ⚜️
+          </motion.div>
 
-        {/* Subtitle - With Glow */}
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-xl md:text-2xl lg:text-3xl text-gray-200 max-w-3xl mx-auto mb-4"
-        >
-          Where{' '}
-          <span className="text-gold-400 font-bold drop-shadow-[0_0_30px_rgba(245,158,11,0.4)]">Royal Engineering</span>
-          {' '}meets{' '}
-          <span className="text-purple-400 font-bold drop-shadow-[0_0_30px_rgba(124,58,237,0.4)]">Digital Innovation</span>
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-base text-gray-300 max-w-2xl mx-auto mb-12"
-        >
-          Building mission-critical systems for governments, enterprises, and the future
-        </motion.p>
+          {/* Floating Animations - RIGHT SIDE */}
+          <motion.div
+            animate={{ 
+              y: [0, -20, 0],
+              rotate: [0, -10, 0],
+              scale: [1, 1.15, 1]
+            }}
+            transition={{ duration: 4.5, repeat: Infinity, delay: 0.5 }}
+            className="absolute -right-20 top-1/2 -translate-y-1/2 text-6xl opacity-40 drop-shadow-[0_0_60px_rgba(245,158,11,0.4)] hidden lg:block"
+            style={{ zIndex: 5 }}
+          >
+            ✨
+          </motion.div>
+          
+          <motion.div
+            animate={{ 
+              y: [0, 20, 0],
+              x: [0, 10, 0],
+              rotate: [0, 15, 0]
+            }}
+            transition={{ duration: 5.5, repeat: Infinity, delay: 2 }}
+            className="absolute -right-10 bottom-0 text-4xl opacity-30 drop-shadow-[0_0_40px_rgba(124,58,237,0.3)] hidden lg:block"
+            style={{ zIndex: 5 }}
+          >
+            🏛️
+          </motion.div>
 
-        {/* CTA Buttons - More Vibrant */}
+          {/* Floating Animations - TOP */}
+          <motion.div
+            animate={{ 
+              y: [0, -15, 0],
+              x: [0, 20, 0],
+              scale: [1, 1.1, 1]
+            }}
+            transition={{ duration: 6, repeat: Infinity, delay: 1.5 }}
+            className="absolute -top-10 left-1/3 text-3xl opacity-30 drop-shadow-[0_0_40px_rgba(245,158,11,0.3)] hidden lg:block"
+            style={{ zIndex: 5 }}
+          >
+            ⭐
+          </motion.div>
+          
+          <motion.div
+            animate={{ 
+              y: [0, -10, 0],
+              x: [0, -20, 0],
+              scale: [1, 1.1, 1]
+            }}
+            transition={{ duration: 5, repeat: Infinity, delay: 2.5 }}
+            className="absolute -top-10 right-1/3 text-3xl opacity-30 drop-shadow-[0_0_40px_rgba(124,58,237,0.3)] hidden lg:block"
+            style={{ zIndex: 5 }}
+          >
+            🌟
+          </motion.div>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight"
+          >
+            <span className="text-white/90 drop-shadow-[0_0_40px_rgba(255,255,255,0.15)]">Welcome to</span>
+            <br />
+            <span className="gradient-gold bg-clip-text text-transparent drop-shadow-[0_0_60px_rgba(245,158,11,0.4)]">
+              The Guruz of IT
+            </span>
+          </motion.h1>
+        </div>
+
+        {/* Subtitle Container - WITH ANIMATIONS AROUND IT */}
+        <div className="relative max-w-3xl mx-auto mb-12">
+          {/* Floating particles around subtitle */}
+          <motion.div
+            animate={{ 
+              y: [0, -8, 0],
+              opacity: [0.2, 0.5, 0.2]
+            }}
+            transition={{ duration: 3, repeat: Infinity }}
+            className="absolute -left-8 top-1/2 -translate-y-1/2 text-xl hidden md:block"
+          >
+            ✦
+          </motion.div>
+          <motion.div
+            animate={{ 
+              y: [0, 8, 0],
+              opacity: [0.2, 0.5, 0.2]
+            }}
+            transition={{ duration: 3.5, repeat: Infinity, delay: 1 }}
+            className="absolute -right-8 top-1/2 -translate-y-1/2 text-xl hidden md:block"
+          >
+            ✦
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-xl md:text-2xl lg:text-3xl text-gray-200"
+          >
+            Where{' '}
+            <span className="text-gold-400 font-bold drop-shadow-[0_0_30px_rgba(245,158,11,0.4)]">Royal Engineering</span>
+            {' '}meets{' '}
+            <span className="text-purple-400 font-bold drop-shadow-[0_0_30px_rgba(124,58,237,0.4)]">Digital Innovation</span>
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="text-base text-gray-300 mt-2"
+          >
+            Building mission-critical systems for governments, enterprises, and the future
+          </motion.p>
+        </div>
+
+        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -270,7 +322,7 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* Trust Badges - Enhanced */}
+        {/* Trust Badges */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
