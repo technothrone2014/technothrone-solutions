@@ -7,10 +7,10 @@ const projects = [
     title: 'KRA Debt Validation',
     org: 'Kenya Revenue Authority',
     icon: <Database className="w-6 h-6" />,
-    description: 'Automated complex debt validation, reducing 2-week manual work to 2-hour scripts.',
+    description: 'Automated complex debt validation, reducing 4-year backlog to automated scripts.',
     impact: 'Saved millions in labor costs',
     color: 'from-gold-500 to-yellow-500',
-    tags: ['SQL', 'ETL', 'Automation']
+    tags: ['SQL', 'Python', 'ETL', 'Automation']
   },
   {
     title: 'Farm Fuzion AI',
@@ -25,7 +25,7 @@ const projects = [
     title: 'KPA Health System',
     org: 'Kenya Ports Authority',
     icon: <Server className="w-6 h-6" />,
-    description: 'Lead Developer & System Admin for healthcare serving thousands.',
+    description: 'System designer, Lead Developer & System Admin for healthcare serving thousands.',
     impact: 'Mission-critical delivery',
     color: 'from-gold-400 to-orange-500',
     tags: ['Full-Stack', 'Healthcare', 'System Admin']

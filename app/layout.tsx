@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Technothrone Solutions | Full-Stack Development & Data Analytics",
-  description: "Government-grade software engineering. From KRA debt automation to AI-powered platforms.",
-  keywords: "full-stack developer, data analytics, KRA, migration, SQL, TypeScript, Python",
+  description: "Government-grade software engineering. From digital automation to AI-powered platforms.",
+  keywords: "full-stack developer, data analytics, data migration, SQL, TypeScript, Python",
 };
 
 export default function RootLayout({

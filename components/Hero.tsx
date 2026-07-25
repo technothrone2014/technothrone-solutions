@@ -58,7 +58,7 @@ export default function Hero() {
         >
           <div className="inline-flex items-center gap-3 px-6 py-3 bg-purple-900/30 backdrop-blur border border-gold-500/30 rounded-full">
             <Crown className="w-5 h-5 text-gold-400 crown-icon" />
-            <span className="text-gold-400 font-semibold">The Technothrone</span>
+            <span className="text-gold-400 font-semibold">Technothrone</span>
             <Sparkles className="w-4 h-4 text-gold-400" />
           </div>
         </motion.div>
@@ -69,7 +69,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
         >
-          <span className="text-white">Welcome to the</span>
+          <span className="text-white">Welcome to</span>
           <br />
           <span className="gradient-gold bg-clip-text text-transparent">
             Technothrone
@@ -88,7 +88,7 @@ export default function Hero() {
           <span className="text-purple-400 font-semibold">Digital Innovation</span>
           <br />
           <span className="text-sm text-gray-400">
-            Building mission-critical systems for government, enterprises, and agriculture
+            Building mission-critical systems for governments & enterprises
           </span>
         </motion.p>
 
@@ -122,8 +122,8 @@ export default function Hero() {
           className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto"
         >
           {[
-            { icon: <Code2 className="w-6 h-6" />, label: "Government Systems", desc: "KRA, KPA Experience" },
-            { icon: <Brain className="w-6 h-6" />, label: "AI & Innovation", desc: "Farm Fuzion Platform" },
+            { icon: <Code2 className="w-6 h-6" />, label: "Government Systems", desc: "Corporate Experience" },
+            { icon: <Brain className="w-6 h-6" />, label: "AI & Innovation", desc: "Intelligent Platforms" },
             { icon: <Shield className="w-6 h-6" />, label: "Enterprise Grade", desc: "Mission Critical" }
           ].map((item, i) => (
             <div key={i} className="p-4 bg-purple-900/20 backdrop-blur border border-gold-500/20 rounded-xl hover:bg-purple-900/30 transition group">
