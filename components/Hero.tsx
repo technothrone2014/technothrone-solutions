@@ -52,12 +52,12 @@ export default function Hero() {
       </div>
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
-        {/* Crown Badge - Warm Colors */}
+        {/* Crown Badge - Warm Colors - INCREASED SPACING */}
         <motion.div
           initial={{ opacity: 0, y: 20, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="flex justify-center mb-8 relative"
+          className="flex justify-center mb-12 relative"
         >
           <motion.div
             animate={{ 
@@ -92,8 +92,8 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Main Headline - WARM WHITE */}
-        <div className="relative mb-6">
+        {/* Main Headline - WARM WHITE - INCREASED SPACING */}
+        <div className="relative mb-8">  {/* Changed from mb-6 to mb-8 */}
           <motion.div
             animate={{ 
               y: [0, -25, 0],
@@ -176,7 +176,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-wide"
+            className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.2] tracking-wide"
           >
             <span className="text-royal-white drop-shadow-[0_0_40px_rgba(255,248,240,0.15)]">
               Welcome to
@@ -188,8 +188,8 @@ export default function Hero() {
           </motion.h1>
         </div>
 
-        {/* Subtitle - WARM GOLD-TINTED */}
-        <div className="relative max-w-3xl mx-auto mb-12">
+        {/* Subtitle - WARM GOLD-TINTED - INCREASED SPACING */}
+        <div className="relative max-w-3xl mx-auto mb-16">  {/* Changed from mb-12 to mb-16 */}
           <motion.div
             animate={{ 
               y: [0, -8, 0],
@@ -215,7 +215,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-space text-xl md:text-2xl lg:text-3xl text-royal-warm tracking-wide"
+            className="font-space text-xl md:text-2xl lg:text-3xl text-royal-warm tracking-wide leading-relaxed"
           >
             Where{' '}
             <span className="text-royal-gold font-bold drop-shadow-[0_0_30px_rgba(245,158,11,0.4)] font-space">
@@ -230,18 +230,18 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="font-inter text-base text-royal-muted mt-2 tracking-wide"
+            className="font-inter text-base text-royal-muted mt-3 tracking-wide"
           >
             Building mission-critical systems for governments, enterprises, and the future
           </motion.p>
         </div>
 
-        {/* CTA Buttons */}
+        {/* CTA Buttons - INCREASED SPACING */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-wrap gap-4 justify-center"
+          className="flex flex-wrap gap-6 justify-center"
         >
           {/* Primary CTA - Gold Button with DARK content */}
           <motion.a
@@ -274,12 +274,12 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* Stats - WARM TEXT */}
+        {/* Stats - WARM TEXT - INCREASED SPACING */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
+          className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
         >
           {[
             { 
@@ -325,12 +325,12 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* Trust Badges - WARM */}
+        {/* Trust Badges - WARM - INCREASED SPACING */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="mt-12 flex flex-wrap justify-center items-center gap-6 text-sm"
+          className="mt-16 flex flex-wrap justify-center items-center gap-8 text-sm"
         >
           <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft">
             <Award className="w-4 h-4 text-royal-gold" />
