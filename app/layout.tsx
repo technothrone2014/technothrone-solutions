@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import BackgroundEffects from "@/components/BackgroundEffects";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Technothrone Solutions | Full-Stack Development & Data Analytics",
-  description: "Government-grade software engineering. From digital automation to AI-powered platforms.",
-  keywords: "full-stack developer, data analytics, data migration, SQL, TypeScript, Python",
+  description: "Government-grade software engineering. From KRA debt automation to AI-powered platforms.",
+  keywords: "full-stack developer, data analytics, KRA, migration, SQL, TypeScript, Python",
 };
 
 export default function RootLayout({
@@ -17,7 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} min-h-screen bg-black text-white antialiased`}>
+      <body className={`${inter.className} min-h-screen antialiased`}>
+        <BackgroundEffects />
         {children}
       </body>
     </html>

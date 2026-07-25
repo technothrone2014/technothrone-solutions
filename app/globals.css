@@ -8,9 +8,11 @@
   }
   
   body {
-    background: #0A0015;
+    /* CHANGE THIS - From black to vibrant purple gradient */
+    background: linear-gradient(135deg, #1a0033 0%, #2d0a4e 25%, #4a0e6b 50%, #2d0a4e 75%, #1a0033 100%);
     color: #FFF5E6;
     font-family: 'Inter', sans-serif;
+    min-height: 100vh;
   }
   
   ::selection {
