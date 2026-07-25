@@ -269,7 +269,7 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* Stats - Glass Cards - FIXED */}
+        {/* Stats - Glass Cards - ONE LINE FIXED */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -279,20 +279,17 @@ export default function Hero() {
           {[
             { 
               icon: <Code2 className="w-7 h-7" />, 
-              label: "Government Systems", 
-              desc: "Corporate Experience",
+              label: "Government Systems - Corporate Experience", 
               color: "from-purple-500/40 to-purple-700/40"
             },
             { 
               icon: <Brain className="w-7 h-7" />, 
-              label: "AI & Innovation", 
-              desc: "Intelligent Platforms",
+              label: "AI & Innovation - Intelligent Platforms", 
               color: "from-gold-500/40 to-yellow-600/40"
             },
             { 
               icon: <Shield className="w-7 h-7" />, 
-              label: "Enterprise Grade", 
-              desc: "Mission Critical",
+              label: "Enterprise Grade - Mission Critical", 
               color: "from-purple-600/40 to-indigo-700/40"
             }
           ].map((item, i) => (
@@ -314,8 +311,9 @@ export default function Hero() {
                   {item.icon}
                 </motion.span>
                 <div className="text-left">
-                  <div className="font-bold text-white text-lg drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]">{item.label}</div>
-                  <div className="text-sm text-gold-300/80">{item.desc}</div>
+                  <div className="font-bold text-white text-lg drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                    {item.label}
+                  </div>
                 </div>
               </div>
             </motion.div>
