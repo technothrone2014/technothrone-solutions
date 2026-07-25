@@ -8,15 +8,61 @@
   }
   
   body {
-    /* CHANGE THIS - From black to vibrant purple gradient */
-    background: linear-gradient(135deg, #1a0033 0%, #2d0a4e 25%, #4a0e6b 50%, #2d0a4e 75%, #1a0033 100%);
+    /* DEEPER PURPLE - Richer gradient with glossy effect */
+    background: linear-gradient(
+      145deg,
+      #0a0015 0%,
+      #1a0033 15%,
+      #2d0a4e 30%,
+      #3d1068 45%,
+      #2d0a4e 60%,
+      #1a0033 75%,
+      #0a0015 100%
+    );
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
     color: #FFF5E6;
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
+    position: relative;
+  }
+  
+  /* Glossy overlay effect */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(
+      ellipse at 50% 0%,
+      rgba(124, 58, 237, 0.15) 0%,
+      transparent 60%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(
+      ellipse at 50% 100%,
+      rgba(245, 158, 11, 0.05) 0%,
+      transparent 50%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
   
   ::selection {
-    background: rgba(124, 58, 237, 0.5);
+    background: rgba(124, 58, 237, 0.6);
     color: #FCD34D;
   }
 }
@@ -34,12 +80,26 @@
     background: linear-gradient(135deg, #7C3AED 0%, #F59E0B 100%);
   }
   
+  .gradient-glossy {
+    background: linear-gradient(
+      145deg,
+      rgba(124, 58, 237, 0.1) 0%,
+      rgba(245, 158, 11, 0.05) 100%
+    );
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  
   .glow-gold {
     box-shadow: 0 0 40px rgba(245, 158, 11, 0.3);
   }
   
   .glow-purple {
     box-shadow: 0 0 40px rgba(124, 58, 237, 0.3);
+  }
+  
+  .glow-royal {
+    box-shadow: 0 0 60px rgba(124, 58, 237, 0.2);
   }
   
   .border-glow {
