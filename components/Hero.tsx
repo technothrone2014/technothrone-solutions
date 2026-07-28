@@ -338,65 +338,64 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* Trust Badges - 8X LARGER with Label */}
+        {/* Stats - MODERN GLOSSY BORDERLESS CARDS */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1 }}
-          className="flex flex-col items-center gap-4"
-          style={{ marginTop: '4rem' }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto"
+          style={{ gap: '2rem', marginTop: '6rem' }}
         >
-          {/* Label */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.1 }}
-            className="flex items-center gap-3"
-          >
-            <div className="w-12 h-px bg-gold-500/30" />
-            <span className="font-playfair text-gold-gradient text-lg md:text-xl tracking-wide font-semibold text-glow-gold-strong">
-              Trustees & Affiliates
-            </span>
-            <div className="w-12 h-px bg-gold-500/30" />
-          </motion.div>
-
-          <div className="flex flex-wrap justify-center items-center gap-4">
-            {['google', 'groq', 'kpa', 'safaricom', 'ms_azure', 'MSSQL_server', 'postgresql', 'oracle', 'python', 'nodejs', 'typescript', 'react', 'javascript'].map((logo) => (
-              <div 
-                key={logo}
-                className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 hover:scale-105 transition-all duration-300 flex items-center justify-center"
-                style={{ padding: '0.75rem 1.8rem', height: '72px' }}
-              >
-                <img 
-                  src={`/logos/${logo}.png`} 
-                  alt={logo} 
-                  style={{ 
-                    height: '48px', 
-                    width: 'auto', 
-                    maxWidth: '150px',
-                    objectFit: 'contain' 
-                  }}
-                />
+          {[
+            { 
+              icon: <Code2 className="w-10 h-10 flex-shrink-0" />,
+              label: "High Tech Corporate Solutions",
+              gradient: "from-purple-600/20 to-purple-800/20"
+            },
+            { 
+              icon: <Brain className="w-10 h-10 flex-shrink-0" />, 
+              label: "Crown-Grade Next-Gen AI Platforms",
+              gradient: "from-gold-500/20 to-yellow-600/20"
+            },
+            { 
+              icon: <Shield className="w-10 h-10 flex-shrink-0" />, 
+              label: "Powered by the Throne. Built for Our Allies.",
+              gradient: "from-purple-600/20 to-indigo-700/20"
+            }
+          ].map((item, i) => (
+            <motion.div 
+              key={i}
+              whileHover={{ 
+                scale: 1.05,
+                y: -8,
+                boxShadow: "0 20px 60px rgba(245,158,11,0.15)"
+              }}
+              className={`relative bg-gradient-to-br ${item.gradient} backdrop-blur-3xl rounded-2xl transition-all duration-500 group cursor-pointer overflow-hidden`}
+              style={{ 
+                padding: '1.5rem 1.5rem',
+                border: 'none',
+                boxShadow: '0 8px 32px rgba(0,0,0,0.2)',
+                minHeight: '80px'
+              }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-t from-white/5 via-transparent to-white/10 pointer-events-none" />
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-gold-500/10 via-transparent to-purple-500/10 pointer-events-none" />
+              
+              <div className="flex items-center gap-5 justify-center relative z-10">
+                <motion.span 
+                  whileHover={{ rotate: 15, scale: 1.2 }}
+                  className="text-royal-gold transition-all duration-300 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)] flex-shrink-0"
+                >
+                  {item.icon}
+                </motion.span>
+                <div className="text-center">
+                  <div className="font-playfair font-black text-gold-warm text-base md:text-lg tracking-wide leading-relaxed whitespace-normal break-words">
+                    {item.label}
+                  </div>
+                </div>
               </div>
-            ))}
-          </div>
-          
-          <div className="flex flex-wrap justify-center items-center gap-4">
-            <div 
-              className="flex items-center gap-3 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 hover:scale-105 transition-all duration-300"
-              style={{ padding: '0.75rem 1.8rem', height: '72px' }}
-            >
-              <Rocket className="w-7 h-7 text-purple-300" />
-              <span className="leading-relaxed tracking-wide text-base text-gold-warm">_10+ Years of experience</span>
-            </div>
-            <div 
-              className="flex items-center gap-3 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 hover:scale-105 transition-all duration-300"
-              style={{ padding: '0.75rem 1.8rem', height: '72px' }}
-            >
-              <Zap className="w-7 h-7 text-royal-gold" />
-              <span className="leading-relaxed tracking-wide text-base text-gold-warm">_Implement your idea today!</span>
-            </div>
-          </div>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </section>
