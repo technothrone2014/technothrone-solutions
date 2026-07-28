@@ -340,28 +340,28 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* Trust Badges - 4X LARGER */}
+        {/* Trust Badges - 8X LARGER (Double 4x) */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="flex flex-col items-center gap-3"
-          style={{ marginTop: '3rem' }}
+          className="flex flex-col items-center gap-4"
+          style={{ marginTop: '4rem' }}
         >
-          <div className="flex flex-wrap justify-center items-center gap-3">
+          <div className="flex flex-wrap justify-center items-center gap-4">
             {['kpa', 'safaricom', 'ms_azure', 'MSSQL_server', 'python'].map((logo) => (
               <div 
                 key={logo}
                 className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 hover:scale-105 transition-all duration-300 flex items-center justify-center"
-                style={{ padding: '0.5rem 1.2rem', height: '48px' }}
+                style={{ padding: '0.75rem 1.8rem', height: '72px' }}
               >
                 <img 
                   src={`/logos/${logo}.png`} 
                   alt={logo} 
                   style={{ 
-                    height: '32px', 
+                    height: '48px', 
                     width: 'auto', 
-                    maxWidth: '100px',
+                    maxWidth: '150px',
                     objectFit: 'contain' 
                   }}
                 />
@@ -369,20 +369,20 @@ export default function Hero() {
             ))}
           </div>
           
-          <div className="flex flex-wrap justify-center items-center gap-3">
+          <div className="flex flex-wrap justify-center items-center gap-4">
             <div 
-              className="flex items-center gap-2 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 hover:scale-105 transition-all duration-300"
-              style={{ padding: '0.5rem 1.2rem', height: '48px' }}
+              className="flex items-center gap-3 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 hover:scale-105 transition-all duration-300"
+              style={{ padding: '0.75rem 1.8rem', height: '72px' }}
             >
-              <Rocket className="w-5 h-5 text-purple-300" />
-              <span className="leading-relaxed tracking-wide text-sm">10+ Years</span>
+              <Rocket className="w-7 h-7 text-purple-300" />
+              <span className="leading-relaxed tracking-wide text-base">10+ Years</span>
             </div>
             <div 
-              className="flex items-center gap-2 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 hover:scale-105 transition-all duration-300"
-              style={{ padding: '0.5rem 1.2rem', height: '48px' }}
+              className="flex items-center gap-3 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 hover:scale-105 transition-all duration-300"
+              style={{ padding: '0.75rem 1.8rem', height: '72px' }}
             >
-              <Zap className="w-5 h-5 text-royal-gold" />
-              <span className="leading-relaxed tracking-wide text-sm">Production</span>
+              <Zap className="w-7 h-7 text-royal-gold" />
+              <span className="leading-relaxed tracking-wide text-base">Production</span>
             </div>
           </div>
         </motion.div>
