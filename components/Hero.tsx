@@ -52,7 +52,7 @@ export default function Hero() {
       </div>
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
-        {/* Crown Badge - Warm Colors - FORCED LARGE TEXT */}
+        {/* Crown Badge - Warm Colors - ROYAL FONT */}
         <motion.div
           initial={{ opacity: 0, y: 20, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -86,7 +86,7 @@ export default function Hero() {
           >
             <Crown className="w-7 h-7 text-royal-gold drop-shadow-[0_0_30px_rgba(245,158,11,0.6)]" />
             <span 
-              className="font-space text-royal-gold font-bold tracking-wider"
+              className="font-playfair text-royal-gold font-bold tracking-wide"
               style={{ fontSize: '2.8rem !important', lineHeight: '1.2' }}
             >
               Technothrone Solutions
