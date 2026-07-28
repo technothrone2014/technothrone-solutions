@@ -5,60 +5,52 @@ import Services from '@/components/Services'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import SectionDivider from '@/components/SectionDivider'
+import SectionSeparator from '@/components/SectionSeparator'
 
 export default function Home() {
   return (
     <main className="min-h-screen text-white">
       <Hero />
       
-      {/* Visual spacer */}
-      <div className="h-16 md:h-24" />
+      {/* Visual separator */}
+      <SectionSeparator />
       
       <SectionDivider label="— The Throne Room —" />
       
       {/* Visual spacer */}
       <div className="h-8 md:h-12" />
       
-      <div className="bg-purple-900/5 backdrop-blur-sm">
-        <Audience />
-      </div>
+      <Audience />
       
-      {/* Visual spacer */}
-      <div className="h-16 md:h-24" />
+      {/* Visual separator */}
+      <SectionSeparator />
       
       <SectionDivider label="— Our Services —" />
       
       {/* Visual spacer */}
       <div className="h-8 md:h-12" />
       
-      <div className="bg-black/20 backdrop-blur-sm">
-        <Services />
-      </div>
+      <Services />
       
-      {/* Visual spacer */}
-      <div className="h-16 md:h-24" />
+      {/* Visual separator */}
+      <SectionSeparator />
       
       <SectionDivider label="— Our Legacy —" />
       
       {/* Visual spacer */}
       <div className="h-8 md:h-12" />
       
-      <div className="bg-purple-900/5 backdrop-blur-sm">
-        <Portfolio />
-      </div>
+      <Portfolio />
       
-      {/* Visual spacer */}
-      <div className="h-16 md:h-24" />
+      {/* Visual separator */}
+      <SectionSeparator />
       
       <SectionDivider label="— Join Us —" />
       
       {/* Visual spacer */}
       <div className="h-8 md:h-12" />
       
-      <div className="bg-black/20 backdrop-blur-sm">
-        <Contact />
-      </div>
-      
+      <Contact />
       <Footer />
     </main>
   )
