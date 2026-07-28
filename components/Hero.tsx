@@ -182,7 +182,7 @@ export default function Hero() {
             className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.2] tracking-wide"
           >
             <span className="text-royal-white drop-shadow-[0_0_40px_rgba(255,248,240,0.15)]">
-              Welcome to
+              Introducing...
             </span>
             <br />
             <span className="gradient-gold bg-clip-text text-transparent drop-shadow-[0_0_60px_rgba(245,158,11,0.4)] font-playfair">
@@ -349,7 +349,7 @@ export default function Hero() {
           style={{ marginTop: '4rem' }}
         >
           <div className="flex flex-wrap justify-center items-center gap-4">
-            {['google', 'kpa', 'safaricom', 'ms_azure', 'MSSQL_server', 'postgresql', 'oracle', 'python', 'nodejs', 'typescript', 'react', 'javascript', 'groq'].map((logo) => (
+            {['ai', 'google', 'groq', 'kpa', 'safaricom', 'ms_azure', 'MSSQL_server', 'postgresql', 'oracle', 'python', 'nodejs', 'typescript', 'react', 'javascript'].map((logo) => (
               <div 
                 key={logo}
                 className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 hover:scale-105 transition-all duration-300 flex items-center justify-center"
