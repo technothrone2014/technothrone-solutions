@@ -58,22 +58,36 @@ export default function Audience() {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/10 via-transparent to-transparent" />
       
       <div className="max-w-7xl mx-auto">
-        {/* Royal Divider - Visual Page Break */}
+        {/* Royal Divider - Enhanced with Border */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex items-center justify-center gap-6 mb-16"
+          className="flex flex-col items-center gap-4 mb-16"
         >
-          <div className="w-20 h-px bg-gradient-to-r from-transparent to-gold-500/50" />
+          {/* Decorative Top Border */}
+          <div className="w-full max-w-2xl h-px bg-gradient-to-r from-transparent via-gold-500/60 to-transparent" />
+          
+          {/* Decorative Pattern */}
           <div className="flex items-center gap-3">
-            <Crown className="w-6 h-6 text-royal-gold drop-shadow-[0_0_20px_rgba(245,158,11,0.3)]" />
-            <span className="font-playfair text-royal-gold text-sm tracking-[0.3em] uppercase">
+            <div className="w-2 h-2 rounded-full bg-gold-500/40" />
+            <div className="w-12 h-px bg-gold-500/30" />
+            <div className="w-1.5 h-1.5 rounded-full bg-gold-500/40" />
+            <div className="w-12 h-px bg-gold-500/30" />
+            <div className="w-2 h-2 rounded-full bg-gold-500/40" />
+          </div>
+
+          {/* The Throne Room Text */}
+          <div className="flex items-center gap-4">
+            <Crown className="w-5 h-5 text-royal-gold drop-shadow-[0_0_20px_rgba(245,158,11,0.3)]" />
+            <span className="font-playfair text-royal-gold text-sm tracking-[0.3em] uppercase font-semibold">
               — The Throne Room —
             </span>
-            <Crown className="w-6 h-6 text-royal-gold drop-shadow-[0_0_20px_rgba(245,158,11,0.3)]" />
+            <Crown className="w-5 h-5 text-royal-gold drop-shadow-[0_0_20px_rgba(245,158,11,0.3)]" />
           </div>
-          <div className="w-20 h-px bg-gradient-to-l from-transparent to-gold-500/50" />
+
+          {/* Decorative Bottom Border */}
+          <div className="w-full max-w-2xl h-px bg-gradient-to-r from-transparent via-gold-500/60 to-transparent" />
         </motion.div>
 
         <div className="text-center mb-16">
