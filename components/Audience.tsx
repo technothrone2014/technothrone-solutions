@@ -17,8 +17,8 @@ const audiences = [
   {
     id: 'developers',
     icon: <Code2 className="w-8 h-8" />,
-    title: "Fellow Developers",
-    description: "Join the royal court of technical excellence",
+    title: "The Tech Council",
+    description: "Step into the inner guild of technical mastery and high-impact engineering.",
     color: "from-purple-500 to-purple-700",
     image: "👑",
     benefits: ["Code Reviews", "Architecture Design", "Technical Consulting"]
@@ -26,7 +26,7 @@ const audiences = [
   {
     id: 'farmers',
     icon: <Leaf className="w-8 h-8" />,
-    title: "Farmers & Agribusiness",
+    title: "Agricultural realms",
     description: "Rule your fields with AI-powered wisdom",
     color: "from-gold-500 to-yellow-600",
     image: "🌾",
@@ -35,8 +35,8 @@ const audiences = [
   {
     id: 'enterprises',
     icon: <Building2 className="w-8 h-8" />,
-    title: "Enterprises & Government",
-    description: "Crown your operations with royal engineering",
+    title: "Enterprises & Governments",
+    description: "Crown your operations with critical digital infrastructure built to endure and dominate.",
     color: "from-purple-600 to-indigo-700",
     image: "🏛️",
     benefits: ["Legacy Migration", "Data Automation", "Gov-Grade Security"]
@@ -44,11 +44,11 @@ const audiences = [
   {
     id: 'startups',
     icon: <Rocket className="w-8 h-8" />,
-    title: "Startups & Visionaries",
-    description: "Launch your kingdom with royal backing",
+    title: "Emerging Empires",
+    description: "Lay your digital foundation's kingdom with rapid, crown-grade tech buildouts.",
     color: "from-gold-400 to-orange-500",
     image: "🚀",
-    benefits: ["MVP in Weeks", "Scalable Architecture", "Funding-Ready"]
+    benefits: ["Speed-to-Market MVPs", "Crown-Grade Scalability", "Venture-Ready Systems"]
   }
 ]
 
@@ -73,7 +73,7 @@ export default function Audience() {
             <span className="gradient-gold bg-clip-text text-transparent">Serve</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            From the fields to the boardroom, we build technology that empowers your kingdom.
+            From local operations to executive halls — our touch guarantees market dominance!
           </p>
         </div>
 
