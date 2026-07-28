@@ -349,7 +349,7 @@ export default function Hero() {
           style={{ marginTop: '4rem' }}
         >
           <div className="flex flex-wrap justify-center items-center gap-4">
-            {['kpa', 'safaricom', 'ms_azure', 'MSSQL_server', 'python'].map((logo) => (
+            {['google', 'kpa', 'safaricom', 'ms_azure', 'MSSQL_server', 'postgresql', 'oracle', 'python', 'nodejs', 'typescript', 'react', 'javascript', 'groq'].map((logo) => (
               <div 
                 key={logo}
                 className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 hover:scale-105 transition-all duration-300 flex items-center justify-center"
