@@ -66,14 +66,14 @@ export default function Audience() {
             className="inline-flex items-center gap-2 px-4 py-2 bg-purple-900/30 border border-gold-500/30 rounded-full text-gold-400 text-sm mb-4"
           >
             <Crown className="w-4 h-4" />
-            For Every Kingdom
+            _Rule your domain with Excellence and Innovation
           </motion.div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-white">Who We </span>
             <span className="gradient-gold bg-clip-text text-transparent">Serve</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            From the fields to the boardroom, we build technology that empowers every domain.
+            From the fields to the boardroom, we build technology that empowers your kingdom.
           </p>
         </div>
 
