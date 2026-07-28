@@ -288,18 +288,18 @@ export default function Hero() {
         >
           {[
             { 
-              icon: <Code2 className="w-10 h-10" />,
-              label: "__High Tech Corporate solutions",
+              icon: <Code2 className="w-10 h-10 flex-shrink-0" />,
+              label: "High Tech Corporate Solutions",
               gradient: "from-purple-600/20 to-purple-800/20"
             },
             { 
-              icon: <Brain className="w-10 h-10" />, 
-              label: "__Crown-Grade Next-Gen AI Platforms",
+              icon: <Brain className="w-10 h-10 flex-shrink-0" />, 
+              label: "Crown-Grade Next-Gen AI Platforms",
               gradient: "from-gold-500/20 to-yellow-600/20"
             },
             { 
-              icon: <Shield className="w-10 h-10" />, 
-              label: "__Powered by the Throne. Built for Our Allies",
+              icon: <Shield className="w-10 h-10 flex-shrink-0" />, 
+              label: "Powered by the Throne. Built for Our Allies.",
               gradient: "from-purple-600/20 to-indigo-700/20"
             }
           ].map((item, i) => (
@@ -314,24 +314,22 @@ export default function Hero() {
               style={{ 
                 padding: '1.5rem 1.5rem',
                 border: 'none',
-                boxShadow: '0 8px 32px rgba(0,0,0,0.2)'
+                boxShadow: '0 8px 32px rgba(0,0,0,0.2)',
+                minHeight: '80px'
               }}
             >
-              {/* Glossy overlay effect */}
               <div className="absolute inset-0 bg-gradient-to-t from-white/5 via-transparent to-white/10 pointer-events-none" />
-              
-              {/* Subtle glow on hover */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-gold-500/10 via-transparent to-purple-500/10 pointer-events-none" />
               
               <div className="flex items-center gap-5 justify-center relative z-10">
                 <motion.span 
                   whileHover={{ rotate: 15, scale: 1.2 }}
-                  className="text-royal-gold transition-all duration-300 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)]"
+                  className="text-royal-gold transition-all duration-300 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)] flex-shrink-0"
                 >
                   {item.icon}
                 </motion.span>
-                <div className="text-left">
-                  <div className="font-inter font-semibold text-royal-white text-base md:text-lg tracking-wide leading-relaxed">
+                <div className="text-left flex-1 min-w-0">
+                  <div className="font-inter font-semibold text-gold-warm text-base md:text-lg tracking-wide leading-relaxed whitespace-normal break-words">
                     {item.label}
                   </div>
                 </div>
