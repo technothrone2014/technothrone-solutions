@@ -340,105 +340,47 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* Trust Badges - LOGOS ONLY */}
+        {/* Trust Badges - TWO ROW LAYOUT */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="flex flex-wrap justify-center items-center"
-          style={{ gap: '2.5rem', marginTop: '5rem' }}
+          className="flex flex-col items-center gap-4"
+          style={{ marginTop: '4rem' }}
         >
-          <div 
-            className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 transition-all duration-300"
-            style={{ padding: '0.75rem 1.5rem' }}
-          >
-            <img 
-              src="/logos/kpa.png" 
-              alt="Kenya Ports Authority" 
-              className="h-10 w-auto object-contain"
-            />
+          {/* Row 1 - Logos */}
+          <div className="flex flex-wrap justify-center items-center gap-3">
+            {['kpa', 'safaricom', 'ms_azure', 'MSSQL_server', 'Oracle_Logo.svg.webp', 'python', 'KRA'].map((logo) => (
+              <div 
+                key={logo}
+                className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 hover:scale-105 transition-all duration-300"
+                style={{ padding: '0.4rem 1rem' }}
+              >
+                <img 
+                  src={`/logos/${logo}.png`} 
+                  alt={logo} 
+                  className="h-5 w-auto object-contain"
+                />
+              </div>
+            ))}
           </div>
-
-          <div 
-            className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 transition-all duration-300"
-            style={{ padding: '0.75rem 1.5rem' }}
-          >
-            <img 
-              src="/logos/safaricom.png" 
-              alt="Safaricom" 
-              className="h-10 w-auto object-contain"
-            />
-          </div>
-
-          <div 
-            className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 transition-all duration-300"
-            style={{ padding: '0.75rem 1.5rem' }}
-          >
-            <img 
-              src="/logos/ms_azure.png" 
-              alt="Microsoft Azure" 
-              className="h-10 w-auto object-contain"
-            />
-          </div>
-
-          <div 
-            className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 transition-all duration-300"
-            style={{ padding: '0.75rem 1.5rem' }}
-          >
-            <img 
-              src="/logos/MSSQL_server.png" 
-              alt="Microsoft SQL Server" 
-              className="h-10 w-auto object-contain"
-            />
-          </div>
-
-          <div 
-            className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 transition-all duration-300"
-            style={{ padding: '0.75rem 1.5rem' }}
-          >
-            <img 
-              src="/logos/Oracle_Logo.svg.webp" 
-              alt="Oracle" 
-              className="h-10 w-auto object-contain"
-            />
-          </div>
-
-          <div 
-            className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 transition-all duration-300"
-            style={{ padding: '0.75rem 1.5rem' }}
-          >
-            <img 
-              src="/logos/python.png" 
-              alt="Python" 
-              className="h-10 w-auto object-contain"
-            />
-          </div>
-
-          <div 
-            className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 transition-all duration-300"
-            style={{ padding: '0.75rem 1.5rem' }}
-          >
-            <img 
-              src="/logos/KRA.png" 
-              alt="Kenya Revenue Authority" 
-              className="h-10 w-auto object-contain"
-            />
-          </div>
-
-          <div 
-            className="flex items-center gap-3 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300"
-            style={{ padding: '0.75rem 1.5rem' }}
-          >
-            <Rocket className="w-5 h-5 text-purple-300" />
-            <span className="leading-relaxed tracking-wide text-sm">10+ Years</span>
-          </div>
-
-          <div 
-            className="flex items-center gap-3 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300"
-            style={{ padding: '0.75rem 1.5rem' }}
-          >
-            <Zap className="w-5 h-5 text-royal-gold" />
-            <span className="leading-relaxed tracking-wide text-sm">Production</span>
+          
+          {/* Row 2 - Metrics */}
+          <div className="flex flex-wrap justify-center items-center gap-3">
+            <div 
+              className="flex items-center gap-2 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 hover:scale-105 transition-all duration-300"
+              style={{ padding: '0.4rem 1rem' }}
+            >
+              <Rocket className="w-4 h-4 text-purple-300" />
+              <span className="leading-relaxed tracking-wide text-xs">10+ Years</span>
+            </div>
+            <div 
+              className="flex items-center gap-2 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 hover:scale-105 transition-all duration-300"
+              style={{ padding: '0.4rem 1rem' }}
+            >
+              <Zap className="w-4 h-4 text-royal-gold" />
+              <span className="leading-relaxed tracking-wide text-xs">Production</span>
+            </div>
           </div>
         </motion.div>
       </div>
