@@ -350,7 +350,7 @@ export default function Hero() {
         >
           {/* Row 1 - Logos */}
           <div className="flex flex-wrap justify-center items-center gap-3">
-            {['kpa', 'safaricom', 'ms_azure', 'MSSQL_server', 'Oracle_Logo.svg.webp', 'python', 'KRA'].map((logo) => (
+            {['kpa', 'safaricom', 'ms_azure', 'MSSQL_server', 'python'].map((logo) => (
               <div 
                 key={logo}
                 className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 hover:scale-105 transition-all duration-300"
