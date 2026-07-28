@@ -259,7 +259,7 @@ export default function Hero() {
             style={{ padding: '1.25rem 3.5rem' }}
           >
             <Crown className="w-8 h-8 text-black group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
-            <span className="text-black leading-relaxed tracking-wide">Claim Your Throne</span>
+            <span className="text-black leading-relaxed tracking-wide"> Claim Your Throne</span>
             <ArrowRight className="w-7 h-7 text-black group-hover:translate-x-2 transition-all duration-300" />
           </motion.a>
 
@@ -278,51 +278,60 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* Stats */}
+        {/* Stats - MODERN GLOSSY BORDERLESS CARDS */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
           className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto"
-          style={{ gap: '2.5rem', marginTop: '6rem' }}
+          style={{ gap: '2rem', marginTop: '6rem' }}
         >
           {[
             { 
-              icon: <Code2 className="w-9 h-9" />,
-              label: "Government Systems - Corporate Experience", 
-              color: "from-purple-500/40 to-purple-700/40"
+              icon: <Code2 className="w-10 h-10" />,
+              label: " Government Systems - Corporate Experience", 
+              gradient: "from-purple-600/20 to-purple-800/20"
             },
             { 
-              icon: <Brain className="w-9 h-9" />, 
-              label: "AI & Innovation - Intelligent Platforms", 
-              color: "from-gold-500/40 to-yellow-600/40"
+              icon: <Brain className="w-10 h-10" />, 
+              label: " AI & Innovation - Intelligent Platforms", 
+              gradient: "from-gold-500/20 to-yellow-600/20"
             },
             { 
-              icon: <Shield className="w-9 h-9" />, 
-              label: "Enterprise Grade - Mission Critical", 
-              color: "from-purple-600/40 to-indigo-700/40"
+              icon: <Shield className="w-10 h-10" />, 
+              label: " Enterprise Grade - Mission Critical", 
+              gradient: "from-purple-600/20 to-indigo-700/20"
             }
           ].map((item, i) => (
             <motion.div 
               key={i}
               whileHover={{ 
-                scale: 1.08, 
-                boxShadow: "0 0 60px rgba(245,158,11,0.2)",
-                borderColor: "rgba(245,158,11,0.5)",
-                y: -10
+                scale: 1.05,
+                y: -8,
+                boxShadow: "0 20px 60px rgba(245,158,11,0.15)"
               }}
-              className={`bg-gradient-to-br ${item.color} backdrop-blur-2xl border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 group cursor-pointer shadow-[0_0_40px_rgba(0,0,0,0.2)]`}
-              style={{ padding: '2.5rem 2rem' }}
+              className={`relative bg-gradient-to-br ${item.gradient} backdrop-blur-3xl rounded-2xl transition-all duration-500 group cursor-pointer overflow-hidden`}
+              style={{ 
+                padding: '1.5rem 1.5rem',
+                border: 'none',
+                boxShadow: '0 8px 32px rgba(0,0,0,0.2)'
+              }}
             >
-              <div className="flex items-center gap-6 justify-center">
+              {/* Glossy overlay effect */}
+              <div className="absolute inset-0 bg-gradient-to-t from-white/5 via-transparent to-white/10 pointer-events-none" />
+              
+              {/* Subtle glow on hover */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-gold-500/10 via-transparent to-purple-500/10 pointer-events-none" />
+              
+              <div className="flex items-center gap-5 justify-center relative z-10">
                 <motion.span 
-                  whileHover={{ rotate: 15, scale: 1.3 }}
-                  className="text-royal-gold transition-all duration-300 drop-shadow-[0_0_30px_rgba(245,158,11,0.4)]"
+                  whileHover={{ rotate: 15, scale: 1.2 }}
+                  className="text-royal-gold transition-all duration-300 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)]"
                 >
                   {item.icon}
                 </motion.span>
                 <div className="text-left">
-                  <div className="font-inter font-bold text-royal-white text-lg md:text-xl tracking-wide leading-loose drop-shadow-[0_0_20px_rgba(255,248,240,0.1)]">
+                  <div className="font-inter font-semibold text-royal-white text-base md:text-lg tracking-wide leading-relaxed">
                     {item.label}
                   </div>
                 </div>
