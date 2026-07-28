@@ -8,7 +8,7 @@ import SectionDivider from '@/components/SectionDivider'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-black text-white">
+    <main className="min-h-screen text-white">
       <Hero />
       
       {/* Visual spacer */}
@@ -19,7 +19,9 @@ export default function Home() {
       {/* Visual spacer */}
       <div className="h-8 md:h-12" />
       
-      <Audience />
+      <div className="bg-purple-900/5 backdrop-blur-sm">
+        <Audience />
+      </div>
       
       {/* Visual spacer */}
       <div className="h-16 md:h-24" />
@@ -29,7 +31,9 @@ export default function Home() {
       {/* Visual spacer */}
       <div className="h-8 md:h-12" />
       
-      <Services />
+      <div className="bg-black/20 backdrop-blur-sm">
+        <Services />
+      </div>
       
       {/* Visual spacer */}
       <div className="h-16 md:h-24" />
@@ -39,7 +43,9 @@ export default function Home() {
       {/* Visual spacer */}
       <div className="h-8 md:h-12" />
       
-      <Portfolio />
+      <div className="bg-purple-900/5 backdrop-blur-sm">
+        <Portfolio />
+      </div>
       
       {/* Visual spacer */}
       <div className="h-16 md:h-24" />
@@ -49,7 +55,10 @@ export default function Home() {
       {/* Visual spacer */}
       <div className="h-8 md:h-12" />
       
-      <Contact />
+      <div className="bg-black/20 backdrop-blur-sm">
+        <Contact />
+      </div>
+      
       <Footer />
     </main>
   )
