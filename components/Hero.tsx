@@ -340,7 +340,7 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* Trust Badges - 8X LARGER (Double 4x) */}
+        {/* Trust Badges - 8X LARGER with Label */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -348,8 +348,22 @@ export default function Hero() {
           className="flex flex-col items-center gap-4"
           style={{ marginTop: '4rem' }}
         >
+          {/* Label */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.1 }}
+            className="flex items-center gap-3"
+          >
+            <div className="w-12 h-px bg-gold-500/30" />
+            <span className="font-playfair text-royal-gold text-lg md:text-xl tracking-wide font-semibold">
+              Trustees & Affiliates
+            </span>
+            <div className="w-12 h-px bg-gold-500/30" />
+          </motion.div>
+
           <div className="flex flex-wrap justify-center items-center gap-4">
-            {['ai', 'google', 'groq', 'kpa', 'safaricom', 'ms_azure', 'MSSQL_server', 'postgresql', 'oracle', 'python', 'nodejs', 'typescript', 'react', 'javascript'].map((logo) => (
+            {['google', 'groq', 'kpa', 'safaricom', 'ms_azure', 'MSSQL_server', 'postgresql', 'oracle', 'python', 'nodejs', 'typescript', 'react', 'javascript'].map((logo) => (
               <div 
                 key={logo}
                 className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 hover:scale-105 transition-all duration-300 flex items-center justify-center"
