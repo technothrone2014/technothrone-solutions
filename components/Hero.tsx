@@ -353,8 +353,8 @@ export default function Hero() {
             style={{ padding: '0.75rem 1.5rem' }}
           >
             <img 
-              src="/logos/kra-logo.png" 
-              alt="Kenya Revenue Authority" 
+              src="/logos/kpa.png" 
+              alt="Kenya Ports Authority" 
               className="h-10 w-auto object-contain"
             />
           </div>
@@ -364,8 +364,63 @@ export default function Hero() {
             style={{ padding: '0.75rem 1.5rem' }}
           >
             <img 
-              src="/logos/kpa-logo.png" 
-              alt="Kenya Ports Authority" 
+              src="/logos/safaricom.png" 
+              alt="Safaricom" 
+              className="h-10 w-auto object-contain"
+            />
+          </div>
+
+          <div 
+            className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 transition-all duration-300"
+            style={{ padding: '0.75rem 1.5rem' }}
+          >
+            <img 
+              src="/logos/ms_azure.png" 
+              alt="Microsoft Azure" 
+              className="h-10 w-auto object-contain"
+            />
+          </div>
+
+          <div 
+            className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 transition-all duration-300"
+            style={{ padding: '0.75rem 1.5rem' }}
+          >
+            <img 
+              src="/logos/MSSQL_server.png" 
+              alt="Microsoft SQL Server" 
+              className="h-10 w-auto object-contain"
+            />
+          </div>
+
+          <div 
+            className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 transition-all duration-300"
+            style={{ padding: '0.75rem 1.5rem' }}
+          >
+            <img 
+              src="/logos/Oracle_Logo.svg.webp" 
+              alt="Oracle" 
+              className="h-10 w-auto object-contain"
+            />
+          </div>
+
+          <div 
+            className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 transition-all duration-300"
+            style={{ padding: '0.75rem 1.5rem' }}
+          >
+            <img 
+              src="/logos/python.png" 
+              alt="Python" 
+              className="h-10 w-auto object-contain"
+            />
+          </div>
+
+          <div 
+            className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 transition-all duration-300"
+            style={{ padding: '0.75rem 1.5rem' }}
+          >
+            <img 
+              src="/logos/KRA.png" 
+              alt="Kenya Revenue Authority" 
               className="h-10 w-auto object-contain"
             />
           </div>
@@ -375,7 +430,7 @@ export default function Hero() {
             style={{ padding: '0.75rem 1.5rem' }}
           >
             <Rocket className="w-5 h-5 text-purple-300" />
-            <span className="leading-relaxed tracking-wide text-sm">7+ Years</span>
+            <span className="leading-relaxed tracking-wide text-sm">10+ Years</span>
           </div>
 
           <div 
