@@ -181,7 +181,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.2] tracking-wide"
           >
-            <span className="text-royal-white drop-shadow-[0_0_40px_rgba(255,248,240,0.15)]">
+            <span className="text-gold-light drop-shadow-[0_0_40px_rgba(245,158,11,0.2)]">
               Introducing...
             </span>
             <br />
@@ -218,7 +218,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-space text-xl md:text-2xl lg:text-3xl text-royal-warm tracking-wide leading-relaxed"
+            className="font-space text-xl md:text-2xl lg:text-3xl text-gold-warm tracking-wide leading-relaxed"
           >
             Where{' '}
             <span className="text-royal-gold font-bold drop-shadow-[0_0_30px_rgba(245,158,11,0.4)] font-space">
@@ -233,7 +233,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="font-inter text-base text-royal-muted mt-3 tracking-wide"
+            className="font-inter text-base text-gold-soft mt-3 tracking-wide"
           >
             Building mission-critical systems for governments, enterprises, and the future
           </motion.p>
@@ -356,7 +356,7 @@ export default function Hero() {
             className="flex items-center gap-3"
           >
             <div className="w-12 h-px bg-gold-500/30" />
-            <span className="font-playfair text-royal-gold text-lg md:text-xl tracking-wide font-semibold">
+            <span className="font-playfair text-gold-gradient text-lg md:text-xl tracking-wide font-semibold text-glow-gold-strong">
               Trustees & Affiliates
             </span>
             <div className="w-12 h-px bg-gold-500/30" />
@@ -389,14 +389,14 @@ export default function Hero() {
               style={{ padding: '0.75rem 1.8rem', height: '72px' }}
             >
               <Rocket className="w-7 h-7 text-purple-300" />
-              <span className="leading-relaxed tracking-wide text-base">_10+ Years of experience</span>
+              <span className="leading-relaxed tracking-wide text-base text-gold-warm">_10+ Years of experience</span>
             </div>
             <div 
               className="flex items-center gap-3 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 hover:scale-105 transition-all duration-300"
               style={{ padding: '0.75rem 1.8rem', height: '72px' }}
             >
               <Zap className="w-7 h-7 text-royal-gold" />
-              <span className="leading-relaxed tracking-wide text-base">_Implement your idea today!</span>
+              <span className="leading-relaxed tracking-wide text-base text-gold-warm">_Implement your idea today!</span>
             </div>
           </div>
         </motion.div>

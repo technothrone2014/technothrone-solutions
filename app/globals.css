@@ -227,4 +227,47 @@
   .link-reset:visited {
     color: inherit !important;
   }
+
+  /* GOLD TEXT VARIANTS */
+  .text-gold-light {
+    color: #FDE68A;
+  }
+  
+  .text-gold-medium {
+    color: #FCD34D;
+  }
+  
+  .text-gold-dark {
+    color: #F59E0B;
+  }
+  
+  .text-gold-warm {
+    color: #F5D9B3;
+  }
+  
+  .text-gold-soft {
+    color: #E8D5A8;
+  }
+  
+  .text-gold-muted {
+    color: #D4C5A0;
+  }
+  
+  /* Gradient Gold Text */
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #FDE68A 0%, #FCD34D 30%, #F59E0B 60%, #D97706 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Gold Glow Effect */
+  .text-glow-gold-strong {
+    text-shadow: 0 0 40px rgba(245, 158, 11, 0.4);
+  }
+  
+  /* Warm Text with Gold Undertone */
+  .text-warm-gold {
+    color: #F5E6D3;
+  }
 }
