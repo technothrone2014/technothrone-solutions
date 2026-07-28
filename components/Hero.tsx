@@ -289,12 +289,12 @@ export default function Hero() {
           {[
             { 
               icon: <Code2 className="w-10 h-10" />,
-              label: "__High Tech Corporate & Institutional Engineering solutions",
+              label: "__High Tech Corporate solutions",
               gradient: "from-purple-600/20 to-purple-800/20"
             },
             { 
               icon: <Brain className="w-10 h-10" />, 
-              label: "__Architects of Crown-Grade Next-Gen AI Platforms",
+              label: "__Crown-Grade Next-Gen AI Platforms",
               gradient: "from-gold-500/20 to-yellow-600/20"
             },
             { 
@@ -340,7 +340,7 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* Trust Badges */}
+        {/* Trust Badges - LOGOS ONLY */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -349,25 +349,41 @@ export default function Hero() {
           style={{ gap: '2.5rem', marginTop: '5rem' }}
         >
           <div 
-            className="flex items-center gap-4 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300"
-            style={{ padding: '1rem 2rem' }}
+            className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 transition-all duration-300"
+            style={{ padding: '0.75rem 1.5rem' }}
           >
-            <Award className="w-6 h-6 text-royal-gold" />
-            <span className="leading-relaxed tracking-wide text-base">Trusted by KRA & KPA</span>
+            <img 
+              src="/logos/kra-logo.png" 
+              alt="Kenya Revenue Authority" 
+              className="h-10 w-auto object-contain"
+            />
           </div>
+
           <div 
-            className="flex items-center gap-4 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300"
-            style={{ padding: '1rem 2rem' }}
+            className="bg-white/5 backdrop-blur-xl rounded-full border border-white/10 hover:bg-white/10 transition-all duration-300"
+            style={{ padding: '0.75rem 1.5rem' }}
           >
-            <Rocket className="w-6 h-6 text-purple-300" />
-            <span className="leading-relaxed tracking-wide text-base">7+ Years Experience</span>
+            <img 
+              src="/logos/kpa-logo.png" 
+              alt="Kenya Ports Authority" 
+              className="h-10 w-auto object-contain"
+            />
           </div>
+
           <div 
-            className="flex items-center gap-4 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300"
-            style={{ padding: '1rem 2rem' }}
+            className="flex items-center gap-3 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300"
+            style={{ padding: '0.75rem 1.5rem' }}
           >
-            <Zap className="w-6 h-6 text-royal-gold" />
-            <span className="leading-relaxed tracking-wide text-base">Production Systems</span>
+            <Rocket className="w-5 h-5 text-purple-300" />
+            <span className="leading-relaxed tracking-wide text-sm">7+ Years</span>
+          </div>
+
+          <div 
+            className="flex items-center gap-3 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300"
+            style={{ padding: '0.75rem 1.5rem' }}
+          >
+            <Zap className="w-5 h-5 text-royal-gold" />
+            <span className="leading-relaxed tracking-wide text-sm">Production</span>
           </div>
         </motion.div>
       </div>
