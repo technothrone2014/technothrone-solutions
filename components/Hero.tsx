@@ -57,7 +57,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="flex justify-center mb-12 relative"
+          className="flex justify-center mb-16 relative"
         >
           <motion.div
             animate={{ 
@@ -93,7 +93,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Main Headline - WARM WHITE */}
-        <div className="relative mb-8">
+        <div className="relative mb-12">
           <motion.div
             animate={{ 
               y: [0, -25, 0],
@@ -189,7 +189,7 @@ export default function Hero() {
         </div>
 
         {/* Subtitle - WARM GOLD-TINTED */}
-        <div className="relative max-w-3xl mx-auto mb-16">
+        <div className="relative max-w-3xl mx-auto mb-20">
           <motion.div
             animate={{ 
               y: [0, -8, 0],
@@ -236,12 +236,12 @@ export default function Hero() {
           </motion.p>
         </div>
 
-        {/* CTA Buttons - INCREASED VERTICAL PADDING */}
+        {/* CTA Buttons - MAXIMUM SPACING */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-wrap gap-6 justify-center"
+          className="flex flex-wrap gap-8 justify-center mb-16"
         >
           {/* Primary CTA - Gold Button */}
           <motion.a
@@ -252,11 +252,11 @@ export default function Hero() {
             }}
             whileTap={{ scale: 0.95 }}
             href="#work"
-            className="link-reset group px-12 py-7 bg-gradient-to-r from-gold-500 via-yellow-500 to-gold-500 rounded-full font-space font-bold text-xl text-black hover:scale-105 transition-all duration-300 shadow-[0_0_60px_rgba(245,158,11,0.3)] flex items-center gap-4"
+            className="link-reset group px-14 py-8 bg-gradient-to-r from-gold-500 via-yellow-500 to-gold-500 rounded-full font-space font-bold text-2xl text-black hover:scale-105 transition-all duration-300 shadow-[0_0_60px_rgba(245,158,11,0.3)] flex items-center gap-5"
           >
-            <Crown className="w-7 h-7 text-black group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
-            <span className="text-black leading-relaxed">Claim Your Throne</span>
-            <ArrowRight className="w-6 h-6 text-black group-hover:translate-x-2 transition-all duration-300" />
+            <Crown className="w-8 h-8 text-black group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
+            <span className="text-black leading-relaxed tracking-wide">Claim Your Throne</span>
+            <ArrowRight className="w-7 h-7 text-black group-hover:translate-x-2 transition-all duration-300" />
           </motion.a>
 
           {/* Secondary CTA - Purple border */}
@@ -268,32 +268,32 @@ export default function Hero() {
             }}
             whileTap={{ scale: 0.95 }}
             href="#contact"
-            className="link-reset px-12 py-7 bg-white/5 backdrop-blur-xl border-2 border-purple-400/30 rounded-full font-space font-bold text-xl text-royal-warm hover:bg-purple-900/30 transition-all duration-300 hover:border-purple-400/60"
+            className="link-reset px-14 py-8 bg-white/5 backdrop-blur-xl border-2 border-purple-400/30 rounded-full font-space font-bold text-2xl text-royal-warm hover:bg-purple-900/30 transition-all duration-300 hover:border-purple-400/60"
           >
-            <span className="leading-relaxed">Rule Together</span>
+            <span className="leading-relaxed tracking-wide">Rule Together</span>
           </motion.a>
         </motion.div>
 
-        {/* Stats - WARM TEXT - INCREASED VERTICAL PADDING */}
+        {/* Stats - WARM TEXT - MAXIMUM SPACING */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
+          className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto"
         >
           {[
             { 
-              icon: <Code2 className="w-8 h-8" />,
+              icon: <Code2 className="w-9 h-9" />,
               label: "Government Systems - Corporate Experience", 
               color: "from-purple-500/40 to-purple-700/40"
             },
             { 
-              icon: <Brain className="w-8 h-8" />, 
+              icon: <Brain className="w-9 h-9" />, 
               label: "AI & Innovation - Intelligent Platforms", 
               color: "from-gold-500/40 to-yellow-600/40"
             },
             { 
-              icon: <Shield className="w-8 h-8" />, 
+              icon: <Shield className="w-9 h-9" />, 
               label: "Enterprise Grade - Mission Critical", 
               color: "from-purple-600/40 to-indigo-700/40"
             }
@@ -308,7 +308,7 @@ export default function Hero() {
               }}
               className={`p-10 bg-gradient-to-br ${item.color} backdrop-blur-2xl border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 group cursor-pointer shadow-[0_0_40px_rgba(0,0,0,0.2)]`}
             >
-              <div className="flex items-center gap-5 justify-center">
+              <div className="flex items-center gap-6 justify-center">
                 <motion.span 
                   whileHover={{ rotate: 15, scale: 1.3 }}
                   className="text-royal-gold transition-all duration-300 drop-shadow-[0_0_30px_rgba(245,158,11,0.4)]"
@@ -316,7 +316,7 @@ export default function Hero() {
                   {item.icon}
                 </motion.span>
                 <div className="text-left">
-                  <div className="font-inter font-bold text-royal-white text-base md:text-lg tracking-wide leading-loose drop-shadow-[0_0_20px_rgba(255,248,240,0.1)]">
+                  <div className="font-inter font-bold text-royal-white text-lg md:text-xl tracking-wide leading-loose drop-shadow-[0_0_20px_rgba(255,248,240,0.1)]">
                     {item.label}
                   </div>
                 </div>
@@ -325,24 +325,24 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* Trust Badges - WARM - INCREASED VERTICAL PADDING */}
+        {/* Trust Badges - WARM - MAXIMUM SPACING */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="mt-16 flex flex-wrap justify-center items-center gap-8 text-sm"
+          className="mt-20 flex flex-wrap justify-center items-center gap-10 text-base"
         >
-          <div className="flex items-center gap-3 px-6 py-4 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300">
-            <Award className="w-5 h-5 text-royal-gold" />
-            <span className="leading-relaxed">Trusted by KRA & KPA</span>
+          <div className="flex items-center gap-4 px-8 py-4 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300">
+            <Award className="w-6 h-6 text-royal-gold" />
+            <span className="leading-relaxed tracking-wide">Trusted by KRA & KPA</span>
           </div>
-          <div className="flex items-center gap-3 px-6 py-4 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300">
-            <Rocket className="w-5 h-5 text-purple-300" />
-            <span className="leading-relaxed">7+ Years Experience</span>
+          <div className="flex items-center gap-4 px-8 py-4 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300">
+            <Rocket className="w-6 h-6 text-purple-300" />
+            <span className="leading-relaxed tracking-wide">7+ Years Experience</span>
           </div>
-          <div className="flex items-center gap-3 px-6 py-4 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300">
-            <Zap className="w-5 h-5 text-royal-gold" />
-            <span className="leading-relaxed">Production Systems</span>
+          <div className="flex items-center gap-4 px-8 py-4 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300">
+            <Zap className="w-6 h-6 text-royal-gold" />
+            <span className="leading-relaxed tracking-wide">Production Systems</span>
           </div>
         </motion.div>
       </div>
