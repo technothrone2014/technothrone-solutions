@@ -63,14 +63,16 @@ export default function Audience() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 px-4 py-2 bg-purple-900/30 border border-gold-500/30 rounded-full text-gold-400 text-sm mb-4"
           >
-            <Crown className="w-4 h-4" />
-            _Rule your domain with Excellence and Innovation
+            <Crown className="w-4 h-4 text-gold-medium" />
+            <span className="text-gold-soft tracking-wide">_Rule your domain with Excellence and Innovation</span>
           </motion.div>
+          
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-white">Who We </span>
-            <span className="gradient-gold bg-clip-text text-transparent">Serve</span>
+            <span className="text-gold-light drop-shadow-[0_0_30px_rgba(245,158,11,0.15)]">Who We </span>
+            <span className="text-gold-gradient drop-shadow-[0_0_40px_rgba(245,158,11,0.3)]">Serve</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          
+          <p className="text-gold-warm max-w-2xl mx-auto leading-relaxed">
             From local operations to executive halls — our touch guarantees market dominance!
           </p>
         </div>
@@ -88,12 +90,16 @@ export default function Audience() {
               <div className={`w-12 h-12 bg-gradient-to-r ${audience.color} rounded-xl flex items-center justify-center mb-4 text-white group-hover:scale-110 transition shadow-lg shadow-purple-500/20 mx-auto`}>
                 {audience.icon}
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">{audience.title}</h3>
-              <p className="text-sm text-gray-400 mb-4">{audience.description}</p>
+              <h3 className="text-lg font-bold text-gold-light mb-2 group-hover:text-gold-medium transition duration-300">
+                {audience.title}
+              </h3>
+              <p className="text-sm text-gold-warm/70 mb-4 leading-relaxed">
+                {audience.description}
+              </p>
               <ul className="space-y-1">
                 {audience.benefits.map((benefit, j) => (
-                  <li key={j} className="text-xs text-gold-400/70 flex items-center gap-2 justify-center">
-                    <span className="w-1.5 h-1.5 bg-gold-400 rounded-full"></span>
+                  <li key={j} className="text-xs text-gold-soft/80 flex items-center gap-2 justify-center">
+                    <span className="w-1.5 h-1.5 bg-gold-400 rounded-full shadow-[0_0_10px_rgba(245,158,11,0.3)]"></span>
                     {benefit}
                   </li>
                 ))}
