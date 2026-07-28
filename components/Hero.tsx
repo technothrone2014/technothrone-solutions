@@ -259,7 +259,7 @@ export default function Hero() {
             style={{ padding: '1.25rem 3.5rem' }}
           >
             <Crown className="w-8 h-8 text-black group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
-            <span className="text-black leading-relaxed tracking-wide"> Claim Your Throne</span>
+            <span className="text-black leading-relaxed tracking-wide"> _Claim Your Throne</span>
             <ArrowRight className="w-7 h-7 text-black group-hover:translate-x-2 transition-all duration-300" />
           </motion.a>
 
@@ -289,12 +289,12 @@ export default function Hero() {
           {[
             { 
               icon: <Code2 className="w-10 h-10" />,
-              label: " Government Systems - Corporate Experience", 
+              label: " _Government Systems - Corporate Experience", 
               gradient: "from-purple-600/20 to-purple-800/20"
             },
             { 
               icon: <Brain className="w-10 h-10" />, 
-              label: " AI & Innovation - Intelligent Platforms", 
+              label: " _AI & Innovation - Intelligent Platforms", 
               gradient: "from-gold-500/20 to-yellow-600/20"
             },
             { 
