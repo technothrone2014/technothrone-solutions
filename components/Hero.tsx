@@ -52,7 +52,7 @@ export default function Hero() {
       </div>
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
-        {/* Crown Badge - Warm Colors - LARGER TEXT */}
+        {/* Crown Badge - Warm Colors - EVEN LARGER TEXT */}
         <motion.div
           initial={{ opacity: 0, y: 20, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -84,11 +84,11 @@ export default function Hero() {
             whileHover={{ scale: 1.05, y: -5 }}
             className="inline-flex items-center gap-3 px-8 py-4 bg-white/5 backdrop-blur-2xl border border-gold-500/30 rounded-full shadow-[0_0_80px_rgba(245,158,11,0.15)] hover:shadow-[0_0_100px_rgba(245,158,11,0.25)] transition-all duration-500"
           >
-            <Crown className="w-6 h-6 text-royal-gold drop-shadow-[0_0_30px_rgba(245,158,11,0.6)]" />
-            <span className="font-space text-royal-gold font-bold text-2xl tracking-wider">
+            <Crown className="w-7 h-7 text-royal-gold drop-shadow-[0_0_30px_rgba(245,158,11,0.6)]" />
+            <span className="font-space text-royal-gold font-bold text-3xl tracking-wider">
               Technothrone Solutions
             </span>
-            <Sparkles className="w-5 h-5 text-royal-gold animate-pulse" />
+            <Sparkles className="w-6 h-6 text-royal-gold animate-pulse" />
           </motion.div>
         </motion.div>
 
