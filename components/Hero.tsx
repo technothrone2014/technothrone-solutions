@@ -52,7 +52,7 @@ export default function Hero() {
       </div>
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
-        {/* Crown Badge - Warm Colors */}
+        {/* Crown Badge - Warm Colors - LARGER TEXT */}
         <motion.div
           initial={{ opacity: 0, y: 20, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -85,7 +85,7 @@ export default function Hero() {
             className="inline-flex items-center gap-3 px-8 py-4 bg-white/5 backdrop-blur-2xl border border-gold-500/30 rounded-full shadow-[0_0_80px_rgba(245,158,11,0.15)] hover:shadow-[0_0_100px_rgba(245,158,11,0.25)] transition-all duration-500"
           >
             <Crown className="w-6 h-6 text-royal-gold drop-shadow-[0_0_30px_rgba(245,158,11,0.6)]" />
-            <span className="font-space text-royal-gold font-bold text-lg tracking-wider">
+            <span className="font-space text-royal-gold font-bold text-2xl tracking-wider">
               Technothrone Solutions
             </span>
             <Sparkles className="w-5 h-5 text-royal-gold animate-pulse" />
@@ -236,7 +236,7 @@ export default function Hero() {
           </motion.p>
         </div>
 
-        {/* CTA Buttons - FORCED SPACING with !important equivalents */}
+        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -244,7 +244,6 @@ export default function Hero() {
           className="flex flex-wrap gap-8 justify-center mb-20"
           style={{ gap: '2rem', marginBottom: '5rem' }}
         >
-          {/* Primary CTA - Gold Button */}
           <motion.a
             whileHover={{ 
               scale: 1.08, 
@@ -261,7 +260,6 @@ export default function Hero() {
             <ArrowRight className="w-7 h-7 text-black group-hover:translate-x-2 transition-all duration-300" />
           </motion.a>
 
-          {/* Secondary CTA - Purple border */}
           <motion.a
             whileHover={{ 
               scale: 1.08, 
@@ -277,7 +275,7 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* Stats - FORCED SPACING */}
+        {/* Stats */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -288,17 +286,17 @@ export default function Hero() {
           {[
             { 
               icon: <Code2 className="w-9 h-9" />,
-              label: "Government Systems - Corporate Experience", 
+              label: " Government Systems - Corporate Experience", 
               color: "from-purple-500/40 to-purple-700/40"
             },
             { 
               icon: <Brain className="w-9 h-9" />, 
-              label: "AI & Innovation - Intelligent Platforms", 
+              label: " AI & Innovation - Intelligent Platforms", 
               color: "from-gold-500/40 to-yellow-600/40"
             },
             { 
               icon: <Shield className="w-9 h-9" />, 
-              label: "Enterprise Grade - Mission Critical", 
+              label: " Enterprise Grade - Mission Critical", 
               color: "from-purple-600/40 to-indigo-700/40"
             }
           ].map((item, i) => (
@@ -330,7 +328,7 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* Trust Badges - FORCED SPACING */}
+        {/* Trust Badges */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
