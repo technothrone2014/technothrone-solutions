@@ -57,7 +57,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="flex justify-center mb-16 relative"
+          className="flex justify-center mb-20 relative"
         >
           <motion.div
             animate={{ 
@@ -93,7 +93,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Main Headline - WARM WHITE */}
-        <div className="relative mb-12">
+        <div className="relative mb-16">
           <motion.div
             animate={{ 
               y: [0, -25, 0],
@@ -189,7 +189,7 @@ export default function Hero() {
         </div>
 
         {/* Subtitle - WARM GOLD-TINTED */}
-        <div className="relative max-w-3xl mx-auto mb-20">
+        <div className="relative max-w-3xl mx-auto mb-24">
           <motion.div
             animate={{ 
               y: [0, -8, 0],
@@ -236,12 +236,13 @@ export default function Hero() {
           </motion.p>
         </div>
 
-        {/* CTA Buttons - MAXIMUM SPACING */}
+        {/* CTA Buttons - FORCED SPACING with !important equivalents */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-wrap gap-8 justify-center mb-16"
+          className="flex flex-wrap gap-8 justify-center mb-20"
+          style={{ gap: '2rem', marginBottom: '5rem' }}
         >
           {/* Primary CTA - Gold Button */}
           <motion.a
@@ -252,7 +253,8 @@ export default function Hero() {
             }}
             whileTap={{ scale: 0.95 }}
             href="#work"
-            className="link-reset group px-14 py-8 bg-gradient-to-r from-gold-500 via-yellow-500 to-gold-500 rounded-full font-space font-bold text-2xl text-black hover:scale-105 transition-all duration-300 shadow-[0_0_60px_rgba(245,158,11,0.3)] flex items-center gap-5"
+            className="link-reset group bg-gradient-to-r from-gold-500 via-yellow-500 to-gold-500 rounded-full font-space font-bold text-2xl text-black hover:scale-105 transition-all duration-300 shadow-[0_0_60px_rgba(245,158,11,0.3)] flex items-center gap-5"
+            style={{ padding: '1.25rem 3.5rem' }}
           >
             <Crown className="w-8 h-8 text-black group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
             <span className="text-black leading-relaxed tracking-wide">Claim Your Throne</span>
@@ -268,18 +270,20 @@ export default function Hero() {
             }}
             whileTap={{ scale: 0.95 }}
             href="#contact"
-            className="link-reset px-14 py-8 bg-white/5 backdrop-blur-xl border-2 border-purple-400/30 rounded-full font-space font-bold text-2xl text-royal-warm hover:bg-purple-900/30 transition-all duration-300 hover:border-purple-400/60"
+            className="link-reset bg-white/5 backdrop-blur-xl border-2 border-purple-400/30 rounded-full font-space font-bold text-2xl text-royal-warm hover:bg-purple-900/30 transition-all duration-300 hover:border-purple-400/60"
+            style={{ padding: '1.25rem 3.5rem' }}
           >
             <span className="leading-relaxed tracking-wide">Rule Together</span>
           </motion.a>
         </motion.div>
 
-        {/* Stats - WARM TEXT - MAXIMUM SPACING */}
+        {/* Stats - FORCED SPACING */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto"
+          style={{ gap: '2.5rem', marginTop: '6rem' }}
         >
           {[
             { 
@@ -306,7 +310,8 @@ export default function Hero() {
                 borderColor: "rgba(245,158,11,0.5)",
                 y: -10
               }}
-              className={`p-10 bg-gradient-to-br ${item.color} backdrop-blur-2xl border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 group cursor-pointer shadow-[0_0_40px_rgba(0,0,0,0.2)]`}
+              className={`bg-gradient-to-br ${item.color} backdrop-blur-2xl border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 group cursor-pointer shadow-[0_0_40px_rgba(0,0,0,0.2)]`}
+              style={{ padding: '2.5rem 2rem' }}
             >
               <div className="flex items-center gap-6 justify-center">
                 <motion.span 
@@ -325,24 +330,34 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* Trust Badges - WARM - MAXIMUM SPACING */}
+        {/* Trust Badges - FORCED SPACING */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="mt-20 flex flex-wrap justify-center items-center gap-10 text-base"
+          className="flex flex-wrap justify-center items-center"
+          style={{ gap: '2.5rem', marginTop: '5rem' }}
         >
-          <div className="flex items-center gap-4 px-8 py-4 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300">
+          <div 
+            className="flex items-center gap-4 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300"
+            style={{ padding: '1rem 2rem' }}
+          >
             <Award className="w-6 h-6 text-royal-gold" />
-            <span className="leading-relaxed tracking-wide">Trusted by KRA & KPA</span>
+            <span className="leading-relaxed tracking-wide text-base">Trusted by KRA & KPA</span>
           </div>
-          <div className="flex items-center gap-4 px-8 py-4 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300">
+          <div 
+            className="flex items-center gap-4 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300"
+            style={{ padding: '1rem 2rem' }}
+          >
             <Rocket className="w-6 h-6 text-purple-300" />
-            <span className="leading-relaxed tracking-wide">7+ Years Experience</span>
+            <span className="leading-relaxed tracking-wide text-base">7+ Years Experience</span>
           </div>
-          <div className="flex items-center gap-4 px-8 py-4 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300">
+          <div 
+            className="flex items-center gap-4 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 transition-all duration-300"
+            style={{ padding: '1rem 2rem' }}
+          >
             <Zap className="w-6 h-6 text-royal-gold" />
-            <span className="leading-relaxed tracking-wide">Production Systems</span>
+            <span className="leading-relaxed tracking-wide text-base">Production Systems</span>
           </div>
         </motion.div>
       </div>
