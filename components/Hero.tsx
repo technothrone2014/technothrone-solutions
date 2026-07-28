@@ -259,7 +259,7 @@ export default function Hero() {
             style={{ padding: '1.25rem 3.5rem' }}
           >
             <Crown className="w-8 h-8 text-black group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
-            <span className="text-black leading-relaxed tracking-wide">_Build your Empire</span>
+            <span className="text-amber-900 font-bold leading-relaxed tracking-wide">_Build your Empire</span>
             <ArrowRight className="w-7 h-7 text-black group-hover:translate-x-2 transition-all duration-300" />
           </motion.a>
 
@@ -274,7 +274,7 @@ export default function Hero() {
             className="link-reset bg-white/5 backdrop-blur-xl border-2 border-purple-400/30 rounded-full font-space font-bold text-2xl text-royal-warm hover:bg-purple-900/30 transition-all duration-300 hover:border-purple-400/60"
             style={{ padding: '1.25rem 3.5rem' }}
           >
-            <span className="leading-relaxed tracking-wide">Join the Council</span>
+            <span className="text-amber-900 font-bold leading-relaxed tracking-wide">Join the Council</span>
           </motion.a>
         </motion.div>
 
