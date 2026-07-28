@@ -58,6 +58,24 @@ export default function Audience() {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/10 via-transparent to-transparent" />
       
       <div className="max-w-7xl mx-auto">
+        {/* Royal Divider - Visual Page Break */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="flex items-center justify-center gap-6 mb-16"
+        >
+          <div className="w-20 h-px bg-gradient-to-r from-transparent to-gold-500/50" />
+          <div className="flex items-center gap-3">
+            <Crown className="w-6 h-6 text-royal-gold drop-shadow-[0_0_20px_rgba(245,158,11,0.3)]" />
+            <span className="font-playfair text-royal-gold text-sm tracking-[0.3em] uppercase">
+              — The Throne Room —
+            </span>
+            <Crown className="w-6 h-6 text-royal-gold drop-shadow-[0_0_20px_rgba(245,158,11,0.3)]" />
+          </div>
+          <div className="w-20 h-px bg-gradient-to-l from-transparent to-gold-500/50" />
+        </motion.div>
+
         <div className="text-center mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
