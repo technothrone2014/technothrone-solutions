@@ -328,8 +328,8 @@ export default function Hero() {
                 >
                   {item.icon}
                 </motion.span>
-                <div className="text-left flex-1 min-w-0">
-                  <div className="font-inter font-semibold text-gold-warm text-base md:text-lg tracking-wide leading-relaxed whitespace-normal break-words">
+                <div className="text-center">
+                  <div className="font-playfair font-bold text-gold-warm text-base md:text-lg tracking-wide leading-relaxed whitespace-normal break-words">
                     {item.label}
                   </div>
                 </div>
