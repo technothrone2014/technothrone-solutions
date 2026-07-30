@@ -64,26 +64,28 @@ export default function Portfolio() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group bg-purple-900/20 backdrop-blur border border-gold-500/20 rounded-2xl p-6 hover:bg-purple-900/30 transition-all duration-300 hover:-translate-y-2 hover:border-gold-500/40"
+              className="group bg-purple-900/20 backdrop-blur border border-gold-500/20 rounded-2xl p-6 hover:bg-purple-900/30 transition-all duration-300 hover:-translate-y-2 hover:border-gold-500/40 text-center"
             >
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <div className={`w-12 h-12 bg-gradient-to-r ${project.color} rounded-xl flex items-center justify-center text-white mb-3 group-hover:scale-110 transition shadow-lg shadow-gold-500/20`}>
-                    {project.icon}
-                  </div>
-                  <h3 className="font-playfair text-lg font-bold text-gold-light group-hover:text-gold-medium transition duration-300">
-                    {project.title}
-                  </h3>
-                  <p className="font-inter text-sm text-gold-warm/70">{project.org}</p>
-                </div>
-                <Crown className="w-5 h-5 text-gold-400/40 group-hover:text-gold-400 transition" />
+              {/* Icon - Centered */}
+              <div className={`w-12 h-12 bg-gradient-to-r ${project.color} rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition shadow-lg shadow-gold-500/20 mx-auto`}>
+                {project.icon}
               </div>
+              
+              {/* Title - Centered */}
+              <h3 className="font-playfair text-lg font-bold text-gold-light group-hover:text-gold-medium transition duration-300">
+                {project.title}
+              </h3>
+              
+              {/* Organization - Centered */}
+              <p className="font-inter text-sm text-gold-warm/70 mb-3">{project.org}</p>
 
+              {/* Description - Centered */}
               <p className="font-inter text-sm text-gold-warm/80 mb-4 leading-relaxed">
                 {project.description}
               </p>
 
-              <div className="flex flex-wrap gap-2 mb-4">
+              {/* Tags - Centered */}
+              <div className="flex flex-wrap gap-2 justify-center mb-4">
                 {project.tags.map((tag, j) => (
                   <span key={j} className="font-inter px-3 py-1 bg-purple-900/50 rounded-full text-xs text-gold-soft/80 border border-gold-500/20">
                     {tag}
@@ -91,7 +93,8 @@ export default function Portfolio() {
                 ))}
               </div>
 
-              <div className="flex items-center gap-2 text-gold-soft/70 text-sm">
+              {/* Impact - Centered */}
+              <div className="flex items-center gap-2 justify-center text-gold-soft/70 text-sm">
                 <CheckCircle2 className="w-4 h-4 text-gold-medium" />
                 <span className="font-inter">{project.impact}</span>
               </div>
