@@ -45,14 +45,16 @@ export default function Services() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 px-4 py-2 bg-purple-900/30 border border-gold-500/30 rounded-full text-gold-400 text-sm mb-4"
           >
-            <Sparkles className="w-4 h-4" />
-            Our Royal Services
+            <Sparkles className="w-4 h-4 text-gold-medium" />
+            <span className="font-space text-gold-soft tracking-wide">Our Royal Services</span>
           </motion.div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-white">What We </span>
-            <span className="gradient-gold bg-clip-text text-transparent">Deliver</span>
+          
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-4">
+            <span className="text-gold-light drop-shadow-[0_0_30px_rgba(245,158,11,0.15)]">What We </span>
+            <span className="text-gold-gradient drop-shadow-[0_0_40px_rgba(245,158,11,0.3)]">Deliver</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          
+          <p className="font-inter text-gold-warm max-w-2xl mx-auto leading-relaxed">
             Every service is crafted with the precision and quality worthy of the throne.
           </p>
         </div>
@@ -64,13 +66,17 @@ export default function Services() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group p-6 bg-purple-900/20 backdrop-blur border border-gold-500/20 rounded-2xl hover:bg-purple-900/30 transition-all duration-300 hover:-translate-y-2 hover:border-gold-500/40"
+              className="group p-6 bg-purple-900/20 backdrop-blur border border-gold-500/20 rounded-2xl hover:bg-purple-900/30 transition-all duration-300 hover:-translate-y-2 hover:border-gold-500/40 text-center"
             >
-              <div className="w-14 h-14 bg-gradient-royal rounded-xl flex items-center justify-center mb-4 text-white group-hover:scale-110 transition shadow-lg shadow-purple-500/20">
+              <div className="w-14 h-14 bg-gradient-royal rounded-xl flex items-center justify-center mb-4 text-white group-hover:scale-110 transition shadow-lg shadow-purple-500/20 mx-auto">
                 {service.icon}
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">{service.title}</h3>
-              <p className="text-gray-400 text-sm">{service.desc}</p>
+              <h3 className="font-playfair text-lg font-bold text-gold-light mb-2 group-hover:text-gold-medium transition duration-300">
+                {service.title}
+              </h3>
+              <p className="font-inter text-sm text-gold-warm/70 leading-relaxed">
+                {service.desc}
+              </p>
             </motion.div>
           ))}
         </div>
