@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import { Crown, CheckCircle2, Database, Brain, Server } from 'lucide-react'
+import { Crown, CheckCircle2, Database, Brain, Server, Sparkles } from 'lucide-react'
 
 const projects = [
   {
@@ -43,14 +43,16 @@ export default function Portfolio() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 px-4 py-2 bg-purple-900/30 border border-gold-500/30 rounded-full text-gold-400 text-sm mb-4"
           >
-            <Crown className="w-4 h-4" />
-            Royal Achievements
+            <Sparkles className="w-4 h-4 text-gold-medium" />
+            <span className="font-space text-gold-soft tracking-wide">Royal Achievements</span>
           </motion.div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-white">Our </span>
-            <span className="gradient-gold bg-clip-text text-transparent">Legacy</span>
+          
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-4">
+            <span className="text-gold-light drop-shadow-[0_0_30px_rgba(245,158,11,0.15)]">Our </span>
+            <span className="text-gold-gradient drop-shadow-[0_0_40px_rgba(245,158,11,0.3)]">Legacy</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          
+          <p className="font-inter text-gold-warm max-w-2xl mx-auto leading-relaxed">
             Every project below has been deployed to production, serving real users and kingdoms.
           </p>
         </div>
@@ -69,25 +71,29 @@ export default function Portfolio() {
                   <div className={`w-12 h-12 bg-gradient-to-r ${project.color} rounded-xl flex items-center justify-center text-white mb-3 group-hover:scale-110 transition shadow-lg shadow-gold-500/20`}>
                     {project.icon}
                   </div>
-                  <h3 className="text-lg font-bold text-white">{project.title}</h3>
-                  <p className="text-sm text-gold-400">{project.org}</p>
+                  <h3 className="font-playfair text-lg font-bold text-gold-light group-hover:text-gold-medium transition duration-300">
+                    {project.title}
+                  </h3>
+                  <p className="font-inter text-sm text-gold-warm/70">{project.org}</p>
                 </div>
                 <Crown className="w-5 h-5 text-gold-400/40 group-hover:text-gold-400 transition" />
               </div>
 
-              <p className="text-gray-300 text-sm mb-4">{project.description}</p>
+              <p className="font-inter text-sm text-gold-warm/80 mb-4 leading-relaxed">
+                {project.description}
+              </p>
 
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tags.map((tag, j) => (
-                  <span key={j} className="px-3 py-1 bg-purple-900/50 rounded-full text-xs text-gold-400/70 border border-gold-500/20">
+                  <span key={j} className="font-inter px-3 py-1 bg-purple-900/50 rounded-full text-xs text-gold-soft/80 border border-gold-500/20">
                     {tag}
                   </span>
                 ))}
               </div>
 
-              <div className="flex items-center gap-2 text-gold-400/70 text-sm">
-                <CheckCircle2 className="w-4 h-4" />
-                <span>{project.impact}</span>
+              <div className="flex items-center gap-2 text-gold-soft/70 text-sm">
+                <CheckCircle2 className="w-4 h-4 text-gold-medium" />
+                <span className="font-inter">{project.impact}</span>
               </div>
             </motion.div>
           ))}
