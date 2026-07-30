@@ -11,7 +11,8 @@ import {
   Award,
   Rocket,
   Zap,
-  GraduationCap
+  GraduationCap,
+  Blocks,
 } from 'lucide-react'
 
 export default function Hero() {
@@ -289,7 +290,7 @@ export default function Hero() {
         >
           {[
             { 
-              icon: <Code2 className="w-10 h-10 flex-shrink-0" />,
+              icon: <Blocks className="w-10 h-10 flex-shrink-0" />,
               label: "High-Tech Realm Engineering",
               description: "End-to-end web & mobile apps, tailored AI platforms, and automated business workflows.",
               gradient: "from-purple-600/20 to-purple-800/20"
