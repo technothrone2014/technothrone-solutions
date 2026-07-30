@@ -289,19 +289,19 @@ export default function Hero() {
           {[
             { 
               icon: <Code2 className="w-10 h-10 flex-shrink-0" />,
-              label: "__ High-Tech Realm Engineering",
+              label: "High-Tech Realm Engineering",
               description: "End-to-end web & mobile apps, tailored AI platforms, and automated business workflows.",
               gradient: "from-purple-600/20 to-purple-800/20"
             },
             { 
               icon: <Brain className="w-10 h-10 flex-shrink-0" />, 
-              label: "__ Strategic Data Intelligence",
+              label: "Strategic Data Intelligence",
               description: "Real-time executive dashboards, automated data flows, seamless data cleaning & staging.",
               gradient: "from-gold-500/20 to-yellow-600/20"
             },
             { 
               icon: <Shield className="w-10 h-10 flex-shrink-0" />, 
-              label: "__ Crown-Grade Systems Architecture",
+              label: "Crown-Grade Systems Architecture",
               description: "Secure, scalable, and battle-tested infrastructure built for enterprise and government.",
               gradient: "from-purple-600/20 to-indigo-700/20"
             }
@@ -318,7 +318,7 @@ export default function Hero() {
                 padding: '1.75rem 1.5rem',
                 border: 'none',
                 boxShadow: '0 8px 32px rgba(0,0,0,0.2)',
-                minHeight: '140px'
+                minHeight: '160px'
               }}
             >
               {/* Glossy overlay effect */}
@@ -327,25 +327,25 @@ export default function Hero() {
               {/* Subtle glow on hover */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-gold-500/10 via-transparent to-purple-500/10 pointer-events-none" />
               
-              <div className="flex items-start gap-5 justify-center relative z-10">
+              <div className="flex flex-col items-center text-center relative z-10">
                 <motion.span 
                   whileHover={{ rotate: 15, scale: 1.2 }}
-                  className="text-royal-gold transition-all duration-300 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)] flex-shrink-0 mt-1"
+                  className="text-royal-gold transition-all duration-300 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)] mb-3"
                 >
                   {item.icon}
                 </motion.span>
-                <div className="text-left flex-1">
+                <div className="w-full">
                   <div 
                     className="font-playfair font-black text-gold-light tracking-wide leading-relaxed whitespace-normal break-words"
                     style={{ 
-                      fontSize: '1.1rem !important', 
+                      fontSize: '1.15rem !important', 
                       lineHeight: '1.4 !important'
                     }}
                   >
                     <span className="text-royal-gold mr-2">✦</span>
                     {item.label}
                   </div>
-                  <p className="font-inter text-sm text-gold-warm/70 mt-2 leading-relaxed">
+                  <p className="font-inter text-sm text-gold-warm/80 mt-2 leading-relaxed max-w-xs mx-auto">
                     {item.description}
                   </p>
                 </div>
