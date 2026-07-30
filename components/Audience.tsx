@@ -10,7 +10,8 @@ import {
   Sparkles,
   Shield,
   GraduationCap,
-  Rocket
+  Rocket,
+  Star
 } from 'lucide-react'
 
 const audiences = [
@@ -96,14 +97,28 @@ export default function Audience() {
               <p className="font-inter text-sm text-gold-warm/70 mb-4 leading-relaxed">
                 {audience.description}
               </p>
-              <ul className="space-y-1">
-                {audience.benefits.map((benefit, j) => (
-                  <li key={j} className="font-inter text-xs text-gold-soft/80 flex items-center gap-2 justify-center">
-                    <span className="w-1.5 h-1.5 bg-gold-400 rounded-full shadow-[0_0_10px_rgba(245,158,11,0.3)]"></span>
-                    {benefit}
-                  </li>
-                ))}
-              </ul>
+              
+              {/* Benefits - Centered block with left-aligned items */}
+              <div className="flex justify-center">
+                <ul className="space-y-2 text-left">
+                  {audience.benefits.map((benefit, j) => (
+                    <motion.li 
+                      key={j}
+                      initial={{ opacity: 0, x: -10 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.3, delay: i * 0.1 + j * 0.1 }}
+                      className="font-inter text-xs flex items-center gap-2 group-hover:translate-x-1 transition-transform duration-300"
+                    >
+                      <span className="flex-shrink-0">
+                        <Star className="w-3 h-3 text-royal-gold fill-royal-gold/20 drop-shadow-[0_0_10px_rgba(245,158,11,0.3)]" />
+                      </span>
+                      <span className="text-gold-light font-medium tracking-wide">
+                        {benefit}
+                      </span>
+                    </motion.li>
+                  ))}
+                </ul>
+              </div>
             </motion.div>
           ))}
         </div>
