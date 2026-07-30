@@ -278,28 +278,31 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* Stats - MODERN GLOSSY BORDERLESS CARDS */}
+        {/* Stats - MODERN GLOSSY BORDERLESS CARDS WITH DESCRIPTIONS */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto"
           style={{ gap: '2rem', marginTop: '6rem' }}
         >
           {[
             { 
               icon: <Code2 className="w-10 h-10 flex-shrink-0" />,
-              label: "High Tech Corporate Solutions",
+              label: "__ High-Tech Realm Engineering",
+              description: "End-to-end web & mobile apps, tailored AI platforms, and automated business workflows.",
               gradient: "from-purple-600/20 to-purple-800/20"
             },
             { 
               icon: <Brain className="w-10 h-10 flex-shrink-0" />, 
-              label: "Crown-Grade Next-Gen AI Platforms",
+              label: "__ Strategic Data Intelligence",
+              description: "Real-time executive dashboards, automated data flows, seamless data cleaning & staging.",
               gradient: "from-gold-500/20 to-yellow-600/20"
             },
             { 
               icon: <Shield className="w-10 h-10 flex-shrink-0" />, 
-              label: "Powered by the Throne. Built for Our Allies.",
+              label: "__ Crown-Grade Systems Architecture",
+              description: "Secure, scalable, and battle-tested infrastructure built for enterprise and government.",
               gradient: "from-purple-600/20 to-indigo-700/20"
             }
           ].map((item, i) => (
@@ -312,32 +315,39 @@ export default function Hero() {
               }}
               className={`relative bg-gradient-to-br ${item.gradient} backdrop-blur-3xl rounded-2xl transition-all duration-500 group cursor-pointer overflow-hidden`}
               style={{ 
-                padding: '1.5rem 1.5rem',
+                padding: '1.75rem 1.5rem',
                 border: 'none',
                 boxShadow: '0 8px 32px rgba(0,0,0,0.2)',
-                minHeight: '80px'
+                minHeight: '140px'
               }}
             >
+              {/* Glossy overlay effect */}
               <div className="absolute inset-0 bg-gradient-to-t from-white/5 via-transparent to-white/10 pointer-events-none" />
+              
+              {/* Subtle glow on hover */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-gold-500/10 via-transparent to-purple-500/10 pointer-events-none" />
               
-              <div className="flex items-center gap-5 justify-center relative z-10">
+              <div className="flex items-start gap-5 justify-center relative z-10">
                 <motion.span 
                   whileHover={{ rotate: 15, scale: 1.2 }}
-                  className="text-royal-gold transition-all duration-300 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)] flex-shrink-0"
+                  className="text-royal-gold transition-all duration-300 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)] flex-shrink-0 mt-1"
                 >
                   {item.icon}
                 </motion.span>
-                <div className="text-center">
+                <div className="text-left flex-1">
                   <div 
-                    className="font-playfair font-black text-gold-warm tracking-wide leading-relaxed whitespace-normal break-words"
+                    className="font-playfair font-black text-gold-light tracking-wide leading-relaxed whitespace-normal break-words"
                     style={{ 
-                      fontSize: '1.25rem !important', 
-                      lineHeight: '1.6 !important'
+                      fontSize: '1.1rem !important', 
+                      lineHeight: '1.4 !important'
                     }}
                   >
+                    <span className="text-royal-gold mr-2">✦</span>
                     {item.label}
                   </div>
+                  <p className="font-inter text-sm text-gold-warm/70 mt-2 leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             </motion.div>
