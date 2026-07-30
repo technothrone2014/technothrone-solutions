@@ -10,7 +10,8 @@ import {
   Shield,
   Award,
   Rocket,
-  Zap
+  Zap,
+  GraduationCap
 } from 'lucide-react'
 
 export default function Hero() {
@@ -300,9 +301,9 @@ export default function Hero() {
               gradient: "from-gold-500/20 to-yellow-600/20"
             },
             { 
-              icon: <Shield className="w-10 h-10 flex-shrink-0" />, 
-              label: "Crown-Grade Systems Architecture",
-              description: "Secure, scalable, and battle-tested infrastructure built for enterprise and government.",
+              icon: <GraduationCap className="w-10 h-10 flex-shrink-0" />, 
+              label: "Technical Upskilling & Mentorship",
+              description: "Peer-to-peer hands-on training/mentorship, with strategic technical collaboration across cutting-edge tech domains.",
               gradient: "from-purple-600/20 to-indigo-700/20"
             }
           ].map((item, i) => (
