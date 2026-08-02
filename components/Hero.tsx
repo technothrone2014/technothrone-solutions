@@ -250,34 +250,38 @@ export default function Hero() {
           className="flex flex-wrap gap-8 justify-center mb-20"
           style={{ gap: '2rem', marginBottom: '5rem' }}
         >
+          {/* Primary CTA - Royal Gold Button */}
           <motion.a
             whileHover={{ 
               scale: 1.08, 
-              boxShadow: "0 0 80px rgba(245,158,11,0.5)",
+              boxShadow: "0 0 80px rgba(245,158,11,0.6)",
               y: -5
             }}
             whileTap={{ scale: 0.95 }}
             href="#work"
-            className="link-reset group bg-gradient-to-r from-gold-500 via-yellow-500 to-gold-500 rounded-full font-space font-bold text-2xl text-black hover:scale-105 transition-all duration-300 shadow-[0_0_60px_rgba(245,158,11,0.3)] flex items-center gap-5"
+            className="link-reset group bg-gradient-to-r from-amber-500 via-gold-400 to-amber-500 rounded-full font-space font-bold text-2xl text-amber-950 hover:scale-105 transition-all duration-300 shadow-[0_0_60px_rgba(245,158,11,0.3)] flex items-center gap-5 hover:shadow-[0_0_80px_rgba(245,158,11,0.5)]"
             style={{ padding: '1.25rem 3.5rem' }}
           >
-            <Crown className="w-8 h-8 text-black group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
-            <span className="text-amber-900 font-bold leading-relaxed tracking-wide">_Build your Empire</span>
-            <ArrowRight className="w-7 h-7 text-black group-hover:translate-x-2 transition-all duration-300" />
+            <Crown className="w-8 h-8 text-amber-950 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 group-hover:text-amber-900" />
+            <span className="text-amber-950 font-bold leading-relaxed tracking-wide group-hover:text-amber-900 transition-colors duration-300">_Build your Empire</span>
+            <ArrowRight className="w-7 h-7 text-amber-950 group-hover:translate-x-2 transition-all duration-300 group-hover:text-amber-900" />
           </motion.a>
 
+          {/* Secondary CTA - Royal Purple Button */}
           <motion.a
             whileHover={{ 
               scale: 1.08, 
-              boxShadow: "0 0 60px rgba(124,58,237,0.3)",
+              boxShadow: "0 0 60px rgba(124,58,237,0.4)",
               y: -5
             }}
             whileTap={{ scale: 0.95 }}
             href="#contact"
-            className="link-reset bg-white/5 backdrop-blur-xl border-2 border-purple-400/30 rounded-full font-space font-bold text-2xl text-royal-warm hover:bg-purple-900/30 transition-all duration-300 hover:border-purple-400/60"
+            className="link-reset group bg-gradient-to-r from-purple-700 via-purple-600 to-purple-700 rounded-full font-space font-bold text-2xl text-gold-light hover:scale-105 transition-all duration-300 shadow-[0_0_40px_rgba(124,58,237,0.2)] flex items-center gap-5 hover:shadow-[0_0_60px_rgba(124,58,237,0.4)]"
             style={{ padding: '1.25rem 3.5rem' }}
           >
-            <span className="text-amber-900 font-bold leading-relaxed tracking-wide">Join the Council</span>
+            <Crown className="w-8 h-8 text-gold-light group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 group-hover:text-gold-medium" />
+            <span className="text-gold-light font-bold leading-relaxed tracking-wide group-hover:text-gold-medium transition-colors duration-300">Join the Council</span>
+            <ArrowRight className="w-7 h-7 text-gold-light group-hover:translate-x-2 transition-all duration-300 group-hover:text-gold-medium" />
           </motion.a>
         </motion.div>
 
