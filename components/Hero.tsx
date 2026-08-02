@@ -281,29 +281,29 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* Stats - MODERN GLOSSY BORDERLESS CARDS WITH DESCRIPTIONS */}
+        {/* Stats - MODERN GLOSSY BORDERLESS CARDS WITH DESCRIPTIONS - COMPACT */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto"
-          style={{ gap: '2rem', marginTop: '6rem' }}
+          className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto"
+          style={{ gap: '1.25rem', marginTop: '3rem' }}
         >
           {[
             { 
-              icon: <Blocks className="w-10 h-10 flex-shrink-0" />,
+              icon: <Blocks className="w-8 h-8 flex-shrink-0" />,
               label: "High-Tech Realm Engineering",
               description: "End-to-end web & mobile apps, tailored AI platforms, and automated business workflows.",
               gradient: "from-purple-600/20 to-purple-800/20"
             },
             { 
-              icon: <Brain className="w-10 h-10 flex-shrink-0" />, 
+              icon: <Brain className="w-8 h-8 flex-shrink-0" />, 
               label: "Strategic Data Intelligence",
               description: "Real-time executive dashboards, automated data flows, seamless data cleaning & staging.",
               gradient: "from-gold-500/20 to-yellow-600/20"
             },
             { 
-              icon: <GraduationCap className="w-10 h-10 flex-shrink-0" />, 
+              icon: <GraduationCap className="w-8 h-8 flex-shrink-0" />, 
               label: "Technical Upskilling & Mentorship",
               description: "Peer-to-peer hands-on training/mentorship, with strategic technical collaboration across cutting-edge tech domains.",
               gradient: "from-purple-600/20 to-indigo-700/20"
@@ -312,16 +312,16 @@ export default function Hero() {
             <motion.div 
               key={i}
               whileHover={{ 
-                scale: 1.05,
-                y: -8,
-                boxShadow: "0 20px 60px rgba(245,158,11,0.15)"
+                scale: 1.04,
+                y: -4,
+                boxShadow: "0 15px 40px rgba(245,158,11,0.12)"
               }}
-              className={`relative bg-gradient-to-br ${item.gradient} backdrop-blur-3xl rounded-2xl transition-all duration-500 group cursor-pointer overflow-hidden`}
+              className={`relative bg-gradient-to-br ${item.gradient} backdrop-blur-3xl rounded-xl transition-all duration-500 group cursor-pointer overflow-hidden`}
               style={{ 
-                padding: '1.75rem 1.5rem',
+                padding: '1rem 1rem',
                 border: 'none',
-                boxShadow: '0 8px 32px rgba(0,0,0,0.2)',
-                minHeight: '160px'
+                boxShadow: '0 4px 20px rgba(0,0,0,0.2)',
+                minHeight: '120px'
               }}
             >
               {/* Glossy overlay effect */}
@@ -330,25 +330,25 @@ export default function Hero() {
               {/* Subtle glow on hover */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-gold-500/10 via-transparent to-purple-500/10 pointer-events-none" />
               
-              <div className="flex flex-col items-center text-center relative z-10">
+              <div className="flex items-center gap-4 relative z-10">
                 <motion.span 
                   whileHover={{ rotate: 15, scale: 1.2 }}
-                  className="text-royal-gold transition-all duration-300 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)] mb-3"
+                  className="text-royal-gold transition-all duration-300 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)] flex-shrink-0"
                 >
                   {item.icon}
                 </motion.span>
-                <div className="w-full">
+                <div className="flex-1 min-w-0">
                   <div 
-                    className="font-playfair font-black text-gold-light tracking-wide leading-relaxed whitespace-normal break-words"
+                    className="font-playfair font-black text-gold-light tracking-wide leading-tight whitespace-normal break-words"
                     style={{ 
-                      fontSize: '1.15rem !important', 
-                      lineHeight: '1.4 !important'
+                      fontSize: '0.95rem !important', 
+                      lineHeight: '1.3 !important'
                     }}
                   >
-                    <span className="text-royal-gold mr-2">✦</span>
+                    <span className="text-royal-gold mr-1.5">✦</span>
                     {item.label}
                   </div>
-                  <p className="font-inter text-sm text-gold-warm/80 mt-2 leading-relaxed max-w-xs mx-auto">
+                  <p className="font-inter text-xs text-gold-warm/75 mt-1 leading-relaxed line-clamp-2">
                     {item.description}
                   </p>
                 </div>
