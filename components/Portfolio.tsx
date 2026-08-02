@@ -1,32 +1,32 @@
 'use client'
 import { motion } from 'framer-motion'
-import { Crown, CheckCircle2, Database, Brain, Server, Sparkles } from 'lucide-react'
+import { Crown, CheckCircle2, Database, Brain, Server, Sparkles, HandCoins, Sprout, HeartPulse } from 'lucide-react'
 
 const projects = [
   {
-    title: 'KRA Debt Validation',
+    title: 'Revenue Debt Validation',
     org: 'Kenya Revenue Authority',
-    icon: <Database className="w-6 h-6" />,
-    description: 'Automated complex debt validation, reducing 4-year backlog to automated scripts.',
-    impact: 'Saved millions in labor costs',
+    icon: <HandCoins className="w-6 h-6" />,
+    description: 'Automated multi-year legacy manual debt validation, eliminating a 4-year backlog into real-time operational results.',
+    impact: 'Multi-Million Shilling Labor Cost Reduction',
     color: 'from-gold-500 to-yellow-500',
     tags: ['SQL', 'Python', 'ETL', 'Automation']
   },
   {
-    title: 'Farm Fuzion AI',
-    org: 'Agritech Innovation',
-    icon: <Brain className="w-6 h-6" />,
-    description: 'AI-powered platform with chatbot and custom reporting for farmers.',
-    impact: 'Transforming agriculture',
+    title: 'Agrarian Intelligence & Yield Platform',
+    org: 'Farm Fuzion',
+    icon: <Sprout className="w-6 h-6" />,
+    description: 'AI-driven agricultural ecosystem featuring intelligent conversational agents, real-time data capture, and automated yield reporting.',
+    impact: 'Next-Gen Agrarian Workflow & Operations',
     color: 'from-purple-500 to-purple-700',
     tags: ['Next.js', 'AI/ML', 'Node.js']
   },
   {
-    title: 'KPA Health System',
+    title: 'Institutional Healthcare System',
     org: 'Kenya Ports Authority',
-    icon: <Server className="w-6 h-6" />,
-    description: 'System designer, Lead Developer & System Admin for healthcare serving thousands.',
-    impact: 'Mission-critical delivery',
+    icon: <HeartPulse className="w-6 h-6" />,
+    description: 'Architected and engineered the enterprise healthcare platform safeguarding thousands of maritime workforce personnel.',
+    impact: 'Seamless Workforce Vitality with Real-Time Health Monitoring',
     color: 'from-gold-400 to-orange-500',
     tags: ['Full-Stack', 'Healthcare', 'System Admin']
   }
@@ -53,7 +53,7 @@ export default function Portfolio() {
           </h2>
           
           <p className="font-inter text-gold-warm max-w-2xl mx-auto leading-relaxed">
-            Every project below has been deployed to production, serving real users and kingdoms.
+            Projects deployed to production, serving real users across diverse domains.
           </p>
         </div>
 

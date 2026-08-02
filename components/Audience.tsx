@@ -22,21 +22,21 @@ const audiences = [
     description: "Step into the inner guild of technical mastery and high-impact engineering.",
     color: "from-purple-500 to-purple-700",
     image: "👑",
-    benefits: ["Code Reviews", "Architecture Design", "Technical Consulting"]
-  },
-  {
-    id: 'farmers',
-    icon: <Leaf className="w-8 h-8" />,
-    title: "Agricultural Realms",
-    description: "Rule your fields with AI-powered wisdom",
-    color: "from-gold-500 to-yellow-600",
-    image: "🌾",
-    benefits: ["Smart Farming", "Yield Prediction", "Market Intelligence"]
+    benefits: ["Code Reviews", "Architecture Design", "Technical Consultations & support"]
   },
   {
     id: 'enterprises',
     icon: <Building2 className="w-8 h-8" />,
-    title: "Enterprises & Governments",
+    title: "Enterprise & Industry",
+    description: "Transform operations across manufacturing, logistics, finance, agriculture, and more.",
+    color: "from-gold-500 to-yellow-600",
+    image: "🏗️",
+    benefits: ["Process Automation", "Data-Driven Decisions", "Industry 4.0 Solutions"]
+  },
+  {
+    id: 'government',
+    icon: <Building2 className="w-8 h-8" />,
+    title: "Governments & Public Sector",
     description: "Crown your operations with critical digital infrastructure built to endure and dominate.",
     color: "from-purple-600 to-indigo-700",
     image: "🏛️",
@@ -65,7 +65,7 @@ export default function Audience() {
             className="inline-flex items-center gap-2 px-4 py-2 bg-purple-900/30 border border-gold-500/30 rounded-full text-gold-400 text-sm mb-4"
           >
             <Crown className="w-4 h-4 text-gold-medium" />
-            <span className="font-space text-gold-soft tracking-wide">_Rule your domain with Excellence and Innovation</span>
+            <span className="font-space text-gold-soft tracking-wide">Rule your domain with Excellence and Innovation</span>
           </motion.div>
           
           <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-4">

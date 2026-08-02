@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Crown, Send, Mail, User, MessageSquare } from 'lucide-react'
+import { Crown, Send, Mail, User, MessageSquare, Sparkles } from 'lucide-react'
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
@@ -26,14 +26,16 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 px-4 py-2 bg-purple-900/30 border border-gold-500/30 rounded-full text-gold-400 text-sm mb-4"
           >
-            <Crown className="w-4 h-4" />
-            Join the Court
+            <Sparkles className="w-4 h-4 text-gold-medium" />
+            <span className="font-space text-gold-soft tracking-wide">Join the Court</span>
           </motion.div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-white">Claim Your </span>
-            <span className="gradient-gold bg-clip-text text-transparent">Throne</span>
+          
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-4">
+            <span className="text-gold-light drop-shadow-[0_0_30px_rgba(245,158,11,0.15)]">Claim Your </span>
+            <span className="text-gold-gradient drop-shadow-[0_0_40px_rgba(245,158,11,0.3)]">Throne</span>
           </h2>
-          <p className="text-gray-400">
+          
+          <p className="font-inter text-gold-warm">
             Ready to rule with royal engineering? Let's build your kingdom together.
           </p>
         </div>
@@ -43,49 +45,63 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           onSubmit={handleSubmit}
-          className="space-y-6 bg-purple-900/20 backdrop-blur border border-gold-500/20 rounded-2xl p-8"
+          className="space-y-6 bg-purple-900/20 backdrop-blur-xl border border-gold-500/20 rounded-2xl p-8 shadow-[0_0_60px_rgba(245,158,11,0.05)]"
         >
-          <div className="relative">
-            <User className="absolute left-4 top-4 w-5 h-5 text-gold-400/40" />
+          {/* Name Input */}
+          <div className="relative group">
+            <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/40 group-hover:text-gold-400 transition-colors duration-300" />
             <input
               type="text"
               placeholder="Your Royal Name"
-              className="w-full pl-12 pr-6 py-4 bg-purple-900/30 border border-gold-500/20 rounded-xl focus:border-gold-500/50 outline-none transition text-white placeholder-gray-400"
+              className="w-full pl-12 pr-6 py-4 bg-purple-900/30 border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-warm placeholder-gold-soft/40 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40"
               required
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             />
           </div>
-          <div className="relative">
-            <Mail className="absolute left-4 top-4 w-5 h-5 text-gold-400/40" />
+          
+          {/* Email Input */}
+          <div className="relative group">
+            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/40 group-hover:text-gold-400 transition-colors duration-300" />
             <input
               type="email"
               placeholder="Your Royal Email"
-              className="w-full pl-12 pr-6 py-4 bg-purple-900/30 border border-gold-500/20 rounded-xl focus:border-gold-500/50 outline-none transition text-white placeholder-gray-400"
+              className="w-full pl-12 pr-6 py-4 bg-purple-900/30 border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-warm placeholder-gold-soft/40 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40"
               required
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             />
           </div>
-          <div className="relative">
-            <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-gold-400/40" />
+          
+          {/* Message Textarea */}
+          <div className="relative group">
+            <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-gold-400/40 group-hover:text-gold-400 transition-colors duration-300" />
             <textarea
               rows={5}
               placeholder="Your Royal Request..."
-              className="w-full pl-12 pr-6 py-4 bg-purple-900/30 border border-gold-500/20 rounded-xl focus:border-gold-500/50 outline-none transition text-white placeholder-gray-400"
+              className="w-full pl-12 pr-6 py-4 bg-purple-900/30 border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-warm placeholder-gold-soft/40 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40 resize-none"
               required
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             />
           </div>
-          <button
+          
+          {/* Submit Button */}
+          <motion.button
+            whileHover={{ 
+              scale: 1.02,
+              boxShadow: "0 0 60px rgba(245,158,11,0.3)"
+            }}
+            whileTap={{ scale: 0.98 }}
             type="submit"
-            className="w-full px-8 py-4 bg-gradient-royal rounded-xl font-semibold hover:scale-[1.02] transition flex items-center justify-center gap-2 shadow-lg shadow-purple-500/25"
+            className="w-full px-8 py-4 bg-gradient-royal rounded-xl font-space font-bold text-lg text-white hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-3 shadow-[0_0_40px_rgba(124,58,237,0.2)] hover:shadow-[0_0_60px_rgba(245,158,11,0.2)]"
           >
-            <Crown className="w-5 h-5" />
-            Send Royal Message
-            <Send className="w-5 h-5" />
-          </button>
-          <p className="text-center text-gold-400/60 text-sm">{status}</p>
+            <Crown className="w-5 h-5 text-gold-light drop-shadow-[0_0_10px_rgba(245,158,11,0.3)]" />
+            <span>Send Royal Message</span>
+            <Send className="w-5 h-5 text-gold-light group-hover:translate-x-1 transition-transform duration-300" />
+          </motion.button>
+          
+          <p className="text-center font-inter text-gold-soft/60 text-sm">{status}</p>
+          
           <div className="text-center">
-            <a href="#" className="text-gold-400 hover:text-gold-300 transition text-sm">
+            <a href="#" className="font-inter text-gold-soft hover:text-gold-medium transition-colors duration-300 text-sm">
               Or book a royal consultation →
             </a>
           </div>

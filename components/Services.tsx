@@ -2,35 +2,36 @@
 import { motion } from 'framer-motion'
 import { 
   Crown, 
-  Server, 
-  Database, 
+  Blocks, 
   Brain, 
+  GraduationCap,
+  Sparkles,
+  Server,
+  Database,
   Shield,
-  GitBranch,
-  LineChart,
-  Sparkles
+  Zap
 } from 'lucide-react'
 
 const services = [
   {
-    icon: <Crown className="w-8 h-8" />,
-    title: 'Royal Engineering',
-    desc: 'Full-stack development with Next.js, TypeScript, and Python — fit for a king.'
+    icon: <Blocks className="w-8 h-8" />,
+    title: 'High-Tech Realm Engineering',
+    desc: 'End-to-end web & mobile apps, tailored AI platforms, and automated business workflows.'
   },
   {
     icon: <Database className="w-8 h-8" />,
-    title: 'Data Sovereignty',
-    desc: 'Complex SQL, ETL pipelines, and automation for government-grade systems.'
+    title: 'Strategic Data Intelligence',
+    desc: 'Real-time executive dashboards, automated data flows, seamless data cleaning & staging.'
   },
   {
-    icon: <Brain className="w-8 h-8" />,
-    title: 'AI & Intelligence',
-    desc: 'Custom chatbots, NLP, and intelligent reporting for modern kingdoms.'
+    icon: <GraduationCap className="w-8 h-8" />,
+    title: 'Technical Upskilling & Mentorship',
+    desc: 'Peer-to-peer hands-on training/mentorship, with strategic technical collaboration across cutting-edge tech domains.'
   },
   {
     icon: <Shield className="w-8 h-8" />,
     title: 'Legacy Ascension',
-    desc: 'Zero-downtime migration from outdated systems to modern architectures.'
+    desc: 'Zero-downtime migration from outdated systems to modern, scalable architectures.'
   }
 ]
 
