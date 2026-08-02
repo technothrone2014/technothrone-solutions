@@ -56,3 +56,8 @@ npm install framer-motion
 git add .
 git commit -m "👑 Royal Transformation - Purple & Gold Theme"
 git push origin master:main
+
+
+git add .
+git commit -m "UI implimentation - Adjusted Hero.tsx to fit viewport"
+git push origin master:main

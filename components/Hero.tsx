@@ -194,7 +194,7 @@ export default function Hero() {
           </motion.h1>
         </div>
 
-        {/* Subtitle - WARM GOLD-TINTED */}
+        {/* Subtitle - DEEPER GOLD */}
         <div className="relative max-w-3xl mx-auto mb-24">
           <motion.div
             animate={{ 
@@ -236,7 +236,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="font-inter text-base text-gold-soft mt-3 tracking-wide"
+            className="font-space text-base text-gold-soft mt-3 tracking-wide"
           >
             Building mission-critical systems for governments, enterprises, and the future
           </motion.p>
@@ -281,7 +281,7 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* Stats - MODERN GLOSSY BORDERLESS CARDS WITH DESCRIPTIONS - COMPACT */}
+        {/* Stats - DEEPER GOLD DESCRIPTIONS */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -324,10 +324,7 @@ export default function Hero() {
                 minHeight: '120px'
               }}
             >
-              {/* Glossy overlay effect */}
               <div className="absolute inset-0 bg-gradient-to-t from-white/5 via-transparent to-white/10 pointer-events-none" />
-              
-              {/* Subtle glow on hover */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-gold-500/10 via-transparent to-purple-500/10 pointer-events-none" />
               
               <div className="flex items-center gap-4 relative z-10">
@@ -348,7 +345,7 @@ export default function Hero() {
                     <span className="text-royal-gold mr-1.5">✦</span>
                     {item.label}
                   </div>
-                  <p className="font-inter text-xs text-gold-warm/75 mt-1 leading-relaxed line-clamp-2">
+                  <p className="font-space text-xs text-gold-soft mt-1 leading-relaxed line-clamp-2">
                     {item.description}
                   </p>
                 </div>
@@ -357,7 +354,7 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* Trust Badges - 8X LARGER with Label */}
+        {/* Trust Badges */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -365,7 +362,6 @@ export default function Hero() {
           className="flex flex-col items-center gap-4"
           style={{ marginTop: '4rem' }}
         >
-          {/* Label */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -402,18 +398,18 @@ export default function Hero() {
           
           <div className="flex flex-wrap justify-center items-center gap-4">
             <div 
-              className="flex items-center gap-3 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 hover:scale-105 transition-all duration-300"
+              className="flex items-center gap-3 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-space text-royal-soft hover:bg-white/10 hover:scale-105 transition-all duration-300"
               style={{ padding: '0.75rem 1.8rem', height: '72px' }}
             >
               <Rocket className="w-7 h-7 text-purple-300" />
-              <span className="leading-relaxed tracking-wide text-base text-gold-warm">_10+ Years of experience</span>
+              <span className="leading-relaxed tracking-wide text-base text-gold-soft">_10+ Years of experience</span>
             </div>
             <div 
-              className="flex items-center gap-3 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-inter text-royal-soft hover:bg-white/10 hover:scale-105 transition-all duration-300"
+              className="flex items-center gap-3 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 font-space text-royal-soft hover:bg-white/10 hover:scale-105 transition-all duration-300"
               style={{ padding: '0.75rem 1.8rem', height: '72px' }}
             >
               <Zap className="w-7 h-7 text-royal-gold" />
-              <span className="leading-relaxed tracking-wide text-base text-gold-warm">_Implement your idea today!</span>
+              <span className="leading-relaxed tracking-wide text-base text-gold-soft">_Implement your idea today!</span>
             </div>
           </div>
         </motion.div>
