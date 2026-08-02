@@ -281,7 +281,7 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* Stats - DEEPER GOLD DESCRIPTIONS */}
+        {/* Stats - RICH GOLD DESCRIPTIONS */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -345,7 +345,7 @@ export default function Hero() {
                     <span className="text-royal-gold mr-1.5">✦</span>
                     {item.label}
                   </div>
-                  <p className="font-space text-xs text-royal-gold/80 mt-1 leading-relaxed line-clamp-2 drop-shadow-[0_0_20px_rgba(245,158,11,0.1)]">
+                  <p className="font-space text-xs text-gold-dark mt-1 leading-relaxed line-clamp-2 drop-shadow-[0_0_20px_rgba(245,158,11,0.15)]">
                     {item.description}
                   </p>
                 </div>
