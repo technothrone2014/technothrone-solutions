@@ -49,11 +49,11 @@ export default function Contact() {
         >
           {/* Name Input */}
           <div className="relative group">
-            <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/40 group-hover:text-gold-400 transition-colors duration-300" />
+            <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/40 group-hover:text-gold-400 transition-colors duration-300 z-10" />
             <input
               type="text"
               placeholder="Your Royal Name"
-              className="w-full pl-12 pr-6 py-4 bg-purple-900/30 border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-warm placeholder-gold-soft/40 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40"
+              className="w-full pl-12 pr-6 py-4 bg-purple-950/60 backdrop-blur-sm border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-warm placeholder-gold-soft/30 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40 focus:bg-purple-950/80"
               required
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             />
@@ -61,11 +61,11 @@ export default function Contact() {
           
           {/* Email Input */}
           <div className="relative group">
-            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/40 group-hover:text-gold-400 transition-colors duration-300" />
+            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/40 group-hover:text-gold-400 transition-colors duration-300 z-10" />
             <input
               type="email"
               placeholder="Your Royal Email"
-              className="w-full pl-12 pr-6 py-4 bg-purple-900/30 border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-warm placeholder-gold-soft/40 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40"
+              className="w-full pl-12 pr-6 py-4 bg-purple-950/60 backdrop-blur-sm border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-warm placeholder-gold-soft/30 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40 focus:bg-purple-950/80"
               required
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             />
@@ -73,35 +73,38 @@ export default function Contact() {
           
           {/* Message Textarea */}
           <div className="relative group">
-            <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-gold-400/40 group-hover:text-gold-400 transition-colors duration-300" />
+            <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-gold-400/40 group-hover:text-gold-400 transition-colors duration-300 z-10" />
             <textarea
               rows={5}
               placeholder="Your Royal Request..."
-              className="w-full pl-12 pr-6 py-4 bg-purple-900/30 border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-warm placeholder-gold-soft/40 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40 resize-none"
+              className="w-full pl-12 pr-6 py-4 bg-purple-950/60 backdrop-blur-sm border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-warm placeholder-gold-soft/30 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40 focus:bg-purple-950/80 resize-none"
               required
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             />
           </div>
           
-          {/* Submit Button */}
+          {/* Submit Button - Enhanced */}
           <motion.button
             whileHover={{ 
               scale: 1.02,
-              boxShadow: "0 0 60px rgba(245,158,11,0.3)"
+              boxShadow: "0 0 60px rgba(245,158,11,0.35)"
             }}
             whileTap={{ scale: 0.98 }}
             type="submit"
-            className="w-full px-8 py-4 bg-gradient-royal rounded-xl font-space font-bold text-lg text-white hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-3 shadow-[0_0_40px_rgba(124,58,237,0.2)] hover:shadow-[0_0_60px_rgba(245,158,11,0.2)]"
+            className="group w-full px-8 py-4 bg-gradient-royal rounded-xl font-space font-bold text-lg text-white hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-3 shadow-[0_0_40px_rgba(124,58,237,0.25)] hover:shadow-[0_0_60px_rgba(245,158,11,0.25)] relative overflow-hidden"
           >
-            <Crown className="w-5 h-5 text-gold-light drop-shadow-[0_0_10px_rgba(245,158,11,0.3)]" />
-            <span>Send Royal Message</span>
-            <Send className="w-5 h-5 text-gold-light group-hover:translate-x-1 transition-transform duration-300" />
+            {/* Animated shimmer effect */}
+            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+            
+            <Crown className="w-5 h-5 text-gold-light drop-shadow-[0_0_10px_rgba(245,158,11,0.3)] group-hover:rotate-12 transition-transform duration-300" />
+            <span className="relative z-10">Send Royal Message</span>
+            <Send className="w-5 h-5 text-gold-light group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
           </motion.button>
           
           <p className="text-center font-inter text-gold-soft/60 text-sm">{status}</p>
           
           <div className="text-center">
-            <a href="#" className="font-inter text-gold-soft hover:text-gold-medium transition-colors duration-300 text-sm">
+            <a href="#" className="font-inter text-gold-soft hover:text-gold-medium transition-colors duration-300 text-sm hover:drop-shadow-[0_0_20px_rgba(245,158,11,0.2)]">
               Or book a royal consultation →
             </a>
           </div>
