@@ -236,7 +236,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="font-space text-base text-gold-soft mt-3 tracking-wide"
+            className="font-space text-base text-gold-dark font-medium mt-3 tracking-wide drop-shadow-[0_0_20px_rgba(245,158,11,0.15)]"
           >
             Building mission-critical systems for governments, enterprises, and the future
           </motion.p>
