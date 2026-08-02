@@ -338,14 +338,14 @@ export default function Hero() {
                   <div 
                     className="font-playfair font-black text-gold-light tracking-wide leading-tight whitespace-normal break-words"
                     style={{ 
-                      fontSize: '0.95rem !important', 
+                      fontSize: '1.1rem !important', 
                       lineHeight: '1.3 !important'
                     }}
                   >
-                    <span className="text-royal-gold mr-1.5">✦</span>
+                    <span className="text-royal-gold mr-1.5 drop-shadow-[0_0_10px_rgba(245,158,11,0.3)]">✦</span>
                     {item.label}
                   </div>
-                  <p className="font-space text-xs text-gold-dark mt-1 leading-relaxed line-clamp-2 drop-shadow-[0_0_20px_rgba(245,158,11,0.15)]">
+                  <p className="font-space text-xs text-gold-dark mt-1.5 leading-relaxed line-clamp-2 drop-shadow-[0_0_20px_rgba(245,158,11,0.15)]">
                     {item.description}
                   </p>
                 </div>
