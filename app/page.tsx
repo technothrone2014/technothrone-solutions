@@ -6,17 +6,22 @@ import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import SectionDivider from '@/components/SectionDivider'
 import SectionSeparator from '@/components/SectionSeparator'
+import TrustBadges from '@/components/TrustBadges'
 
 export default function Home() {
   return (
     <main className="min-h-screen text-white">
-      {/* Hero - Full viewport with no background block */}
       <Hero />
       
-      {/* Large spacer after Hero */}
-      <div className="h-24 md:h-48" />
+      {/* Trust Badges - Now a separate component */}
+      <div className="py-8">
+        <TrustBadges />
+      </div>
+      
+      {/* Large spacer after Trust Badges */}
+      <div className="h-12 md:h-20" />
       <SectionSeparator />
-      <div className="h-24 md:h-48" />
+      <div className="h-12 md:h-20" />
       
       {/* Audience Section */}
       <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20 py-4">
