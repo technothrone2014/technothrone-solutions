@@ -13,62 +13,62 @@ export default function Home() {
       {/* Hero - Full viewport with no background block */}
       <Hero />
       
-      {/* Visual spacer */}
-      <div className="h-8 md:h-12" />
+      {/* Large spacer after Hero */}
+      <div className="h-12 md:h-20" />
       <SectionSeparator />
-      <div className="h-8 md:h-12" />
+      <div className="h-12 md:h-20" />
       
-      {/* Audience Section - DARKER BACKGROUND */}
+      {/* Audience Section */}
       <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-transparent pointer-events-none" />
         <div className="relative z-10">
           <SectionDivider label="— The Throne Room —" />
-          <div className="h-6 md:h-8" />
+          <div className="h-8 md:h-12" />
           <Audience />
         </div>
       </div>
       
-      {/* Visual spacer */}
-      <div className="h-8 md:h-12" />
+      {/* Large spacer after Audience */}
+      <div className="h-12 md:h-20" />
       <SectionSeparator />
-      <div className="h-8 md:h-12" />
+      <div className="h-12 md:h-20" />
       
-      {/* Services Section - DARKER BACKGROUND */}
+      {/* Services Section */}
       <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold-900/20 to-transparent pointer-events-none" />
         <div className="relative z-10">
           <SectionDivider label="— Our Services —" />
-          <div className="h-6 md:h-8" />
+          <div className="h-8 md:h-12" />
           <Services />
         </div>
       </div>
       
-      {/* Visual spacer */}
-      <div className="h-8 md:h-12" />
+      {/* Large spacer after Services */}
+      <div className="h-12 md:h-20" />
       <SectionSeparator />
-      <div className="h-8 md:h-12" />
+      <div className="h-12 md:h-20" />
       
-      {/* Portfolio Section - DARKER BACKGROUND */}
+      {/* Portfolio Section */}
       <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-transparent pointer-events-none" />
         <div className="relative z-10">
           <SectionDivider label="— Our Legacy —" />
-          <div className="h-6 md:h-8" />
+          <div className="h-8 md:h-12" />
           <Portfolio />
         </div>
       </div>
       
-      {/* Visual spacer */}
-      <div className="h-8 md:h-12" />
+      {/* Large spacer after Portfolio */}
+      <div className="h-12 md:h-20" />
       <SectionSeparator />
-      <div className="h-8 md:h-12" />
+      <div className="h-12 md:h-20" />
       
-      {/* Contact Section - DARKER BACKGROUND */}
+      {/* Contact Section */}
       <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold-900/20 to-transparent pointer-events-none" />
         <div className="relative z-10">
           <SectionDivider label="— Join Us —" />
-          <div className="h-6 md:h-8" />
+          <div className="h-8 md:h-12" />
           <Contact />
         </div>
       </div>
