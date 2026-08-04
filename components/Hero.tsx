@@ -18,7 +18,7 @@ import {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 md:px-8 overflow-hidden">
+    <section className="relative flex items-center justify-center px-4 md:px-8 overflow-hidden py-12">
       {/* Background remains the same */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-slate-900/60 to-gold-900/30" />

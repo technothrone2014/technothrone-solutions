@@ -14,9 +14,9 @@ export default function Home() {
       <Hero />
       
       {/* Large spacer after Hero */}
-      <div className="h-16 md:h-32" />
+      <div className="h-24 md:h-48" />
       <SectionSeparator />
-      <div className="h-16 md:h-32" />
+      <div className="h-24 md:h-48" />
       
       {/* Audience Section */}
       <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20 py-4">
