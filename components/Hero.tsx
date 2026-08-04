@@ -290,7 +290,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto pb-16"
           style={{ gap: '1.25rem', marginTop: '3rem' }}
         >
           {[
