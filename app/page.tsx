@@ -18,9 +18,9 @@ export default function Home() {
       <SectionSeparator />
       <div className="h-8 md:h-12" />
       
-      {/* Audience Section - With its OWN background */}
-      <div className="relative bg-purple-900/5 backdrop-blur-sm border-y border-gold-500/10">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/10 to-transparent pointer-events-none" />
+      {/* Audience Section - DARKER BACKGROUND */}
+      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-transparent pointer-events-none" />
         <div className="relative z-10">
           <SectionDivider label="— The Throne Room —" />
           <div className="h-6 md:h-8" />
@@ -33,9 +33,9 @@ export default function Home() {
       <SectionSeparator />
       <div className="h-8 md:h-12" />
       
-      {/* Services Section - With its OWN background */}
-      <div className="relative bg-purple-900/5 backdrop-blur-sm border-y border-gold-500/10">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold-900/10 to-transparent pointer-events-none" />
+      {/* Services Section - DARKER BACKGROUND */}
+      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold-900/20 to-transparent pointer-events-none" />
         <div className="relative z-10">
           <SectionDivider label="— Our Services —" />
           <div className="h-6 md:h-8" />
@@ -48,9 +48,9 @@ export default function Home() {
       <SectionSeparator />
       <div className="h-8 md:h-12" />
       
-      {/* Portfolio Section - With its OWN background */}
-      <div className="relative bg-purple-900/5 backdrop-blur-sm border-y border-gold-500/10">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/10 to-transparent pointer-events-none" />
+      {/* Portfolio Section - DARKER BACKGROUND */}
+      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-transparent pointer-events-none" />
         <div className="relative z-10">
           <SectionDivider label="— Our Legacy —" />
           <div className="h-6 md:h-8" />
@@ -63,9 +63,9 @@ export default function Home() {
       <SectionSeparator />
       <div className="h-8 md:h-12" />
       
-      {/* Contact Section - With its OWN background */}
-      <div className="relative bg-purple-900/5 backdrop-blur-sm border-y border-gold-500/10">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold-900/10 to-transparent pointer-events-none" />
+      {/* Contact Section - DARKER BACKGROUND */}
+      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold-900/20 to-transparent pointer-events-none" />
         <div className="relative z-10">
           <SectionDivider label="— Join Us —" />
           <div className="h-6 md:h-8" />
