@@ -55,7 +55,7 @@ const audiences = [
 
 export default function Audience() {
   return (
-    <section id="audience" className="py-24 px-4 md:px-8 relative">
+    <section id="audience" className="py-24 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.div
