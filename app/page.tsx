@@ -14,12 +14,12 @@ export default function Home() {
       <Hero />
       
       {/* Large spacer after Hero */}
-      <div className="h-12 md:h-20" />
+      <div className="h-16 md:h-24" />
       <SectionSeparator />
-      <div className="h-12 md:h-20" />
+      <div className="h-16 md:h-24" />
       
       {/* Audience Section */}
-      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20">
+      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20 py-4">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-transparent pointer-events-none" />
         <div className="relative z-10">
           <SectionDivider label="— The Throne Room —" />
@@ -29,12 +29,12 @@ export default function Home() {
       </div>
       
       {/* Large spacer after Audience */}
-      <div className="h-12 md:h-20" />
+      <div className="h-16 md:h-24" />
       <SectionSeparator />
-      <div className="h-12 md:h-20" />
+      <div className="h-16 md:h-24" />
       
       {/* Services Section */}
-      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20">
+      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20 py-4">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold-900/20 to-transparent pointer-events-none" />
         <div className="relative z-10">
           <SectionDivider label="— Our Services —" />
@@ -44,12 +44,12 @@ export default function Home() {
       </div>
       
       {/* Large spacer after Services */}
-      <div className="h-12 md:h-20" />
+      <div className="h-16 md:h-24" />
       <SectionSeparator />
-      <div className="h-12 md:h-20" />
+      <div className="h-16 md:h-24" />
       
       {/* Portfolio Section */}
-      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20">
+      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20 py-4">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-transparent pointer-events-none" />
         <div className="relative z-10">
           <SectionDivider label="— Our Legacy —" />
@@ -59,12 +59,12 @@ export default function Home() {
       </div>
       
       {/* Large spacer after Portfolio */}
-      <div className="h-12 md:h-20" />
+      <div className="h-16 md:h-24" />
       <SectionSeparator />
-      <div className="h-12 md:h-20" />
+      <div className="h-16 md:h-24" />
       
       {/* Contact Section */}
-      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20">
+      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20 py-4">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold-900/20 to-transparent pointer-events-none" />
         <div className="relative z-10">
           <SectionDivider label="— Join Us —" />

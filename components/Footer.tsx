@@ -3,7 +3,7 @@ import { Crown } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="py-8 border-t border-gold-500/20 bg-purple-900/10">
+    <footer className="py-24 border-t border-gold-500/20 bg-purple-900/10">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
