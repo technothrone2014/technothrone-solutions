@@ -8,7 +8,7 @@ export default function TrustBadges() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, delay: 1 }}
-      className="flex flex-col items-center gap-4 py-8"
+      className="flex flex-col items-center gap-4 py-8 mt-16"
     >
       <motion.div
         initial={{ opacity: 0, y: 10 }}
