@@ -13,50 +13,50 @@ export default function SectionDivider({ label, showCrown = true }: SectionDivid
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="relative w-full py-16"
+      className="relative w-full py-20"
     >
-      {/* Full width gold line - TOP - BOLD with extended glow */}
-      <div className="w-full h-[3px] rounded-full bg-gradient-to-r from-transparent via-royal-gold to-transparent shadow-[0_0_60px_rgba(245,158,11,0.4)]" />
+      {/* Top decorative line - THICKER */}
+      <div className="w-full h-[4px] rounded-full bg-gradient-to-r from-transparent via-royal-gold/70 to-transparent shadow-[0_0_80px_rgba(245,158,11,0.3)]" />
       
-      {/* Extended decorative pattern */}
-      <div className="flex items-center justify-center gap-4 py-4">
-        <div className="w-2 h-2 rounded-full bg-royal-gold/40 shadow-[0_0_20px_rgba(245,158,11,0.2)]" />
-        <div className="w-16 h-[1px] bg-gradient-to-r from-transparent to-royal-gold/40" />
-        <div className="w-1.5 h-1.5 rounded-full bg-royal-gold/30" />
-        <div className="w-16 h-[1px] bg-gradient-to-r from-royal-gold/40 to-transparent" />
-        <div className="w-2 h-2 rounded-full bg-royal-gold/40 shadow-[0_0_20px_rgba(245,158,11,0.2)]" />
+      {/* Decorative pattern - LARGER */}
+      <div className="flex items-center justify-center gap-6 py-6">
+        <div className="w-3 h-3 rounded-full bg-royal-gold/50 shadow-[0_0_30px_rgba(245,158,11,0.3)]" />
+        <div className="w-20 h-[2px] bg-gradient-to-r from-transparent to-royal-gold/60" />
+        <div className="w-2 h-2 rounded-full bg-royal-gold/40" />
+        <div className="w-20 h-[2px] bg-gradient-to-r from-royal-gold/60 to-transparent" />
+        <div className="w-3 h-3 rounded-full bg-royal-gold/50 shadow-[0_0_30px_rgba(245,158,11,0.3)]" />
       </div>
       
-      {/* Center element - BOLD with larger spacing */}
-      <div className="flex items-center justify-center gap-8 py-4">
-        <div className="w-16 h-[2px] bg-gradient-to-r from-transparent to-royal-gold/60" />
-        <div className="flex items-center gap-5">
+      {/* Center element - LARGER */}
+      <div className="flex items-center justify-center gap-10 py-4">
+        <div className="w-20 h-[3px] bg-gradient-to-r from-transparent to-royal-gold/70" />
+        <div className="flex items-center gap-6">
           {showCrown && (
-            <Crown className="w-6 h-6 text-royal-gold drop-shadow-[0_0_50px_rgba(245,158,11,0.6)]" />
+            <Crown className="w-8 h-8 text-royal-gold drop-shadow-[0_0_60px_rgba(245,158,11,0.6)]" />
           )}
           {label && (
-            <span className="font-playfair text-royal-gold text-base tracking-[0.5em] uppercase font-bold drop-shadow-[0_0_40px_rgba(245,158,11,0.3)]">
+            <span className="font-playfair text-royal-gold text-lg tracking-[0.6em] uppercase font-bold drop-shadow-[0_0_50px_rgba(245,158,11,0.3)]">
               {label}
             </span>
           )}
           {showCrown && label && (
-            <Crown className="w-6 h-6 text-royal-gold drop-shadow-[0_0_50px_rgba(245,158,11,0.6)]" />
+            <Crown className="w-8 h-8 text-royal-gold drop-shadow-[0_0_60px_rgba(245,158,11,0.6)]" />
           )}
         </div>
-        <div className="w-16 h-[2px] bg-gradient-to-l from-transparent to-royal-gold/60" />
+        <div className="w-20 h-[3px] bg-gradient-to-l from-transparent to-royal-gold/70" />
       </div>
       
-      {/* Extended decorative pattern - bottom */}
-      <div className="flex items-center justify-center gap-4 py-4">
-        <div className="w-2 h-2 rounded-full bg-royal-gold/40 shadow-[0_0_20px_rgba(245,158,11,0.2)]" />
-        <div className="w-16 h-[1px] bg-gradient-to-r from-transparent to-royal-gold/40" />
-        <div className="w-1.5 h-1.5 rounded-full bg-royal-gold/30" />
-        <div className="w-16 h-[1px] bg-gradient-to-r from-royal-gold/40 to-transparent" />
-        <div className="w-2 h-2 rounded-full bg-royal-gold/40 shadow-[0_0_20px_rgba(245,158,11,0.2)]" />
+      {/* Decorative pattern - BOTTOM */}
+      <div className="flex items-center justify-center gap-6 py-6">
+        <div className="w-3 h-3 rounded-full bg-royal-gold/50 shadow-[0_0_30px_rgba(245,158,11,0.3)]" />
+        <div className="w-20 h-[2px] bg-gradient-to-r from-transparent to-royal-gold/60" />
+        <div className="w-2 h-2 rounded-full bg-royal-gold/40" />
+        <div className="w-20 h-[2px] bg-gradient-to-r from-royal-gold/60 to-transparent" />
+        <div className="w-3 h-3 rounded-full bg-royal-gold/50 shadow-[0_0_30px_rgba(245,158,11,0.3)]" />
       </div>
       
-      {/* Full width gold line - BOTTOM - BOLD with extended glow */}
-      <div className="w-full h-[3px] rounded-full bg-gradient-to-r from-transparent via-royal-gold to-transparent shadow-[0_0_60px_rgba(245,158,11,0.4)]" />
+      {/* Bottom decorative line - THICKER */}
+      <div className="w-full h-[4px] rounded-full bg-gradient-to-r from-transparent via-royal-gold/70 to-transparent shadow-[0_0_80px_rgba(245,158,11,0.3)]" />
     </motion.div>
   )
 }

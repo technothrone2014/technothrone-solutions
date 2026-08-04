@@ -12,45 +12,55 @@ export default function Home() {
     <main className="min-h-screen text-white">
       <Hero />
       
-      {/* Visual separator */}
+      {/* Enhanced Visual separator with more space */}
+      <div className="h-8 md:h-12" />
       <SectionSeparator />
-      
-      <SectionDivider label="— The Throne Room —" />
-      
-      {/* Visual spacer */}
       <div className="h-8 md:h-12" />
       
-      <Audience />
+      {/* Audience Section with subtle background */}
+      <div className="relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/5 to-transparent pointer-events-none" />
+        <SectionDivider label="— The Throne Room —" />
+        <div className="h-6 md:h-8" />
+        <Audience />
+      </div>
       
-      {/* Visual separator */}
+      <div className="h-8 md:h-12" />
       <SectionSeparator />
-      
-      <SectionDivider label="— Our Services —" />
-      
-      {/* Visual spacer */}
       <div className="h-8 md:h-12" />
       
-      <Services />
+      {/* Services Section with subtle background */}
+      <div className="relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold-900/5 to-transparent pointer-events-none" />
+        <SectionDivider label="— Our Services —" />
+        <div className="h-6 md:h-8" />
+        <Services />
+      </div>
       
-      {/* Visual separator */}
+      <div className="h-8 md:h-12" />
       <SectionSeparator />
-      
-      <SectionDivider label="— Our Legacy —" />
-      
-      {/* Visual spacer */}
       <div className="h-8 md:h-12" />
       
-      <Portfolio />
+      {/* Portfolio Section with subtle background */}
+      <div className="relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/5 to-transparent pointer-events-none" />
+        <SectionDivider label="— Our Legacy —" />
+        <div className="h-6 md:h-8" />
+        <Portfolio />
+      </div>
       
-      {/* Visual separator */}
+      <div className="h-8 md:h-12" />
       <SectionSeparator />
-      
-      <SectionDivider label="— Join Us —" />
-      
-      {/* Visual spacer */}
       <div className="h-8 md:h-12" />
       
-      <Contact />
+      {/* Contact Section with subtle background */}
+      <div className="relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold-900/5 to-transparent pointer-events-none" />
+        <SectionDivider label="— Join Us —" />
+        <div className="h-6 md:h-8" />
+        <Contact />
+      </div>
+      
       <Footer />
     </main>
   )
