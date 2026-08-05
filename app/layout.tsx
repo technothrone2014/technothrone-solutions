@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import BackgroundEffects from "@/components/BackgroundEffects";
 
 // Font configurations
 const inter = Inter({ 
@@ -42,7 +41,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`scroll-smooth ${playfair.variable} ${inter.variable} ${jetbrains.variable} ${spaceGrotesk.variable}`}>
       <body className={`${inter.className} min-h-screen antialiased`}>
-        <BackgroundEffects />
         {children}
       </body>
     </html>
