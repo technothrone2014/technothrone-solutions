@@ -60,6 +60,9 @@ export default function TrustBadges() {
           <span className="leading-relaxed tracking-wide text-base text-gold-soft">_Implement your idea today!</span>
         </div>
       </div>
+
+      {/* 👑 BLANK SPACE - Creates separation after TrustBadges */}
+      <div className="h-16 md:h-24" />
     </motion.div>
   )
 }
