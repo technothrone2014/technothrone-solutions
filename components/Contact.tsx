@@ -49,11 +49,22 @@ export default function Contact() {
         >
           {/* Name Input */}
           <div className="relative group">
-            <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 pointer-events-none" />
+            <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 pointer-events-none z-10" />
             <input
               type="text"
               placeholder="Your Royal Name"
-              className="w-full pl-12 pr-6 py-4 bg-purple-950/40 backdrop-blur-sm border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-light placeholder-gold-soft/40 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40"
+              className="w-full pl-12 pr-6 py-4 rounded-xl outline-none transition-all duration-300 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] resize-none placeholder:text-gold-warm/40"
+              style={{
+                backgroundColor: 'rgba(30, 10, 50, 0.6)',
+                border: '1px solid rgba(245, 158, 11, 0.2)',
+                color: '#FDE68A'
+              }}
+              onFocus={(e) => {
+                e.target.style.borderColor = 'rgba(245, 158, 11, 0.6)'
+              }}
+              onBlur={(e) => {
+                e.target.style.borderColor = 'rgba(245, 158, 11, 0.2)'
+              }}
               required
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             />
@@ -61,11 +72,22 @@ export default function Contact() {
           
           {/* Email Input */}
           <div className="relative group">
-            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 pointer-events-none" />
+            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 pointer-events-none z-10" />
             <input
               type="email"
               placeholder="Your Royal Email"
-              className="w-full pl-12 pr-6 py-4 bg-purple-950/40 backdrop-blur-sm border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-light placeholder-gold-soft/40 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40"
+              className="w-full pl-12 pr-6 py-4 rounded-xl outline-none transition-all duration-300 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] resize-none"
+              style={{
+                backgroundColor: 'rgba(30, 10, 50, 0.6)',
+                border: '1px solid rgba(245, 158, 11, 0.2)',
+                color: '#FDE68A'
+              }}
+              onFocus={(e) => {
+                e.target.style.borderColor = 'rgba(245, 158, 11, 0.6)'
+              }}
+              onBlur={(e) => {
+                e.target.style.borderColor = 'rgba(245, 158, 11, 0.2)'
+              }}
               required
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             />
@@ -73,17 +95,28 @@ export default function Contact() {
           
           {/* Message Textarea */}
           <div className="relative group">
-            <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 pointer-events-none" />
+            <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 pointer-events-none z-10" />
             <textarea
               rows={5}
               placeholder="Your Royal Request..."
-              className="w-full pl-12 pr-6 py-4 bg-purple-950/40 backdrop-blur-sm border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-light placeholder-gold-soft/40 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40 resize-none"
+              className="w-full pl-12 pr-6 py-4 rounded-xl outline-none transition-all duration-300 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] resize-none"
+              style={{
+                backgroundColor: 'rgba(30, 10, 50, 0.6)',
+                border: '1px solid rgba(245, 158, 11, 0.2)',
+                color: '#FDE68A'
+              }}
+              onFocus={(e) => {
+                e.target.style.borderColor = 'rgba(245, 158, 11, 0.6)'
+              }}
+              onBlur={(e) => {
+                e.target.style.borderColor = 'rgba(245, 158, 11, 0.2)'
+              }}
               required
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             />
           </div>
           
-          {/* Submit Button - Dark Royal Purple with Gold Text */}
+          {/* Submit Button - Dark Purple with Gold Text */}
           <motion.button
             whileHover={{ 
               scale: 1.02,
@@ -91,14 +124,28 @@ export default function Contact() {
             }}
             whileTap={{ scale: 0.98 }}
             type="submit"
-            className="group w-full px-8 py-4 bg-purple-900/80 backdrop-blur-sm border-2 border-gold-500/40 rounded-xl font-space font-bold text-lg text-gold-light hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-3 shadow-[0_0_40px_rgba(124,58,237,0.2)] hover:shadow-[0_0_60px_rgba(124,58,237,0.4)] hover:border-gold-500/60 relative overflow-hidden"
+            className="group w-full px-8 py-4 rounded-xl font-space font-bold text-lg transition-all duration-300 flex items-center justify-center gap-3 relative overflow-hidden"
+            style={{
+              backgroundColor: '#2d0a4e',
+              border: '2px solid rgba(245, 158, 11, 0.4)',
+              color: '#FDE68A',
+              boxShadow: '0 0 40px rgba(124, 58, 237, 0.2)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.boxShadow = '0 0 60px rgba(124, 58, 237, 0.4)'
+              e.currentTarget.style.borderColor = 'rgba(245, 158, 11, 0.6)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.boxShadow = '0 0 40px rgba(124, 58, 237, 0.2)'
+              e.currentTarget.style.borderColor = 'rgba(245, 158, 11, 0.4)'
+            }}
           >
             {/* Animated shimmer effect */}
             <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-gold-500/10 to-transparent" />
             
-            <Crown className="w-5 h-5 text-gold-light drop-shadow-[0_0_10px_rgba(245,158,11,0.3)] group-hover:rotate-12 transition-transform duration-300 group-hover:text-gold-medium" />
+            <Crown className="w-5 h-5 text-gold-light drop-shadow-[0_0_10px_rgba(245,158,11,0.3)] group-hover:rotate-12 transition-transform duration-300" />
             <span className="relative z-10">Send Royal Message</span>
-            <Send className="w-5 h-5 text-gold-light group-hover:translate-x-1 transition-transform duration-300 relative z-10 group-hover:text-gold-medium" />
+            <Send className="w-5 h-5 text-gold-light group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
           </motion.button>
           
           <p className="text-center font-inter text-gold-soft/60 text-sm">{status}</p>
