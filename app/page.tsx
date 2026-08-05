@@ -24,7 +24,7 @@ export default function Home() {
       <div className="h-24 md:h-32" />
       
       {/* Audience Section */}
-      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20 py-4">
+      <div className="relative bg-purple-900/30 backdrop-blur-sm border-y border-gold-500/30 rounded-xl py-4">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-transparent pointer-events-none" />
         <div className="relative z-10">
           <SectionDivider label="— The Throne Room —" />
