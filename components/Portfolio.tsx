@@ -102,6 +102,17 @@ export default function Portfolio() {
           ))}
         </div>
       </div>
+
+      {/* ===== ROYAL GOLD DIVIDER - Portfolio Section Bottom ===== */}
+      <div className="w-full max-w-4xl mx-auto pt-12">
+        <div className="w-full h-[3px] bg-gradient-to-r from-transparent via-royal-gold/60 to-transparent rounded-full shadow-[0_0_20px_rgba(245,158,11,0.2)]" />
+        <div className="flex justify-center items-center gap-4 mt-3">
+          <Crown className="w-4 h-4 text-royal-gold/60 drop-shadow-[0_0_10px_rgba(245,158,11,0.2)]" />
+          <span className="text-royal-gold/40 text-xs tracking-[0.3em] uppercase font-playfair">✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦</span>
+          <Crown className="w-4 h-4 text-royal-gold/60 drop-shadow-[0_0_10px_rgba(245,158,11,0.2)]" />
+        </div>
+        <div className="w-full h-[3px] bg-gradient-to-r from-transparent via-royal-gold/60 to-transparent rounded-full shadow-[0_0_20px_rgba(245,158,11,0.2)]" />
+      </div>
     </section>
   )
 }
