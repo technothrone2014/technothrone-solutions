@@ -4,7 +4,7 @@ import { Sparkles, Crown, Star, Diamond, Gem } from 'lucide-react'
 
 export default function BackgroundEffects() {
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
       {/* Base Gradient - Deeper */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-950 via-purple-900/90 to-purple-950" />
       
