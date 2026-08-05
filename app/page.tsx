@@ -1,3 +1,4 @@
+// page.tsx
 import Hero from '@/components/Hero'
 import Audience from '@/components/Audience'
 import Portfolio from '@/components/Portfolio'
@@ -13,75 +14,97 @@ export default function Home() {
     <main className="min-h-screen text-white">
       <Hero />
       
-      {/* DIVIDER 1: Hero → TrustBadges */}
-      <div className="h-8 md:h-12" />
-      <div className="w-full h-[2px] bg-royal-gold/40" />
-      <div className="h-8 md:h-12" />
+      {/* ===== SEPARATOR 1: Hero → TrustBadges ===== */}
+      <div className="relative py-12 md:py-16">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/10 to-transparent" />
+        <div className="relative">
+          <div className="h-px bg-gradient-to-r from-transparent via-royal-gold/30 to-transparent" />
+        </div>
+      </div>
       
-      <TrustBadges />
+      {/* Trust Badges */}
+      <div className="relative z-10">
+        <TrustBadges />
+      </div>
 
-      {/* DIVIDER 2: TrustBadges → Audience */}
-      <div className="h-8 md:h-12" />
-      <div className="w-full h-[2px] bg-royal-gold/40" />
-      <div className="h-8 md:h-12" />
-      <SectionSeparator />
-      <div className="h-8 md:h-12" />
+      {/* ===== SEPARATOR 2: TrustBadges → Audience ===== */}
+      <div className="relative py-16 md:py-20">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/15 to-transparent" />
+        <div className="relative">
+          <div className="h-px bg-gradient-to-r from-transparent via-royal-gold/40 to-transparent" />
+          <div className="mt-8">
+            <SectionSeparator />
+          </div>
+        </div>
+      </div>
       
-      {/* Audience Section */}
-      <div className="relative bg-purple-900/30 backdrop-blur-sm border-2 border-gold-500/30 rounded-2xl p-8 shadow-[0_0_60px_rgba(124,58,237,0.1)]">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-transparent pointer-events-none rounded-2xl" />
-        <div className="relative z-10">
+      {/* Audience Section - STRONGER BACKGROUND */}
+      <div className="relative">
+        <div className="absolute inset-0 bg-purple-900/40 backdrop-blur-sm border-y border-gold-500/20" />
+        <div className="relative z-10 py-8">
           <SectionDivider label="— The Throne Room —" />
           <div className="h-6 md:h-8" />
           <Audience />
         </div>
       </div>
       
-      {/* DIVIDER 3: Audience → Services */}
-      <div className="h-8 md:h-12" />
-      <div className="w-full h-[2px] bg-royal-gold/40" />
-      <div className="h-8 md:h-12" />
-      <SectionSeparator />
-      <div className="h-8 md:h-12" />
+      {/* ===== SEPARATOR 3: Audience → Services ===== */}
+      <div className="relative py-20 md:py-24">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-transparent" />
+        <div className="relative">
+          <div className="h-px bg-gradient-to-r from-transparent via-royal-gold/50 to-transparent" />
+          <div className="mt-8">
+            <SectionSeparator />
+          </div>
+        </div>
+      </div>
       
-      {/* Services Section */}
-      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20 py-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold-900/20 to-transparent pointer-events-none" />
-        <div className="relative z-10">
+      {/* Services Section - STRONGER BACKGROUND */}
+      <div className="relative">
+        <div className="absolute inset-0 bg-purple-900/40 backdrop-blur-sm border-y border-gold-500/20" />
+        <div className="relative z-10 py-8">
           <SectionDivider label="— Our Services —" />
           <div className="h-8 md:h-12" />
           <Services />
         </div>
       </div>
       
-      {/* DIVIDER 4: Services → Portfolio */}
-      <div className="h-8 md:h-12" />
-      <div className="w-full h-[2px] bg-royal-gold/40" />
-      <div className="h-8 md:h-12" />
-      <SectionSeparator />
-      <div className="h-8 md:h-12" />
+      {/* ===== SEPARATOR 4: Services → Portfolio ===== */}
+      <div className="relative py-20 md:py-24">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-transparent" />
+        <div className="relative">
+          <div className="h-px bg-gradient-to-r from-transparent via-royal-gold/50 to-transparent" />
+          <div className="mt-8">
+            <SectionSeparator />
+          </div>
+        </div>
+      </div>
       
-      {/* Portfolio Section */}
-      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20 py-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-transparent pointer-events-none" />
-        <div className="relative z-10">
+      {/* Portfolio Section - STRONGER BACKGROUND */}
+      <div className="relative">
+        <div className="absolute inset-0 bg-purple-900/40 backdrop-blur-sm border-y border-gold-500/20" />
+        <div className="relative z-10 py-8">
           <SectionDivider label="— Our Legacy —" />
           <div className="h-8 md:h-12" />
           <Portfolio />
         </div>
       </div>
       
-      {/* DIVIDER 5: Portfolio → Contact */}
-      <div className="h-8 md:h-12" />
-      <div className="w-full h-[2px] bg-royal-gold/40" />
-      <div className="h-8 md:h-12" />
-      <SectionSeparator />
-      <div className="h-8 md:h-12" />
+      {/* ===== SEPARATOR 5: Portfolio → Contact ===== */}
+      <div className="relative py-20 md:py-24">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-transparent" />
+        <div className="relative">
+          <div className="h-px bg-gradient-to-r from-transparent via-royal-gold/50 to-transparent" />
+          <div className="mt-8">
+            <SectionSeparator />
+          </div>
+        </div>
+      </div>
       
-      {/* Contact Section */}
-      <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20 py-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold-900/20 to-transparent pointer-events-none" />
-        <div className="relative z-10">
+      {/* Contact Section - STRONGER BACKGROUND */}
+      <div className="relative">
+        <div className="absolute inset-0 bg-purple-900/40 backdrop-blur-sm border-y border-gold-500/20" />
+        <div className="relative z-10 py-8">
           <SectionDivider label="— Join Us —" />
           <div className="h-8 md:h-12" />
           <Contact />
