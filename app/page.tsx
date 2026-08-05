@@ -13,20 +13,19 @@ export default function Home() {
     <main className="min-h-screen text-white">
       <Hero />
       
-      {/* ===== SEPARATOR 1: Hero → TrustBadges ===== */}
-      <div className="h-16 md:h-24" />
-      <div className="w-full h-px bg-gradient-to-r from-transparent via-royal-gold/50 to-transparent" />
-      <div className="h-16 md:h-24" />
+      {/* DIVIDER 1: Hero → TrustBadges */}
+      <div className="h-8 md:h-12" />
+      <div className="w-full h-[2px] bg-royal-gold/40" />
+      <div className="h-8 md:h-12" />
       
-      {/* Trust Badges */}
       <TrustBadges />
 
-      {/* ===== SEPARATOR 2: TrustBadges → Audience ===== */}
-      <div className="h-16 md:h-24" />
-      <div className="w-full h-px bg-gradient-to-r from-transparent via-royal-gold/50 to-transparent" />
-      <div className="h-16 md:h-24" />
+      {/* DIVIDER 2: TrustBadges → Audience */}
+      <div className="h-8 md:h-12" />
+      <div className="w-full h-[2px] bg-royal-gold/40" />
+      <div className="h-8 md:h-12" />
       <SectionSeparator />
-      <div className="h-16 md:h-24" />
+      <div className="h-8 md:h-12" />
       
       {/* Audience Section */}
       <div className="relative bg-purple-900/30 backdrop-blur-sm border-2 border-gold-500/30 rounded-2xl p-8 shadow-[0_0_60px_rgba(124,58,237,0.1)]">
@@ -38,12 +37,12 @@ export default function Home() {
         </div>
       </div>
       
-      {/* ===== SEPARATOR 3: Audience → Services ===== */}
-      <div className="h-16 md:h-24" />
-      <div className="w-full h-px bg-gradient-to-r from-transparent via-royal-gold/50 to-transparent" />
-      <div className="h-16 md:h-24" />
+      {/* DIVIDER 3: Audience → Services */}
+      <div className="h-8 md:h-12" />
+      <div className="w-full h-[2px] bg-royal-gold/40" />
+      <div className="h-8 md:h-12" />
       <SectionSeparator />
-      <div className="h-16 md:h-24" />
+      <div className="h-8 md:h-12" />
       
       {/* Services Section */}
       <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20 py-4">
@@ -55,12 +54,12 @@ export default function Home() {
         </div>
       </div>
       
-      {/* ===== SEPARATOR 4: Services → Portfolio ===== */}
-      <div className="h-16 md:h-24" />
-      <div className="w-full h-px bg-gradient-to-r from-transparent via-royal-gold/50 to-transparent" />
-      <div className="h-16 md:h-24" />
+      {/* DIVIDER 4: Services → Portfolio */}
+      <div className="h-8 md:h-12" />
+      <div className="w-full h-[2px] bg-royal-gold/40" />
+      <div className="h-8 md:h-12" />
       <SectionSeparator />
-      <div className="h-16 md:h-24" />
+      <div className="h-8 md:h-12" />
       
       {/* Portfolio Section */}
       <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20 py-4">
@@ -72,12 +71,12 @@ export default function Home() {
         </div>
       </div>
       
-      {/* ===== SEPARATOR 5: Portfolio → Contact ===== */}
-      <div className="h-16 md:h-24" />
-      <div className="w-full h-px bg-gradient-to-r from-transparent via-royal-gold/50 to-transparent" />
-      <div className="h-16 md:h-24" />
+      {/* DIVIDER 5: Portfolio → Contact */}
+      <div className="h-8 md:h-12" />
+      <div className="w-full h-[2px] bg-royal-gold/40" />
+      <div className="h-8 md:h-12" />
       <SectionSeparator />
-      <div className="h-16 md:h-24" />
+      <div className="h-8 md:h-12" />
       
       {/* Contact Section */}
       <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20 py-4">
