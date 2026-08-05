@@ -14,14 +14,14 @@ export default function Home() {
       <Hero />
       
       {/* Trust Badges - Now a separate component */}
-      <div className="py-8">
+      <div className="py-8 mt-16">
         <TrustBadges />
       </div>
-      
-      {/* Large spacer after Trust Badges */}
-      <div className="h-12 md:h-20" />
+
+      {/* MASSIVE spacer after Trust Badges */}
+      <div className="h-24 md:h-32" />
       <SectionSeparator />
-      <div className="h-12 md:h-20" />
+      <div className="h-24 md:h-32" />
       
       {/* Audience Section */}
       <div className="relative bg-purple-900/20 backdrop-blur-sm border-y border-gold-500/20 py-4">
