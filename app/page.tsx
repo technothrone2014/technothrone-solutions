@@ -23,11 +23,14 @@ export default function Home() {
       <SectionSeparator />
       <div className="h-24 md:h-32" />
       
-      {/* Audience Section */}
-      <div className="relative bg-black/40 backdrop-blur-sm border border-gold-500/20 rounded-2xl p-6 my-12">
-        <SectionDivider label="— The Throne Room —" />
-        <div className="h-6 md:h-8" />
-        <Audience />
+      {/* Audience Section - VISIBLE BACKGROUND */}
+      <div className="relative bg-purple-900/30 backdrop-blur-sm border-2 border-gold-500/30 rounded-2xl p-8 my-12 shadow-[0_0_60px_rgba(124,58,237,0.1)]">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-transparent pointer-events-none rounded-2xl" />
+        <div className="relative z-10">
+          <SectionDivider label="— The Throne Room —" />
+          <div className="h-6 md:h-8" />
+          <Audience />
+        </div>
       </div>
       
       {/* Large spacer after Audience */}
