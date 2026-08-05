@@ -49,11 +49,11 @@ export default function Contact() {
         >
           {/* Name Input */}
           <div className="relative group">
-            <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 z-10" />
+            <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 pointer-events-none" />
             <input
               type="text"
               placeholder="Your Royal Name"
-              className="w-full pl-12 pr-6 py-4 bg-transparent border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-light placeholder-gold-soft/40 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40"
+              className="w-full pl-12 pr-6 py-4 bg-purple-950/40 backdrop-blur-sm border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-light placeholder-gold-soft/40 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40"
               required
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             />
@@ -61,11 +61,11 @@ export default function Contact() {
           
           {/* Email Input */}
           <div className="relative group">
-            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 z-10" />
+            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 pointer-events-none" />
             <input
               type="email"
               placeholder="Your Royal Email"
-              className="w-full pl-12 pr-6 py-4 bg-transparent border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-light placeholder-gold-soft/40 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40"
+              className="w-full pl-12 pr-6 py-4 bg-purple-950/40 backdrop-blur-sm border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-light placeholder-gold-soft/40 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40"
               required
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             />
@@ -73,17 +73,17 @@ export default function Contact() {
           
           {/* Message Textarea */}
           <div className="relative group">
-            <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 z-10" />
+            <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 pointer-events-none" />
             <textarea
               rows={5}
               placeholder="Your Royal Request..."
-              className="w-full pl-12 pr-6 py-4 bg-transparent border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-light placeholder-gold-soft/40 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40 resize-none"
+              className="w-full pl-12 pr-6 py-4 bg-purple-950/40 backdrop-blur-sm border border-gold-500/20 rounded-xl focus:border-gold-500/60 outline-none transition-all duration-300 text-gold-light placeholder-gold-soft/40 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] hover:border-gold-500/40 resize-none"
               required
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             />
           </div>
           
-          {/* Submit Button - Royal Purple with Gold */}
+          {/* Submit Button - Dark Royal Purple with Gold Text */}
           <motion.button
             whileHover={{ 
               scale: 1.02,
@@ -91,7 +91,7 @@ export default function Contact() {
             }}
             whileTap={{ scale: 0.98 }}
             type="submit"
-            className="group w-full px-8 py-4 bg-gradient-to-r from-purple-700 via-purple-600 to-purple-700 rounded-xl font-space font-bold text-lg text-gold-light hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-3 shadow-[0_0_40px_rgba(124,58,237,0.3)] hover:shadow-[0_0_60px_rgba(124,58,237,0.5)] relative overflow-hidden border border-gold-500/30"
+            className="group w-full px-8 py-4 bg-purple-900/80 backdrop-blur-sm border-2 border-gold-500/40 rounded-xl font-space font-bold text-lg text-gold-light hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-3 shadow-[0_0_40px_rgba(124,58,237,0.2)] hover:shadow-[0_0_60px_rgba(124,58,237,0.4)] hover:border-gold-500/60 relative overflow-hidden"
           >
             {/* Animated shimmer effect */}
             <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-gold-500/10 to-transparent" />
