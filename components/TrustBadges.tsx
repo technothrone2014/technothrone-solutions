@@ -61,8 +61,14 @@ export default function TrustBadges() {
         </div>
       </div>
 
-      {/* 👑 BLANK SPACE - Creates separation after TrustBadges */}
-      <div className="h-16 md:h-24" />
+      {/* ===== VISIBLE DIVIDER LINE ===== */}
+      <div className="w-full max-w-4xl mx-auto pt-8">
+        <div className="w-full h-[3px] bg-gradient-to-r from-transparent via-royal-gold/60 to-transparent rounded-full shadow-[0_0_20px_rgba(245,158,11,0.2)]" />
+        <div className="flex justify-center items-center gap-4 mt-3">
+          <span className="text-royal-gold/40 text-xs tracking-[0.3em] uppercase font-playfair">✦ ✦ ✦</span>
+        </div>
+        <div className="w-full h-[3px] bg-gradient-to-r from-transparent via-royal-gold/60 to-transparent rounded-full shadow-[0_0_20px_rgba(245,158,11,0.2)]" />
+      </div>
     </motion.div>
   )
 }
