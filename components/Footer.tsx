@@ -1,9 +1,10 @@
 'use client'
 import { Crown } from 'lucide-react'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 export default function Footer() {
   return (
-    <footer className="py-24 border-t border-gold-500/20 bg-purple-900/10">
+    <footer className="py-8 border-t border-gold-500/20 bg-purple-900/10">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
@@ -13,30 +14,33 @@ export default function Footer() {
           <p className="text-gray-400 text-sm text-center md:text-left">
             Where Royal Engineering Meets Digital Innovation
           </p>
-          <div className="flex gap-4 text-sm">
+          <div className="flex gap-4 items-center">
             <a 
               href="https://github.com/technothrone2014" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gold-400 transition"
+              className="text-gray-500 hover:text-gold-400 transition-all duration-300 hover:scale-110"
+              aria-label="GitHub"
             >
-              GitHub
+              <FaGithub className="w-5 h-5" />
             </a>
             <a 
               href="#" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gold-400 transition"
+              className="text-gray-500 hover:text-gold-400 transition-all duration-300 hover:scale-110"
+              aria-label="LinkedIn"
             >
-              LinkedIn
+              <FaLinkedin className="w-5 h-5" />
             </a>
             <a 
               href="#" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gold-400 transition"
+              className="text-gray-500 hover:text-gold-400 transition-all duration-300 hover:scale-110"
+              aria-label="Twitter"
             >
-              Twitter
+              <FaTwitter className="w-5 h-5" />
             </a>
           </div>
         </div>

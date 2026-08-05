@@ -10,7 +10,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus('Sending...')
-    window.location.href = `mailto:info@technothrone.com?subject=Royal%20Opportunity&body=${encodeURIComponent(
+    window.location.href = `mailto:technothrone2014@gmail.com?subject=Royal%20Opportunity&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     )}`
     setStatus('Opening your royal court...')
