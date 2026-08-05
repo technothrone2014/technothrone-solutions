@@ -47,17 +47,18 @@ export default function Contact() {
           onSubmit={handleSubmit}
           className="space-y-6 bg-purple-900/20 backdrop-blur-xl border border-gold-500/20 rounded-2xl p-8 shadow-[0_0_60px_rgba(245,158,11,0.05)]"
         >
-          {/* Name Input - FIXED */}
+          {/* Name Input */}
           <div className="relative group">
             <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 pointer-events-none z-10" />
             <input
               type="text"
               placeholder="Your Royal Name"
-              className="w-full pl-12 pr-6 py-4 rounded-xl outline-none transition-all duration-300 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] resize-none"
+              className="w-full pl-12 pr-6 py-4 rounded-xl outline-none transition-all duration-300 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] resize-none placeholder:text-gold-warm/40"
               style={{
                 backgroundColor: 'rgba(30, 10, 50, 0.6)',
                 border: '1px solid rgba(245, 158, 11, 0.2)',
-                color: '#FDE68A'
+                color: '#FDE68A',
+                paddingLeft: '3rem'
               }}
               onFocus={(e) => {
                 e.target.style.borderColor = 'rgba(245, 158, 11, 0.6)'
@@ -70,17 +71,18 @@ export default function Contact() {
             />
           </div>
           
-          {/* Email Input - FIXED */}
+          {/* Email Input */}
           <div className="relative group">
             <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 pointer-events-none z-10" />
             <input
               type="email"
               placeholder="Your Royal Email"
-              className="w-full pl-12 pr-6 py-4 rounded-xl outline-none transition-all duration-300 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] resize-none"
+              className="w-full pl-12 pr-6 py-4 rounded-xl outline-none transition-all duration-300 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] resize-none placeholder:text-gold-warm/40"
               style={{
                 backgroundColor: 'rgba(30, 10, 50, 0.6)',
                 border: '1px solid rgba(245, 158, 11, 0.2)',
-                color: '#FDE68A'
+                color: '#FDE68A',
+                paddingLeft: '3rem'
               }}
               onFocus={(e) => {
                 e.target.style.borderColor = 'rgba(245, 158, 11, 0.6)'
@@ -93,17 +95,18 @@ export default function Contact() {
             />
           </div>
           
-          {/* Message Textarea - FIXED */}
+          {/* Message Textarea */}
           <div className="relative group">
-            <MessageSquare className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 pointer-events-none z-10" />
+            <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-gold-400/60 group-hover:text-gold-400 transition-colors duration-300 pointer-events-none z-10" />
             <textarea
               rows={5}
               placeholder="Your Royal Request..."
-              className="w-full pl-12 pr-6 py-4 rounded-xl outline-none transition-all duration-300 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] resize-none"
+              className="w-full pl-12 pr-6 py-4 rounded-xl outline-none transition-all duration-300 font-inter focus:shadow-[0_0_30px_rgba(245,158,11,0.1)] resize-none placeholder:text-gold-warm/40"
               style={{
                 backgroundColor: 'rgba(30, 10, 50, 0.6)',
                 border: '1px solid rgba(245, 158, 11, 0.2)',
-                color: '#FDE68A'
+                color: '#FDE68A',
+                paddingLeft: '3rem'
               }}
               onFocus={(e) => {
                 e.target.style.borderColor = 'rgba(245, 158, 11, 0.6)'
@@ -116,7 +119,7 @@ export default function Contact() {
             />
           </div>
           
-          {/* Submit Button - Dark Purple with Gold Text */}
+          {/* Submit Button */}
           <motion.button
             whileHover={{ 
               scale: 1.02,
@@ -140,7 +143,6 @@ export default function Contact() {
               e.currentTarget.style.borderColor = 'rgba(245, 158, 11, 0.4)'
             }}
           >
-            {/* Animated shimmer effect */}
             <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-gold-500/10 to-transparent" />
             
             <Crown className="w-5 h-5 text-gold-light drop-shadow-[0_0_10px_rgba(245,158,11,0.3)] group-hover:rotate-12 transition-transform duration-300" />
