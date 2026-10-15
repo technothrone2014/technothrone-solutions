@@ -44,7 +44,7 @@ export default function Hero() {
               className="eyebrow mb-7"
             >
               <span className="status-dot" />
-              Software engineering · Data systems · Automation
+              Software engineering · Data analytics · Project delivery
             </motion.div>
 
             <motion.h1
@@ -62,7 +62,7 @@ export default function Hero() {
               transition={{ duration: 0.55, delay: 0.16 }}
               className="mt-7 max-w-xl text-base leading-8 text-slate-300 sm:text-lg"
             >
-              Technothrone Solutions partners with product teams and domain experts to turn complex processes into reliable products, useful data, and practical automation—bringing the right people, proven open-source tools, and AI together for each challenge.
+              Technothrone Solutions partners with product teams and domain experts to turn complex processes into reliable products and useful data. We bring full-stack engineering, analytics, and delivery together—integrating proven open-source tools and AI where they fit.
             </motion.p>
 
             <motion.div
@@ -83,7 +83,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.38 }}
               className="mt-12 flex flex-wrap items-center gap-x-7 gap-y-3 border-t border-white/10 pt-6 text-sm text-slate-400"
             >
-              <span className="inline-flex items-center gap-2"><Sparkles className="h-4 w-4 text-accent" aria-hidden="true" /> 10+ years of engineering experience</span>
+              <span className="inline-flex items-center gap-2"><Sparkles className="h-4 w-4 text-accent" aria-hidden="true" /> Experience across data, software & delivery since 2012</span>
               <span className="text-xs text-slate-500">Explore our GitHub profiles</span>
               <a href="https://github.com/technothrone2014" target="_blank" rel="noopener noreferrer" aria-label="Technothrone Solutions on GitHub (opens in a new tab)" className="social-link"><Code2 className="h-4 w-4" aria-hidden="true" /> @technothrone2014</a>
               <a href="https://github.com/jayjchiringz" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile @jayjchiringz (opens in a new tab)" className="social-link"><Code2 className="h-4 w-4" aria-hidden="true" /> @jayjchiringz</a>

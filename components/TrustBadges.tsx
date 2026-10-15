@@ -28,9 +28,9 @@ export default function TrustBadges() {
             <p className="section-kicker">Built together</p>
             <h2 className="mt-2 text-sm font-medium text-slate-300">Technologies and organizations across our work</h2>
           </div>
-          <p className="text-xs text-slate-500">10+ years across software and data</p>
+          <p className="text-xs text-slate-500">Data, software & project delivery experience since 2012</p>
         </div>
-        <div className="flex flex-wrap items-center gap-2.5">
+        <div className="badge-grid">
           {platforms.map(([logo, name], index) => (
             <motion.div
               key={logo}
@@ -39,9 +39,9 @@ export default function TrustBadges() {
               viewport={{ once: true }}
               transition={{ duration: 0.25, delay: index * 0.025 }}
               title={name}
-              className="flex h-12 items-center justify-center rounded-lg border border-white/[0.07] bg-slate-950/30 px-4 grayscale transition duration-200 hover:border-white/20 hover:grayscale-0"
+              className="badge-card"
             >
-              <Image src={`/logos/${logo}.png`} alt={name} width={120} height={40} unoptimized style={{ width: 'auto', height: '24px' }} className="max-w-[104px] object-contain" />
+              <Image src={`/logos/${logo}.png`} alt={name} width={120} height={40} unoptimized style={{ width: 'auto', height: '28px' }} className="max-w-[112px] object-contain" />
             </motion.div>
           ))}
         </div>
