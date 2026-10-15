@@ -23,7 +23,7 @@ export default function Contact() {
         <div>
           <p className="section-kicker">Contact</p>
           <h2 className="section-heading">Have a complex problem to solve?</h2>
-          <p className="section-copy mt-5">Share a little about what you&apos;re working on. I&apos;d be glad to talk through where engineering, data, or automation could help.</p>
+          <p className="section-copy mt-5">Tell us what you&apos;re working on. We can explore how software engineering, data, and automation can support your team and the people you serve.</p>
           <a href="mailto:technothrone2014@gmail.com" className="contact-email mt-7">
             <Mail className="h-4 w-4" aria-hidden="true" />
             technothrone2014@gmail.com

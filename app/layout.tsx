@@ -15,9 +15,9 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Technothrone Solutions | Software Engineering & Data Systems",
-  description: "Software engineering, data systems, and automation for organizations solving complex real-world problems.",
-  keywords: "software engineer, full-stack development, data engineering, automation, SQL, TypeScript, Python",
+  title: "Technothrone Solutions | Collaborative Software Engineering",
+  description: "Technothrone Solutions partners with teams to build practical software, data systems, and automation—using proven tools and AI where they fit.",
+  keywords: "software engineering, collaborative development, full-stack development, data engineering, automation, SQL, TypeScript, Python",
   icons: {
     icon: "/favicon.svg",
   },

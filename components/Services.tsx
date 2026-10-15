@@ -35,9 +35,9 @@ export default function Services() {
     <section id="services" className="border-y border-white/[0.06] bg-white/[0.015]">
       <div className="section-shell">
         <div className="mb-10 max-w-2xl">
-          <p className="section-kicker">Expertise</p>
+          <p className="section-kicker">Our expertise</p>
           <h2 className="section-heading">From complex challenge to dependable software.</h2>
-          <p className="section-copy mt-4">A practical mix of engineering, data, and delivery support—shaped around what each team actually needs.</p>
+          <p className="section-copy mt-4">We bring engineering, data, and delivery together around each team&apos;s goals, building with established platforms and the right mix of technologies.</p>
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">

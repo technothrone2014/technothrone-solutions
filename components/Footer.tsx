@@ -9,9 +9,10 @@ export default function Footer() {
           Technothrone Solutions
         </a>
         <p className="text-xs text-slate-500">© {new Date().getFullYear()} Technothrone Solutions</p>
-        <div className="flex items-center gap-5 text-xs text-slate-400">
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-3 text-xs text-slate-400">
           <a href="mailto:technothrone2014@gmail.com" className="footer-link"><Mail className="h-3.5 w-3.5" aria-hidden="true" /> Email</a>
-          <a href="https://github.com/technothrone2014" target="_blank" rel="noopener noreferrer" className="footer-link">GitHub <Code2 className="h-3.5 w-3.5" aria-hidden="true" /><ArrowUpRight className="h-3 w-3" aria-hidden="true" /></a>
+          <a href="https://github.com/technothrone2014" target="_blank" rel="noopener noreferrer" aria-label="Technothrone Solutions on GitHub (opens in a new tab)" className="footer-link">@technothrone2014 <Code2 className="h-3.5 w-3.5" aria-hidden="true" /><ArrowUpRight className="h-3 w-3" aria-hidden="true" /></a>
+          <a href="https://github.com/jayjchiringz" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile @jayjchiringz (opens in a new tab)" className="footer-link">@jayjchiringz <Code2 className="h-3.5 w-3.5" aria-hidden="true" /><ArrowUpRight className="h-3 w-3" aria-hidden="true" /></a>
         </div>
       </div>
     </footer>

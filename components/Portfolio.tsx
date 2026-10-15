@@ -41,7 +41,7 @@ export default function Portfolio() {
           <p className="section-kicker">Selected work</p>
           <h2 className="section-heading">Built for real-world impact.</h2>
         </div>
-        <p className="section-copy md:max-w-md">A few examples of software and data systems delivered for organizations working at scale.</p>
+        <p className="section-copy md:max-w-md">Selected software and data systems delivered in collaboration with teams across public services, agriculture, and healthcare.</p>
       </div>
 
       <div className="grid gap-4 lg:grid-cols-3">

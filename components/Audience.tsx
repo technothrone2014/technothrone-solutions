@@ -32,7 +32,7 @@ export default function Audience() {
       <div className="mb-10 max-w-2xl">
         <p className="section-kicker">Collaboration</p>
         <h2 className="section-heading">Good work starts with the right problem.</h2>
-        <p className="section-copy mt-4">I partner with teams at different stages to make complex technology more useful, reliable, and easier to work with.</p>
+        <p className="section-copy mt-4">We work alongside in-house teams, subject-matter experts, and technology partners—integrating with existing workflows and choosing the tools that best fit the challenge.</p>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight, Check, Code2, Crown } from 'lucide-react'
+import { ArrowRight, Code2, Crown, Sparkles } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -53,7 +53,7 @@ export default function Hero() {
               transition={{ duration: 0.55, delay: 0.08 }}
               className="max-w-3xl text-5xl font-semibold leading-[1.06] tracking-[-0.055em] text-white sm:text-6xl lg:text-[4.5rem]"
             >
-              I build digital systems that <span className="text-accent">move work forward.</span>
+              We build digital systems that <span className="text-accent">move work forward.</span>
             </motion.h1>
 
             <motion.p
@@ -62,7 +62,7 @@ export default function Hero() {
               transition={{ duration: 0.55, delay: 0.16 }}
               className="mt-7 max-w-xl text-base leading-8 text-slate-300 sm:text-lg"
             >
-              I&apos;m a software engineer focused on turning complex, manual processes into reliable products, useful data, and practical automation.
+              Technothrone Solutions partners with product teams and domain experts to turn complex processes into reliable products, useful data, and practical automation—bringing the right people, proven open-source tools, and AI together for each challenge.
             </motion.p>
 
             <motion.div
@@ -72,7 +72,7 @@ export default function Hero() {
               className="mt-9 flex flex-wrap gap-3"
             >
               <a href="#work" className="button-primary">
-                Explore my work <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                Explore our work <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </a>
               <a href="#contact" className="button-secondary">Get in touch</a>
             </motion.div>
@@ -83,8 +83,10 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.38 }}
               className="mt-12 flex flex-wrap items-center gap-x-7 gap-y-3 border-t border-white/10 pt-6 text-sm text-slate-400"
             >
-              <span className="inline-flex items-center gap-2"><Check className="h-4 w-4 text-emerald-300" /> 10+ years building software</span>
-              <a href="https://github.com/technothrone2014" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)" className="social-link"><Code2 className="h-4 w-4" /> GitHub</a>
+              <span className="inline-flex items-center gap-2"><Sparkles className="h-4 w-4 text-accent" aria-hidden="true" /> 10+ years of engineering experience</span>
+              <span className="text-xs text-slate-500">Explore our GitHub profiles</span>
+              <a href="https://github.com/technothrone2014" target="_blank" rel="noopener noreferrer" aria-label="Technothrone Solutions on GitHub (opens in a new tab)" className="social-link"><Code2 className="h-4 w-4" aria-hidden="true" /> @technothrone2014</a>
+              <a href="https://github.com/jayjchiringz" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile @jayjchiringz (opens in a new tab)" className="social-link"><Code2 className="h-4 w-4" aria-hidden="true" /> @jayjchiringz</a>
             </motion.div>
           </div>
 
@@ -107,7 +109,7 @@ export default function Hero() {
                   <p className="font-mono text-xs uppercase tracking-[0.18em] text-slate-500">Illustrative system view</p>
                   <p className="mt-2 text-xl font-medium text-white">Revenue validation</p>
                 </div>
-                <span className="rounded-full border border-emerald-300/20 bg-emerald-300/10 px-3 py-1 text-xs text-emerald-200">Operational</span>
+                <span className="rounded-full border border-emerald-300/20 bg-emerald-300/10 px-3 py-1 text-xs text-emerald-200">Example workflow</span>
               </div>
 
               <div className="mt-8 grid grid-cols-2 gap-3">

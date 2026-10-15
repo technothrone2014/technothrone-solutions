@@ -25,8 +25,8 @@ export default function TrustBadges() {
       <div className="site-shell py-9 sm:py-11">
         <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="section-kicker">Tools & experience</p>
-            <h2 className="mt-2 text-sm font-medium text-slate-300">Platforms and organizations in my work</h2>
+            <p className="section-kicker">Built together</p>
+            <h2 className="mt-2 text-sm font-medium text-slate-300">Technologies and organizations across our work</h2>
           </div>
           <p className="text-xs text-slate-500">10+ years across software and data</p>
         </div>
