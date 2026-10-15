@@ -1,117 +1,74 @@
 'use client'
+
 import { motion } from 'framer-motion'
-import { Crown, CheckCircle2, Database, Brain, Server, Sparkles, HandCoins, Sprout, HeartPulse } from 'lucide-react'
+import { ArrowUpRight, HandCoins, HeartPulse, Sprout } from 'lucide-react'
 
 const projects = [
   {
-    title: 'Revenue Debt Validation',
+    title: 'Revenue debt validation',
     org: 'Kenya Revenue Authority',
-    icon: <HandCoins className="w-6 h-6" />,
-    description: 'Automated multi-year legacy manual debt validation, eliminating a 4-year backlog into real-time operational results.',
-    impact: 'Multi-Million Shilling Labor Cost Reduction',
-    color: 'from-gold-500 to-yellow-500',
-    tags: ['SQL', 'Python', 'ETL', 'Automation']
+    icon: HandCoins,
+    description: 'Automated validation of multi-year legacy debt records, helping turn a four-year manual backlog into real-time operational results.',
+    outcome: 'Reduced manual validation effort',
+    tags: ['SQL', 'Python', 'ETL', 'Automation'],
+    accent: 'amber',
   },
   {
-    title: 'Agrarian Intelligence & Yield Platform',
+    title: 'Agrarian intelligence platform',
     org: 'Farm Fuzion',
-    icon: <Sprout className="w-6 h-6" />,
-    description: 'AI-driven agricultural ecosystem featuring intelligent conversational agents, real-time data capture, and automated yield reporting.',
-    impact: 'Next-Gen Agrarian Workflow & Operations',
-    color: 'from-purple-500 to-purple-700',
-    tags: ['Next.js', 'AI/ML', 'Node.js']
+    icon: Sprout,
+    description: 'An AI-enabled agricultural ecosystem with conversational tools, real-time data capture, and automated yield reporting.',
+    outcome: 'Connected data to daily decisions',
+    tags: ['Next.js', 'AI/ML', 'Node.js'],
+    accent: 'emerald',
   },
   {
-    title: 'Institutional Healthcare System',
+    title: 'Institutional healthcare system',
     org: 'Kenya Ports Authority',
-    icon: <HeartPulse className="w-6 h-6" />,
-    description: 'Architected and engineered the enterprise healthcare platform safeguarding thousands of maritime workforce personnel.',
-    impact: 'Seamless Workforce Vitality with Real-Time Health Monitoring',
-    color: 'from-gold-400 to-orange-500',
-    tags: ['Full-Stack', 'Healthcare', 'System Admin']
-  }
+    icon: HeartPulse,
+    description: 'An enterprise healthcare platform supporting the care and operational needs of a large maritime workforce.',
+    outcome: 'Real-time workforce health workflows',
+    tags: ['Full-stack', 'Healthcare', 'System administration'],
+    accent: 'sky',
+  },
 ]
 
 export default function Portfolio() {
   return (
-    <section id="work" className="py-24 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-purple-900/30 border border-gold-500/30 rounded-full text-gold-400 text-sm mb-4"
-          >
-            <Sparkles className="w-4 h-4 text-gold-medium" />
-            <span className="font-space text-gold-soft tracking-wide">Royal Achievements</span>
-          </motion.div>
-          
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-gold-light drop-shadow-[0_0_30px_rgba(245,158,11,0.15)]">Our </span>
-            <span className="text-gold-gradient drop-shadow-[0_0_40px_rgba(245,158,11,0.3)]">Legacy</span>
-          </h2>
-          
-          <p className="font-inter text-gold-warm max-w-2xl mx-auto leading-relaxed">
-            Projects deployed to production, serving real users across diverse domains.
-          </p>
+    <section id="work" className="section-shell">
+      <div className="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+        <div>
+          <p className="section-kicker">Selected work</p>
+          <h2 className="section-heading">Built for real-world impact.</h2>
         </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group bg-purple-900/20 backdrop-blur border border-gold-500/20 rounded-2xl p-6 hover:bg-purple-900/30 transition-all duration-300 hover:-translate-y-2 hover:border-gold-500/40 text-center"
-            >
-              {/* Icon - Centered */}
-              <div className={`w-12 h-12 bg-gradient-to-r ${project.color} rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition shadow-lg shadow-gold-500/20 mx-auto`}>
-                {project.icon}
-              </div>
-              
-              {/* Title - Centered */}
-              <h3 className="font-playfair text-lg font-bold text-gold-light group-hover:text-gold-medium transition duration-300">
-                {project.title}
-              </h3>
-              
-              {/* Organization - Centered */}
-              <p className="font-inter text-sm text-gold-warm/70 mb-3">{project.org}</p>
-
-              {/* Description - Centered */}
-              <p className="font-inter text-sm text-gold-warm/80 mb-4 leading-relaxed">
-                {project.description}
-              </p>
-
-              {/* Tags - Centered */}
-              <div className="flex flex-wrap gap-2 justify-center mb-4">
-                {project.tags.map((tag, j) => (
-                  <span key={j} className="font-inter px-3 py-1 bg-purple-900/50 rounded-full text-xs text-gold-soft/80 border border-gold-500/20">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              {/* Impact - Centered */}
-              <div className="flex items-center gap-2 justify-center text-gold-soft/70 text-sm">
-                <CheckCircle2 className="w-4 h-4 text-gold-medium" />
-                <span className="font-inter">{project.impact}</span>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+        <p className="section-copy md:max-w-md">A few examples of software and data systems delivered for organizations working at scale.</p>
       </div>
 
-      {/* ===== ROYAL GOLD DIVIDER - Portfolio Section Bottom ===== */}
-      <div className="w-full max-w-4xl mx-auto pt-12">
-        <div className="w-full h-[3px] bg-gradient-to-r from-transparent via-royal-gold/60 to-transparent rounded-full shadow-[0_0_20px_rgba(245,158,11,0.2)]" />
-        <div className="flex justify-center items-center gap-4 mt-3">
-          <Crown className="w-4 h-4 text-royal-gold/60 drop-shadow-[0_0_10px_rgba(245,158,11,0.2)]" />
-          <span className="text-royal-gold/40 text-xs tracking-[0.3em] uppercase font-playfair">✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦</span>
-          <Crown className="w-4 h-4 text-royal-gold/60 drop-shadow-[0_0_10px_rgba(245,158,11,0.2)]" />
-        </div>
-        <div className="w-full h-[3px] bg-gradient-to-r from-transparent via-royal-gold/60 to-transparent rounded-full shadow-[0_0_20px_rgba(245,158,11,0.2)]" />
+      <div className="grid gap-4 lg:grid-cols-3">
+        {projects.map(({ title, org, icon: Icon, description, outcome, tags, accent }, index) => (
+          <motion.article
+            key={title}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.45, delay: index * 0.08 }}
+            className="project-card group"
+          >
+            <div className="flex items-start justify-between">
+              <div className={`project-icon project-icon-${accent}`}>
+                <Icon className="h-5 w-5" aria-hidden="true" />
+              </div>
+              <ArrowUpRight className="h-4 w-4 text-slate-600 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-slate-300" aria-hidden="true" />
+            </div>
+            <p className="mt-7 font-mono text-[10px] uppercase tracking-[0.15em] text-slate-500">{org}</p>
+            <h3 className="mt-2 text-xl font-medium leading-snug tracking-tight text-white">{title}</h3>
+            <p className="mt-3 min-h-[6rem] text-sm leading-6 text-slate-400">{description}</p>
+            <div className="mt-5 border-l border-amber-300/60 pl-3 text-sm text-slate-300">{outcome}</div>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {tags.map((tag) => <span key={tag} className="tag">{tag}</span>)}
+            </div>
+          </motion.article>
+        ))}
       </div>
     </section>
   )
